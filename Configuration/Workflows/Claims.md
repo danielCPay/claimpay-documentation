@@ -1589,24 +1589,41 @@
 ### Conditions:
 
 - All:
-  - **lock_automation** is disabled
-  - **current_role** is not Claim Underwiter
-  - **public_adjuster_confirmation_status** is not Confirmed
+  - **lock_automation** is _0_
+  - **current_role** is not _Claim Underwriter_
+  - **public_adjuster_confirmation_status** is not _Confirmed_
 - At least one:
 
 ### Tasks:
 
 - Set Public Adjuster Confirmation Status to Confirmed
+- call STOP_IF_MORE_CLAIMS_TO_UNDERWRITE
+- send a notification to Claim Acceptant role that claims in portfolio should be approved
 
 ### Tasks with Details:
 
 - Set Public Adjuster Confirmation Status to Confirmed
+
+  ```
+  taskType: VTUpdateFieldsTask, active: true
+  taskTypeParameters: {
+    "public_adjuster_confirmation_status": "'Confirmed' (field)"
+  },
+  ```
+
+- call STOP_IF_MORE_CLAIMS_TO_UNDERWRITE
   ```
   taskType: VTEntityWorkflow, active: true
   taskTypeParameters: {
-    "workflowModule": "PARENT||OutsideCases",
-    "otherWorkflowId": "Set Date of service",
-    "otherWorkflowField": "outside_case",
-    "otherWorkflowFieldValueVersion": "New"
+    "workflowModule": "PARENT||Portfolios",
+    "otherWorkflowId": "STOP_IF_MORE_CLAIMS_TO_UNDERWRITE",
+    "otherWorkflowField": "portfolio"
   },
+  ```
+
+- send a notification to Claim Acceptant role that claims in portfolio should be approved
+  ```
+  taskType: VTWatchdog, active: true
+  otherParameters: {srcWatchdogModule: Notification, type: PLL_USERS, message: Claims in portfolio:  <a href="$(relatedRecord : portfolio|CrmDetailViewURL)$">$(record : portfolio)$</a> should be approved
+  , recipients: Roles:H10, title: Claims in portfolio should be approved, skipCurrentUser: },
   ```
