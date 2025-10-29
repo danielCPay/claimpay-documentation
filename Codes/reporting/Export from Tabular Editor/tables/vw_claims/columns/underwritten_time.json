@@ -1,0 +1,25 @@
+{
+  "name": "underwritten_time",
+  "dataType": "dateTime",
+  "sourceColumn": "underwritten_time",
+  "formatString": "General Date",
+  "lineageTag": "19c01e31-8dd8-4cef-b049-e60acde675b1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "2d324d8d-18d7-4f2a-8e03-1fa769cb79a2",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_02e2b784-868f-4a61-92f6-e1b03cefaa11",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

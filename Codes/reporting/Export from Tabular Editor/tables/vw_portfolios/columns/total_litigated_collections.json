@@ -1,0 +1,17 @@
+{
+  "name": "total_litigated_collections",
+  "dataType": "double",
+  "sourceColumn": "total_litigated_collections",
+  "lineageTag": "7dda57c3-bbf2-4be5-9b88-cf79582ed117",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

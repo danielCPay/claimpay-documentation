@@ -1,0 +1,13 @@
+{
+  "name": "bank",
+  "dataType": "string",
+  "sourceColumn": "bank",
+  "lineageTag": "15e977ad-55fa-4834-84f7-2780212a99b1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

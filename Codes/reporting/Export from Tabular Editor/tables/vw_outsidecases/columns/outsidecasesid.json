@@ -1,0 +1,14 @@
+{
+  "name": "outsidecasesid",
+  "dataType": "int64",
+  "sourceColumn": "outsidecasesid",
+  "formatString": "0",
+  "lineageTag": "06fd5ac5-1584-4ef3-9f93-f194b38375c3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

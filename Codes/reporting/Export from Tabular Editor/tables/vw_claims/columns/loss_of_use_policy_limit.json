@@ -1,0 +1,17 @@
+{
+  "name": "loss_of_use_policy_limit",
+  "dataType": "double",
+  "sourceColumn": "loss_of_use_policy_limit",
+  "lineageTag": "9c57802c-c315-414e-af9d-0bf0c626477f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

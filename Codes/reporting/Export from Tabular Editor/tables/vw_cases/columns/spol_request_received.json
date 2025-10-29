@@ -1,0 +1,29 @@
+{
+  "name": "spol_request_received",
+  "dataType": "dateTime",
+  "sourceColumn": "spol_request_received",
+  "formatString": "Long Date",
+  "lineageTag": "7803ded5-5ef1-45e0-8461-a435936a6492",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "467cdb0b-2078-4dee-bba4-f02cbba09e83",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_92b55b42-0acf-4e30-95c9-326d108a78c9",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "avg_months_till_portfol_closed",
+  "dataType": "int64",
+  "sourceColumn": "avg_months_till_portfol_closed",
+  "formatString": "0",
+  "lineageTag": "81075449-a29b-48ed-b329-21745d1677c8",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

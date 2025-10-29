@@ -1,0 +1,13 @@
+{
+  "name": "internal_temp_note",
+  "dataType": "string",
+  "sourceColumn": "internal_temp_note",
+  "lineageTag": "9a247f40-a80c-433b-b024-e219cac554a2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_37a2f9f4-7c5c-4e5c-b49e-444ff2f00f8a-e9d2a1c5-d109-4edf-9c4a-26d030e2c1f9",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_claims'[vol_coll_started_date])), 1, 1), Date(Year(MAX('vw_claims'[vol_coll_started_date])), 12, 31))"
+  }
+}

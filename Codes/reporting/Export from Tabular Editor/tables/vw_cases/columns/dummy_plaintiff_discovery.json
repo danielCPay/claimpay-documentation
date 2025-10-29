@@ -1,0 +1,13 @@
+{
+  "name": "dummy_plaintiff_discovery",
+  "dataType": "string",
+  "sourceColumn": "dummy_plaintiff_discovery",
+  "lineageTag": "aeb48cec-1ef4-4c1c-944c-f13d761ba369",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

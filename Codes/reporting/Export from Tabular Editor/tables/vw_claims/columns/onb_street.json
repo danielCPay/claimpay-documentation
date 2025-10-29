@@ -1,0 +1,13 @@
+{
+  "name": "onb_street",
+  "dataType": "string",
+  "sourceColumn": "onb_street",
+  "lineageTag": "dae940a8-e99b-4309-8220-3aa831876c1e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

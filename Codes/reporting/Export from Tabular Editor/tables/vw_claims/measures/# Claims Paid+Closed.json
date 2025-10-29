@@ -1,0 +1,6 @@
+{
+  "name": "# Claims Paid+Closed",
+  "expression": "CALCULATE([# Claims],KEEPFILTERS(vw_claims[claim_status] in {\"Closed\", \"Paid\"} ))",
+  "formatString": "0",
+  "lineageTag": "73fa1238-ba15-4abc-bdc4-71ac5d5a34ab"
+}

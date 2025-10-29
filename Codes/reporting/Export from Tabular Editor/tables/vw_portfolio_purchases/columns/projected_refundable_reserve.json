@@ -1,0 +1,17 @@
+{
+  "name": "projected_refundable_reserve",
+  "dataType": "double",
+  "sourceColumn": "projected_refundable_reserve",
+  "lineageTag": "03e965ab-c035-49b9-bcc1-334b3fb6190a",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

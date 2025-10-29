@@ -1,0 +1,29 @@
+{
+  "name": "funded_date",
+  "dataType": "dateTime",
+  "sourceColumn": "funded_date",
+  "formatString": "Long Date",
+  "lineageTag": "2e28a862-0b0e-4ed1-8413-92428da457b0",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "fcfa8303-b977-41df-ab04-37a1592af79d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_a97c9716-3885-483e-b15b-e27f23a51e88",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

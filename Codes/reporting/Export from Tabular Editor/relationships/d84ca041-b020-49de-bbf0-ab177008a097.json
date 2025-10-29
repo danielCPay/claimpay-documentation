@@ -1,0 +1,8 @@
+{
+  "name": "d84ca041-b020-49de-bbf0-ab177008a097",
+  "fromTable": "vw_portfolios",
+  "fromColumn": "closed_date",
+  "toTable": "LocalDateTable_1ac232cf-0a11-4000-9dfc-040ebc732c64",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

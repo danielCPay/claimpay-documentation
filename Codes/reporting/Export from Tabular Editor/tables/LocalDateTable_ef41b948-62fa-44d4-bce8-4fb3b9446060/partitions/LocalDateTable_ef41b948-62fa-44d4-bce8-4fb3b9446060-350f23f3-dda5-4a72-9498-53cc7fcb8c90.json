@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_ef41b948-62fa-44d4-bce8-4fb3b9446060-350f23f3-dda5-4a72-9498-53cc7fcb8c90",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[motion_in_limine_deadline])), 1, 1), Date(Year(MAX('vw_cases'[motion_in_limine_deadline])), 12, 31))"
+  }
+}

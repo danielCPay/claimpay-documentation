@@ -1,0 +1,29 @@
+{
+  "name": "closed_date",
+  "dataType": "dateTime",
+  "sourceColumn": "closed_date",
+  "formatString": "Long Date",
+  "lineageTag": "ab6ecddb-295f-417c-ae54-d5804d1a20bf",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "d84ca041-b020-49de-bbf0-ab177008a097",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_1ac232cf-0a11-4000-9dfc-040ebc732c64",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pricing_expert",
+  "dataType": "int64",
+  "sourceColumn": "pricing_expert",
+  "formatString": "0",
+  "lineageTag": "3962bc02-7f29-45d1-ad8e-891ddd1a027b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

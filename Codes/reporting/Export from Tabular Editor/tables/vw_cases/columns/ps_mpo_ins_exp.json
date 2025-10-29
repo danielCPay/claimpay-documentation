@@ -1,0 +1,29 @@
+{
+  "name": "ps_mpo_ins_exp",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_mpo_ins_exp",
+  "formatString": "Long Date",
+  "lineageTag": "2ac5fb25-5d1d-4f3c-9478-c6fc81569073",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "c8081b5a-52ef-43ea-bf8f-49738be282e1",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_b5e63068-1ab9-42a2-ba20-1b45f72a2089",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

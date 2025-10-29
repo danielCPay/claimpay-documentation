@@ -1,0 +1,7 @@
+{
+  "name": "29dc10f3-d675-46a2-b03a-362beabe8e49",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "portfolio",
+  "toTable": "vw_portfolios",
+  "toColumn": "portfolio"
+}

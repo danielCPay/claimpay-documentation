@@ -1,0 +1,17 @@
+{
+  "name": "assigned_value",
+  "dataType": "double",
+  "sourceColumn": "assigned_value",
+  "lineageTag": "552d24dc-d6a3-4735-a17f-0c4931a60af6",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

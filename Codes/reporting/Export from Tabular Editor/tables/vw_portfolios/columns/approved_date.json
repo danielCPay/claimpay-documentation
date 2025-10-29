@@ -1,0 +1,29 @@
+{
+  "name": "approved_date",
+  "dataType": "dateTime",
+  "sourceColumn": "approved_date",
+  "formatString": "Long Date",
+  "lineageTag": "9c1120ce-41a5-4625-a4fd-a599a4c68d4a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "ac510cbb-0c6e-456c-b768-0a9f9fe15700",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_71ea0c1d-ff45-4eea-a317-76e17aa036d6",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

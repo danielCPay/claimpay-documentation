@@ -1,0 +1,17 @@
+{
+  "name": "limit_reserve_to_apply_to_clai",
+  "dataType": "double",
+  "sourceColumn": "limit_reserve_to_apply_to_clai",
+  "lineageTag": "1e9c3864-5740-4085-ba5b-2459a310d451",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

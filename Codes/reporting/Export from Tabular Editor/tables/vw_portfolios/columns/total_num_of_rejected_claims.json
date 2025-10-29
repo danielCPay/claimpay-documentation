@@ -1,0 +1,14 @@
+{
+  "name": "total_num_of_rejected_claims",
+  "dataType": "int64",
+  "sourceColumn": "total_num_of_rejected_claims",
+  "formatString": "0",
+  "lineageTag": "6c3d2105-8407-44e2-b669-63030526147c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

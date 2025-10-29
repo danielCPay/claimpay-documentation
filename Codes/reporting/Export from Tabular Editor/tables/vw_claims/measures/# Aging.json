@@ -1,0 +1,11 @@
+{
+  "name": "# Aging",
+  "expression": "divide([# PaidClosed TD],vw_portfolio_purchases[Inception Date])",
+  "lineageTag": "d0c0e95b-78d5-4b4a-a14e-9732ac17cde5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

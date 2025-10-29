@@ -1,0 +1,17 @@
+{
+  "name": "pre_suit_settlement_demand",
+  "dataType": "double",
+  "sourceColumn": "pre_suit_settlement_demand",
+  "lineageTag": "ac9c901d-1af1-4dd4-8014-bb93d0465303",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

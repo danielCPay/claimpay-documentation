@@ -1,0 +1,8 @@
+{
+  "name": "35f7ef77-8557-4a95-aabc-3ae205787b18",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_2_disco_set_resp_received",
+  "toTable": "LocalDateTable_b328daf5-ebc9-4592-a7ae-2cbe30608290",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

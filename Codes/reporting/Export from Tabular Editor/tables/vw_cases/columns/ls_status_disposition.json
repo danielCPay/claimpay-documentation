@@ -1,0 +1,13 @@
+{
+  "name": "ls_status_disposition",
+  "dataType": "string",
+  "sourceColumn": "ls_status_disposition",
+  "lineageTag": "c71a9ade-b5a1-4cd0-b5f4-b76d3ee0a0f3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "93ab0a32-6b0e-4c3a-8fdf-e1c049bd66a5",
+  "fromTable": "vw_claims",
+  "fromColumn": "insurance_company",
+  "toTable": "vw_insurancecompanies",
+  "toColumn": "insurance_company"
+}

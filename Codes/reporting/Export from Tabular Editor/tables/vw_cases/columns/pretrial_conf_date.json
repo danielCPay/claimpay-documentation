@@ -1,0 +1,29 @@
+{
+  "name": "pretrial_conf_date",
+  "dataType": "dateTime",
+  "sourceColumn": "pretrial_conf_date",
+  "formatString": "Long Date",
+  "lineageTag": "69f8e679-38fc-4e74-8650-799b7b620335",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "2404c1fa-a541-498d-b82e-a7e7386042c8",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_11e18532-2e5f-46e0-9344-524dd2f2cfdb",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Adjusted Value",
+  "expression": "SUM( vw_portfolios[adjusted_claim_value] )",
+  "lineageTag": "b62512ab-0f3d-4a9d-a72c-c2c2c0c6af12",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "DeplFee Maximum Factor Fee",
+  "expression": "30/100 * [Factor Fee]",
+  "lineageTag": "0ada03c4-c81c-4996-a9c4-13a4386a9458",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

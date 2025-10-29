@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_bbaa6ddb-03d0-4b47-af68-a614a422eee0-db70f3d7-c2d4-4f9f-bcdb-88a0605d7700",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[daubert_deadline])), 1, 1), Date(Year(MAX('vw_cases'[daubert_deadline])), 12, 31))"
+  }
+}

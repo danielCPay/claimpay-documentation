@@ -1,0 +1,10 @@
+{
+  "name": "81b64d64-7de4-4e68-8807-cf3d68805fb4",
+  "fromCardinality": "one",
+  "fromTable": "vw_investors_portfolio",
+  "fromColumn": "number",
+  "toTable": "vw_providers",
+  "toColumn": "number",
+  "isActive": false,
+  "crossFilteringBehavior": "bothDirections"
+}

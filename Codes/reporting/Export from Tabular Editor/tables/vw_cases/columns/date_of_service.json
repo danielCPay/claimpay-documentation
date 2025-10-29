@@ -1,0 +1,29 @@
+{
+  "name": "date_of_service",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_service",
+  "formatString": "Long Date",
+  "lineageTag": "7c3bb38a-ea5d-4b88-bcdf-f74ab2884778",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "9427a718-5292-435e-afcd-08b9acd7f659",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_eaf5f4cb-15c4-49f9-84d3-51707e3436f2",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

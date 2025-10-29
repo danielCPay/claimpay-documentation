@@ -1,0 +1,17 @@
+{
+  "name": "roof_area",
+  "dataType": "double",
+  "sourceColumn": "roof_area",
+  "lineageTag": "b6617157-80f7-40fe-9008-3b640b593c6a",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

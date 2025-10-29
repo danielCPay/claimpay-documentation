@@ -1,0 +1,25 @@
+{
+  "name": "approved_rejected_time",
+  "dataType": "dateTime",
+  "sourceColumn": "approved_rejected_time",
+  "formatString": "General Date",
+  "lineageTag": "99fcd648-4884-4d17-8f3d-72bfa2ab42ae",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f2416b0e-18fc-4ee5-b0ba-1615ac98b71a",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_e8722c41-affa-43e5-af8d-bf823d0ca25c",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

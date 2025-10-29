@@ -1,0 +1,29 @@
+{
+  "name": "last_reserves_released_date",
+  "dataType": "dateTime",
+  "sourceColumn": "last_reserves_released_date",
+  "formatString": "Long Date",
+  "lineageTag": "10baa82b-db83-4579-a605-c1e72c9939c5",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "a602de25-55ca-469c-beea-0e5fa5cf729e",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_242736c6-69c0-4b6b-9c4c-02c3aa8823c6",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

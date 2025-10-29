@@ -1,0 +1,17 @@
+{
+  "name": "ls_voluntary_principal_payment",
+  "dataType": "double",
+  "sourceColumn": "ls_voluntary_principal_payment",
+  "lineageTag": "ba4b432d-6249-48ba-9973-f058e01b50de",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

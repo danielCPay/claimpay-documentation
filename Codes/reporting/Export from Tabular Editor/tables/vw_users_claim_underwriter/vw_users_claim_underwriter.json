@@ -1,0 +1,10 @@
+{
+  "name": "vw_users_claim_underwriter",
+  "lineageTag": "748b9dd0-b5d3-424a-8bfd-72471f9e9435",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

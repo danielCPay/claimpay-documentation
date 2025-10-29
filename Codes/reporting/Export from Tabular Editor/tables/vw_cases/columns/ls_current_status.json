@@ -1,0 +1,13 @@
+{
+  "name": "ls_current_status",
+  "dataType": "string",
+  "sourceColumn": "ls_current_status",
+  "lineageTag": "07457f9a-7240-45be-8480-aaa889359666",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "total_collections",
+  "dataType": "double",
+  "sourceColumn": "total_collections",
+  "lineageTag": "76121c77-2f20-4227-a9cd-531f2e9a73ec",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

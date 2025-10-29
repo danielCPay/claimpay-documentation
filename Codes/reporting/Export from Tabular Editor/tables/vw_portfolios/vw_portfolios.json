@@ -1,0 +1,10 @@
+{
+  "name": "vw_portfolios",
+  "lineageTag": "bd303250-ad7e-4c62-976a-8e6728b1d49a",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

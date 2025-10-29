@@ -1,0 +1,29 @@
+{
+  "name": "lop_date",
+  "dataType": "dateTime",
+  "sourceColumn": "lop_date",
+  "formatString": "Long Date",
+  "lineageTag": "618228e5-a426-46ce-8813-b083f4616c8e",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "659e11e0-67e0-4c20-938a-b964ac4602df",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_4f7456ab-b883-4d98-a85b-20e71d5ef344",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

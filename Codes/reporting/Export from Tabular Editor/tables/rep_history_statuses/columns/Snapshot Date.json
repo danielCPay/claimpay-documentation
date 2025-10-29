@@ -1,0 +1,29 @@
+{
+  "name": "Snapshot Date",
+  "dataType": "dateTime",
+  "sourceColumn": "Snapshot Date",
+  "formatString": "Long Date",
+  "lineageTag": "56e5c5e4-2a1b-40ed-8708-6fe69c054c2a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "26591280-7b42-4ee1-8455-1225cf3c391f",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_6c01f92a-f64a-4626-a50a-776ab58f4a48",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

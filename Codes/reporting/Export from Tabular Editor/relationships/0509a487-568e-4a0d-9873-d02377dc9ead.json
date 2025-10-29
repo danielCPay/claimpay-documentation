@@ -1,0 +1,8 @@
+{
+  "name": "0509a487-568e-4a0d-9873-d02377dc9ead",
+  "fromTable": "vw_cases",
+  "fromColumn": "10_day_demand_resp_receive",
+  "toTable": "LocalDateTable_6a35cfa9-2f3e-4b71-8aa1-0ae82e7ca48e",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

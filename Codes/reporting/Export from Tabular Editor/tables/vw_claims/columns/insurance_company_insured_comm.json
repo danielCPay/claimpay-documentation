@@ -1,0 +1,13 @@
+{
+  "name": "insurance_company_insured_comm",
+  "dataType": "string",
+  "sourceColumn": "insurance_company_insured_comm",
+  "lineageTag": "44926e56-dbb7-4155-840b-d811c5b068cc",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

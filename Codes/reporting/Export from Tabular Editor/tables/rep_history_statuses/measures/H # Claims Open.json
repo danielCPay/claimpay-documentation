@@ -1,0 +1,6 @@
+{
+  "name": "H # Claims Open",
+  "expression": "calculate([Last #],KEEPFILTERS( rep_history_statuses[status_area]=\"Claim Status\" && rep_history_statuses[status_value]=\"Open\" ))",
+  "formatString": "0",
+  "lineageTag": "5c83b06a-15ef-4882-86bb-277236f85638"
+}

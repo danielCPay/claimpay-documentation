@@ -1,0 +1,29 @@
+{
+  "name": "request_for_documents_received",
+  "dataType": "dateTime",
+  "sourceColumn": "request_for_documents_received",
+  "formatString": "Long Date",
+  "lineageTag": "4d67bf8e-4c1e-4d1c-81b2-a530ccad1ab4",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "88eb8ba0-5176-4501-b42e-5a835e9b7a09",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_dac7fad1-7728-4785-86f6-4d9b3676397d",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Purchase_aging Purchase_Date",
+  "expression": "min(purchase_aging[purchase_date])",
+  "formatString": "General Date",
+  "lineageTag": "d04e825b-61f5-4087-a105-6199cd18a785"
+}

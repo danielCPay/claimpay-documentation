@@ -1,0 +1,8 @@
+{
+  "name": "0058651f-9477-4ffe-b0ca-8026174e6258",
+  "fromTable": "vw_cases",
+  "fromColumn": "ptc_small_claims",
+  "toTable": "LocalDateTable_59d1622a-5e75-4da4-bf51-c0e6e7814440",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

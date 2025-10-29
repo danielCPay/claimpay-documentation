@@ -1,0 +1,8 @@
+{
+  "name": "fb324b0a-0efa-4d77-b73c-e185a3369b9c",
+  "fromTable": "vw_claims",
+  "fromColumn": "portfolio",
+  "toTable": "vw_portfolios",
+  "toColumn": "portfolio",
+  "isActive": false
+}

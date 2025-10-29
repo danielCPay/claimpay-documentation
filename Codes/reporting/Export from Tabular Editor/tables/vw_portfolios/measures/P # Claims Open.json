@@ -1,0 +1,6 @@
+{
+  "name": "P # Claims Open",
+  "expression": "[P # Claims Purchased] - [P # Claims Closed]",
+  "formatString": "0",
+  "lineageTag": "0815ae63-bcd7-43b8-83f8-d7c445cb4730"
+}

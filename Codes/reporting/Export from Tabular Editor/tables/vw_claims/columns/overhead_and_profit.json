@@ -1,0 +1,17 @@
+{
+  "name": "overhead_and_profit",
+  "dataType": "double",
+  "sourceColumn": "overhead_and_profit",
+  "lineageTag": "9735362e-cc49-4b04-8adf-13d29e08081c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

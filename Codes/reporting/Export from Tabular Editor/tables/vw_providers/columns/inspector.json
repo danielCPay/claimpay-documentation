@@ -1,0 +1,14 @@
+{
+  "name": "inspector",
+  "dataType": "int64",
+  "sourceColumn": "inspector",
+  "formatString": "0",
+  "lineageTag": "149b0715-32e0-4317-8cdc-c924799d9814",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

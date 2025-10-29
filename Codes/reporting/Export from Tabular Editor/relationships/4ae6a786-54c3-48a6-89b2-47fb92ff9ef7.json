@@ -1,0 +1,8 @@
+{
+  "name": "4ae6a786-54c3-48a6-89b2-47fb92ff9ef7",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_msj_drafted",
+  "toTable": "LocalDateTable_9bea6b89-4e1e-4ce3-a3f6-667f57ea5c07",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

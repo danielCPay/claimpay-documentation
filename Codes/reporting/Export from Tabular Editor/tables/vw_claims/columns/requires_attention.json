@@ -1,0 +1,13 @@
+{
+  "name": "requires_attention",
+  "dataType": "string",
+  "sourceColumn": "requires_attention",
+  "lineageTag": "a4674e81-e638-44aa-a60e-0661ae8057bf",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

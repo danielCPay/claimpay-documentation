@@ -1,0 +1,8 @@
+{
+  "name": "63ca8c27-9485-493c-819f-fd3a516da22c",
+  "fromTable": "vw_cases",
+  "fromColumn": "ds_expert_disco_set_received",
+  "toTable": "LocalDateTable_5b955d3f-af1e-4705-afe2-109c95c5c76a",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

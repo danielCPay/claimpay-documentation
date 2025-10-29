@@ -1,0 +1,8 @@
+{
+  "name": "2afdb1f9-8723-4518-bbb3-2b948d778c3a",
+  "fromTable": "vw_cases",
+  "fromColumn": "pfs_received",
+  "toTable": "LocalDateTable_9f58eac9-6526-48d5-8ab2-1c04258f522e",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

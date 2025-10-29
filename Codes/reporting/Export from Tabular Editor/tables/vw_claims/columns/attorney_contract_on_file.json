@@ -1,0 +1,13 @@
+{
+  "name": "attorney_contract_on_file",
+  "dataType": "string",
+  "sourceColumn": "attorney_contract_on_file",
+  "lineageTag": "93d113f3-220d-47dc-bd57-5d0868ca82f4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "total_reserved_released",
+  "dataType": "double",
+  "sourceColumn": "total_reserved_released",
+  "lineageTag": "5b4e7d05-7622-4f50-81be-7531720d7485",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "settlement_af",
+  "dataType": "double",
+  "sourceColumn": "settlement_af",
+  "lineageTag": "071c5215-912d-400f-a241-f0b7b06229ce",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

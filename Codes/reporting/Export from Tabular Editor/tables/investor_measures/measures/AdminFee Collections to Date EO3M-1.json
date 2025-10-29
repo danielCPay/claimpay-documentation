@@ -1,0 +1,17 @@
+{
+  "name": "AdminFee Collections to Date EO3M-1",
+  "expression": [
+    "CALCULATE ( ",
+    "\t\t\t\tSUM( vw_claimcollections[assigned_value] )",
+    "                , FILTER( purchase_aging, NOT ISBLANK( purchase_aging[purchase_date] ) )",
+    "\t\t\t\t, FILTER( vw_collections, [payment_date] <= [AdminFee Aging to Date EO3M-1] )",
+    "\t\t\t\t)"
+  ],
+  "lineageTag": "c514ac37-322d-4f5e-8879-8cddf0c93842",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

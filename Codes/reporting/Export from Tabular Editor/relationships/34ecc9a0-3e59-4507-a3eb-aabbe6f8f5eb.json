@@ -1,0 +1,8 @@
+{
+  "name": "34ecc9a0-3e59-4507-a3eb-aabbe6f8f5eb",
+  "fromTable": "vw_collections",
+  "fromColumn": "disbursed_date",
+  "toTable": "LocalDateTable_c6b3c3c2-1f43-4ba2-b0ef-ebef719a3819",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

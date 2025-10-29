@@ -1,0 +1,13 @@
+{
+  "name": "insurance_shared_notes",
+  "dataType": "string",
+  "sourceColumn": "insurance_shared_notes",
+  "lineageTag": "85c2304b-d91a-4e27-a333-1acc2f840389",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

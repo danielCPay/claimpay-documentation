@@ -1,0 +1,16 @@
+{
+  "name": "AdminFee Outstanding Deployment",
+  "expression": [
+    "IF( [Purchase Value] - [AdminFee Collections to Date EO3M-1] > 0 && NOT ISBLANK([AdminFee Aging to Date EO3M-1]), ",
+    "\t\t\t\tSUMX(purchase_aging, [Purchase Value] - [AdminFee Collections to Date EO3M-1]), ",
+    "\t\t\t\tBLANK() ",
+    "\t\t\t\t)"
+  ],
+  "lineageTag": "3feb8d45-de72-4be5-974c-769737660820",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

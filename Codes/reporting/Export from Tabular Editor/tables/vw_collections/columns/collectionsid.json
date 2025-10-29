@@ -1,0 +1,14 @@
+{
+  "name": "collectionsid",
+  "dataType": "int64",
+  "sourceColumn": "collectionsid",
+  "formatString": "0",
+  "lineageTag": "2ac589eb-435f-41cc-bbff-41ec609dbb47",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

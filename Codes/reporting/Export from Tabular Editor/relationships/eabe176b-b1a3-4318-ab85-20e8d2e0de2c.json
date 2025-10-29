@@ -1,0 +1,8 @@
+{
+  "name": "eabe176b-b1a3-4318-ab85-20e8d2e0de2c",
+  "fromTable": "vw_cases",
+  "fromColumn": "arbitration_award",
+  "toTable": "LocalDateTable_10f7eac8-b18c-4428-aaed-3f7ded4ec21f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

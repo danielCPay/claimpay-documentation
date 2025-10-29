@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_a1d58e8d-2303-48b8-ab49-ca563adbebdc-8023d0de-9830-4d06-bff0-ccf0a9d11ca5",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[ps_3_disco_set_ds_mfet_hearing])), 1, 1), Date(Year(MAX('vw_cases'[ps_3_disco_set_ds_mfet_hearing])), 12, 31))"
+  }
+}

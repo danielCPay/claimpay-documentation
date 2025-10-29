@@ -1,0 +1,8 @@
+{
+  "name": "26591280-7b42-4ee1-8455-1225cf3c391f",
+  "fromTable": "rep_history_statuses",
+  "fromColumn": "Snapshot Date",
+  "toTable": "LocalDateTable_6c01f92a-f64a-4626-a50a-776ab58f4a48",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

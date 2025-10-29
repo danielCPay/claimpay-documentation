@@ -1,0 +1,11 @@
+{
+  "name": "Voluntary Collection",
+  "expression": "sum(vw_claims[total_voluntary_ollections])",
+  "lineageTag": "7379ee40-4a32-42a5-b9d9-4c2fb9b0cd0c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

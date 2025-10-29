@@ -1,0 +1,8 @@
+{
+  "name": "1fe75442-910d-4b64-9ff8-6b14fd618521",
+  "fromTable": "vw_insureds",
+  "fromColumn": "createdtime",
+  "toTable": "LocalDateTable_20e64626-1a12-4bd7-b907-65f1678db048",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

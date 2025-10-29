@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Year",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[year]",
+  "lineageTag": "4dbffe8f-0eb6-4289-a70b-f062a6ad50e1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

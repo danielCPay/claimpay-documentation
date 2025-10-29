@@ -1,0 +1,8 @@
+{
+  "name": "c9acd112-6957-4f04-925d-6cc3155e2a41",
+  "fromTable": "vw_portfolios",
+  "fromColumn": "last_reserves_released_date",
+  "toTable": "LocalDateTable_25d465c7-7acf-493b-96ca-0743ada54eec",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

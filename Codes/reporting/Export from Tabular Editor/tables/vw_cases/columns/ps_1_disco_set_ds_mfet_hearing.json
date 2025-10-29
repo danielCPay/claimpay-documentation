@@ -1,0 +1,29 @@
+{
+  "name": "ps_1_disco_set_ds_mfet_hearing",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_1_disco_set_ds_mfet_hearing",
+  "formatString": "Long Date",
+  "lineageTag": "3b8f636c-1626-47b0-b611-161e2ed0c287",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0f534d1d-9a2f-4533-b8d4-a8e7ed79e7d5",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_8b16f767-78d6-4a98-ba8f-987942805fd6",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

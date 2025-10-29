@@ -1,0 +1,29 @@
+{
+  "name": "date_of_award_penalties",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_award_penalties",
+  "formatString": "Long Date",
+  "lineageTag": "5ef3c933-d207-4723-beb7-fda16eff97ee",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "89eba5ba-266f-4e80-9da3-81c3c3e21a16",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_929de5f5-7012-4112-b51d-e32da8be04b1",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "897420ab-b9e0-419d-8648-ed4a6d46753b",
+  "fromTable": "vw_providers",
+  "fromColumn": "date_of_first_contact",
+  "toTable": "LocalDateTable_cfdd2fe4-f0f8-4476-a7d9-8486b4b687d5",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

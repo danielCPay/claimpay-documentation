@@ -1,0 +1,13 @@
+{
+  "name": "in_good_standing",
+  "dataType": "string",
+  "sourceColumn": "in_good_standing",
+  "lineageTag": "a94a83e8-8f62-4619-83fd-6f408ed5a4e8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

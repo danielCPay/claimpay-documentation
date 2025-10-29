@@ -1,0 +1,319 @@
+"pdfid";"module_name";"STATUS";"primary_name";"secondary_name";"filename";"conditions";"pdfid";"module_name";"header_content";"body_content";"footer_content";"status";"primary_name";"secondary_name";"meta_author";"meta_keywords";"metatags_status";"meta_subject";"meta_title";"page_format";"margin_chkbox";"margin_top";"margin_bottom";"margin_left";"margin_right";"header_height";"footer_height";"page_orientation";"language";"filename";"visibility";"default";"conditions";"watermark_type";"watermark_text";"watermark_angle";"watermark_image";"template_members";"one_pdf";"type"
+"33";"FInvoice";"1";"SINGLE_FInvoice";"SINGLE_FInvoice";"";"[]";"33";"FInvoice";"<div>
+<table style="font-family:'DejaVu Sans';font-size:10px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="text-align:left;width:50%;">$(translate : Other.PDF|LBL_INVOICE_NUMBER)$ $(record : number)$</td>
+			<td style="text-align:right;width:50%;">$(translate : Other.PDF|Issued Date)$ $(record : issue_time)$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+";"<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;margin-bottom:6px;width:100%;">
+	<thead>
+		<tr>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|Issued Date)$</th>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|LBL_SALE_DATE)$</th>
+			<th style="text-align:center;width:25%;">$(translate : FInvoice|FL_PAYMENT_DATE)$</th>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|LBL_PAYMENT_METHOD)$</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : issue_time)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : saledate)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : paymentdate)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : finvoice_formpayment)$</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;line-height:1.1em;text-align:center;width:100%;">
+	<thead>
+		<tr>
+			<th style="font-size:9px;width:50%;">$(translate : Other.PDF|LBL_DEALER)$</th>
+			<th style="font-size:9px;width:50%;">$(translate : Other.PDF|LBL_BUYER)$</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;line-height:1.2;vertical-align:top;">$(organization : 1|company_name)$<br>
+			$(organization : 1|addresslevel8a)$ $(organization : 1|buildingnumbera)$<br>
+			$(organization : 1|addresslevel7a)$ $(organization : 1|addresslevel5a)$<br>
+			$(translate : Other.PDF|LBL_VATID)$: $(organization : 1|vat)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;line-height:1.2;vertical-align:top;">$(relatedRecord : accountid|accountname|Accounts)$<br>
+			$(relatedRecord : accountid|addresslevel8a|Accounts)$ $(relatedRecord : accountid|buildingnumbera|Accounts)$<br>
+			$(relatedRecord : accountid|addresslevel7a|Accounts)$ $(relatedRecord : accountid|addresslevel5a|Accounts)$<br>
+			$(translate : Other.PDF|LBL_VATID)$: $(relatedRecord : accountid|vat_id|Accounts)$</td>
+		</tr>
+	</tbody>
+</table>
+<div style="font-family:'DejaVu Sans';margin-top:12px;text-align:center;">
+<h3>$(translate : Other.PDF|LBL_INVOICE_NUMBER)$: $(record : number)$</h3>
+</div>
+<div style="font-family:'DejaVu Sans';font-size:8px;margin-bottom:20px;margin-left:0px;margin-right:0px;margin-top:10px;">$(custom : ProductsTableShortVersion)$</div>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:8px;margin:0px 0px 20px 0px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top;width:50%;">$(custom : TableTaxSummary)$</td>
+			<td style="vertical-align:top;width:50%;">$(custom : TableDiscountSummary)$</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:8px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top;width:50%;">$(custom : TableCurrencySummary)$</td>
+			<td style="vertical-align:top;width:50%;">
+			<table cellspacing="0" style="border-collapse:collapse;width:100%;">
+				<thead>
+					<tr>
+						<th style="font-size:10px;">$(translate : Other.PDF|LBL_TO_PAY)$</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="border-color:#dddddd;border-style:solid;border-width:1px;font-size:12px;font-weight:bold;text-align:center;">$(record : sum_gross)$</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;margin:20px 0px;text-align:left;width:100%;">
+	<thead>
+		<tr>
+			<th style="text-align:left;">
+			<div style="margin-left:4px;">$(translate : Other.PDF|LBL_COMMENTS)$</div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;padding:10px;">$(record : attention)$</td>
+		</tr>
+	</tbody>
+</table>
+<div style="font-family:'DejaVu Sans';font-size:8px;text-align:left;">$(translate : Other.PDF|LBL_STAGE)$: $(record : assigned_user_id)$</div>
+";"<table style="font-family:'DejaVu Sans';font-size:8px;width:100%;">
+<tbody>
+	<tr>
+		<td style="text-align:right;width:50%;">$(custom : CurrentPage)$/$(custom : AllPages)$</td>
+	</tr>
+</tbody>
+</table>";"1";"SINGLE_FInvoice";"SINGLE_FInvoice";"";"";"1";"";"";"A4";"null";"null";"null";"null";"null";"null";"null";"PLL_PORTRAIT";"";"";"PLL_LISTVIEW,PLL_DETAILVIEW";"1";"[]";"0";"";"0";"";"";"null";"0"
+"34";"FInvoiceProforma";"1";"SINGLE_FInvoiceProforma";"SINGLE_FInvoiceProforma";"";"[]";"34";"FInvoiceProforma";"<div>
+<table style="font-family:'DejaVu Sans';font-size:10px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="text-align:left;width:50%;">$(translate : FInvoiceProforma|SINGLE_FInvoiceProforma)$ $(record : number)$</td>
+			<td style="text-align:right;width:50%;">$(translate : Other.PDF|LBL_SALE_DATE)$ $(record : saledate)$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+";"<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;margin-bottom:6px;width:100%;">
+	<thead>
+		<tr>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|LBL_SALE_DATE)$</th>
+			<th style="text-align:center;width:25%;">$(translate : FInvoiceProforma|FL_PAYMENT_DATE)$</th>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|LBL_PAYMENT_METHOD)$</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : saledate)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : paymentdate)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : finvoiceproforma_formpayment)$</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;line-height:1.1em;text-align:center;width:100%;">
+	<thead>
+		<tr>
+			<th style="font-size:9px;width:50%;">$(translate : Other.PDF|LBL_DEALER)$</th>
+			<th style="font-size:9px;width:50%;">$(translate : Other.PDF|LBL_BUYER)$</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;line-height:1.2;vertical-align:top;">$(organization : 1|company_name)$<br>
+			$(organization : 1|addresslevel8a)$ $(organization : 1|buildingnumbera)$<br>
+			$(organization : 1|addresslevel7a)$ $(organization : 1|addresslevel5a)$<br>
+			$(translate : Other.PDF|LBL_VATID)$: $(organization : 1|vat)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;line-height:1.2;vertical-align:top;">$(relatedRecord : accountid|accountname|Accounts)$<br>
+			$(relatedRecord : accountid|addresslevel8a|Accounts)$ $(relatedRecord : accountid|buildingnumbera|Accounts)$<br>
+			$(relatedRecord : accountid|addresslevel7a|Accounts)$ $(relatedRecord : accountid|addresslevel5a|Accounts)$<br>
+			$(translate : Other.PDF|LBL_VATID)$: $(relatedRecord : accountid|vat_id|Accounts)$</td>
+		</tr>
+	</tbody>
+</table>
+<div style="font-family:'DejaVu Sans';margin-top:12px;text-align:center;">
+<h3>$(translate : FInvoiceProforma|SINGLE_FInvoiceProforma)$: $(record : number)$</h3>
+</div>
+<div style="font-family:'DejaVu Sans';font-size:8px;margin-bottom:20px;margin-left:0px;margin-right:0px;margin-top:10px;">$(custom : ProductsTableShortVersion)$</div>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:8px;margin:0px 0px 20px 0px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top;width:50%;">$(custom : TableTaxSummary)$</td>
+			<td style="vertical-align:top;width:50%;">$(custom : TableDiscountSummary)$</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:8px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top;width:50%;">$(custom : TableCurrencySummary)$</td>
+			<td style="vertical-align:top;width:50%;">
+			<table cellspacing="0" style="border-collapse:collapse;width:100%;">
+				<thead>
+					<tr>
+						<th style="font-size:10px;">$(translate : Other.PDF|LBL_TO_PAY)$</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="border-color:#dddddd;border-style:solid;border-width:1px;font-size:12px;font-weight:bold;text-align:center;">$(record : sum_gross)$</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;margin:20px 0px;text-align:left;width:100%;">
+	<thead>
+		<tr>
+			<th style="text-align:left;">
+			<div style="margin-left:4px;">$(translate : Other.PDF|LBL_COMMENTS)$</div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;padding:10px;">$(record : attention)$</td>
+		</tr>
+	</tbody>
+</table>
+<div style="font-family:'DejaVu Sans';font-size:8px;text-align:left;">$(translate : Other.PDF|LBL_STAGE)$: $(record : assigned_user_id)$</div>
+";"<table style="font-family:'DejaVu Sans';font-size:8px;width:100%;">
+<tbody>
+	<tr>
+		<td style="text-align:right;width:50%;">$(custom : CurrentPage)$/$(custom : AllPages)$</td>
+	</tr>
+</tbody>
+</table>";"1";"SINGLE_FInvoiceProforma";"SINGLE_FInvoiceProforma";"";"";"1";"";"";"A4";"null";"null";"null";"null";"null";"null";"null";"PLL_PORTRAIT";"";"";"PLL_LISTVIEW,PLL_DETAILVIEW";"1";"[]";"0";"";"0";"";"";"null";"0"
+"35";"FCorectingInvoice";"1";"SINGLE_FCorectingInvoice";"SINGLE_FCorectingInvoice";"";"[]";"35";"FCorectingInvoice";"<div>
+<table style="font-family:'DejaVu Sans';font-size:10px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="text-align:left;width:50%;">$(translate : FCorectingInvoice|SINGLE_FCorectingInvoice)$ $(record : number)$</td>
+			<td style="text-align:right;width:50%;">$(translate : Other.PDF|LBL_SALE_DATE)$ $(record : saledate)$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+";"<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;margin-bottom:6px;width:100%;">
+	<thead>
+		<tr>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|LBL_SALE_DATE)$</th>
+			<th style="text-align:center;width:25%;">$(translate : FCorectingInvoice|FL_PAYMENT_DATE)$</th>
+			<th style="text-align:center;width:25%;">$(translate : Other.PDF|LBL_PAYMENT_METHOD)$</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : saledate)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : paymentdate)$</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;text-align:center;">$(record : fcorectinginvoice_formpayment)$</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;line-height:1.1em;text-align:center;width:100%;">
+	<thead>
+		<tr>
+			<th style="font-size:9px;width:50%;">$(translate : Other.PDF|LBL_DEALER)$</th>
+			<th style="font-size:9px;width:50%;">$(translate : Other.PDF|LBL_BUYER)$</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;line-height:1.2;vertical-align:top;">
+			<table cellspacing="0" style="border-collapse:collapse;width:100%;">
+				<tbody>
+					<tr>
+						<td> </td>
+						<td style="vertical-align:top;">$(organization : 1|company_name)$<br>
+						$(organization : 1|addresslevel8a)$ $(organization : 1|buildingnumbera)$<br>
+						$(organization : 1|addresslevel7a)$ $(organization : 1|addresslevel5a)$<br>
+						$(translate : Other.PDF|LBL_VATID)$: $(organization : 1|vat)$</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;line-height:1.2;vertical-align:top;">$(relatedRecord : accountid|accountname|Accounts)$<br>
+			$(relatedRecord : accountid|addresslevel8a|Accounts)$ $(relatedRecord : accountid|buildingnumbera|Accounts)$<br>
+			$(relatedRecord : accountid|addresslevel7a|Accounts)$ $(relatedRecord : accountid|addresslevel5a|Accounts)$<br>
+			$(translate : Other.PDF|LBL_VATID)$: $(relatedRecord : accountid|vat_id|Accounts)$</td>
+		</tr>
+	</tbody>
+</table>
+<div style="font-family:'DejaVu Sans';margin-top:12px;text-align:center;">
+<h3>$(translate : FCorectingInvoice|SINGLE_FCorectingInvoice)$: $(record : number)$</h3>
+</div>
+<div style="font-family:'DejaVu Sans';font-size:8px;margin-left:0px;margin-right:0px;margin-top:10px;">$(translate : Other.PDF|LBL_TO_FINVOICE_NUMBER)$: $(relatedRecord : finvoiceid|number|FInvoice)$</div>
+<div style="font-family:'DejaVu Sans';font-size:8px;margin-bottom:20px;margin-left:0px;margin-right:0px;margin-top:10px;"><strong>$(translate : FCorectingInvoice|LBL_BEFORE_CORRECTION)$</strong><br>
+$(custom : ProductsTableCorrectingBefore)$</div>
+<div style="font-family:'DejaVu Sans';font-size:8px;margin-bottom:20px;margin-left:0px;margin-right:0px;margin-top:10px;"><strong>$(translate : FCorectingInvoice|LBL_AFTER_CORRECTION)$</strong><br>
+$(custom : ProductsTableShortVersion)$</div>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:8px;margin:0px 0px 20px 0px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top;width:50%;">$(custom : TableTaxSummary)$</td>
+			<td style="vertical-align:top;width:50%;">$(custom : TableDiscountSummary)$</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:8px;width:100%;">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top;width:50%;">$(custom : TableCurrencySummary)$</td>
+			<td style="vertical-align:top;width:50%;">
+			<table cellspacing="0" style="border-collapse:collapse;width:100%;">
+				<thead>
+					<tr>
+						<th style="font-size:10px;">$(translate : Other.PDF|LBL_TO_PAY)$</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="border-color:#dddddd;border-style:solid;border-width:1px;font-size:12px;font-weight:bold;text-align:center;">$(record : sum_gross)$</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" style="border-collapse:collapse;font-family:'DejaVu Sans';font-size:9px;margin:20px 0px;text-align:left;width:100%;">
+	<thead>
+		<tr>
+			<th style="text-align:left;">
+			<div style="margin-left:4px;">$(translate : Other.PDF|LBL_COMMENTS)$</div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border-color:#dddddd;border-style:solid;border-width:1px;padding:10px;">$(record : attention)$</td>
+		</tr>
+	</tbody>
+</table>
+<div style="font-family:'DejaVu Sans';font-size:8px;text-align:left;">$(translate : Other.PDF|LBL_STAGE)$: $(record : assigned_user_id)$</div>
+";"<table style="font-family:'DejaVu Sans';font-size:8px;width:100%;">
+<tbody>
+	<tr>
+		<td style="text-align:right;width:50%;">$(custom : CurrentPage)$/$(custom : AllPages)$</td>
+	</tr>
+</tbody>
+</table>";"1";"SINGLE_FCorectingInvoice";"SINGLE_FCorectingInvoice";"";"";"1";"";"";"A4";"null";"null";"null";"null";"null";"null";"null";"PLL_PORTRAIT";"";"";"PLL_LISTVIEW,PLL_DETAILVIEW";"1";"[]";"0";"";"0";"";"";"null";"0"

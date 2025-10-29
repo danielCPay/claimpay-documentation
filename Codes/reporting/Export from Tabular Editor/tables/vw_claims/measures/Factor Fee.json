@@ -1,0 +1,11 @@
+{
+  "name": "Factor Fee",
+  "expression": "sum( vw_claims[factor_fee] )",
+  "lineageTag": "f91a9837-56db-40f7-bb78-24a7c1fc86af",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

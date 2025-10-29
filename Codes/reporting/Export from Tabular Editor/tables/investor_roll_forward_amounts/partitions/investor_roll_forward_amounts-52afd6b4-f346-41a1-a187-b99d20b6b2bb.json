@@ -1,0 +1,19 @@
+{
+  "name": "investor_roll_forward_amounts-52afd6b4-f346-41a1-a187-b99d20b6b2bb",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "",
+      "        DISTINCT( ",
+      "\t\t\tSELECTCOLUMNS( FILTER( vw_portfolio_purchases, vw_portfolio_purchases[createdtime] >= date(2020,1,1) && vw_portfolio_purchases[purchase_date] >= date(2020,1,1) )",
+      "                , \"investor\", vw_portfolio_purchases[investor]",
+      "\t\t\t\t, \"Investor Name\", RELATED(vw_investors[Investor Name])",
+      "                , \"purchase_month\", DATE( YEAR(vw_portfolio_purchases[purchase_date]), MONTH(vw_portfolio_purchases[purchase_date]), 1 )",
+      "\t\t\t\t, \"investor_purchase_month\", CONCATENATE( vw_portfolio_purchases[investor], CONCATENATE( \"-\",  CONCATENATE( YEAR(vw_portfolio_purchases[purchase_date]), CONCATENATE( \".\", MONTH(vw_portfolio_purchases[purchase_date]) ) ) ) ) ",
+      "\t\t\t\t) ",
+      "\t\t\t)",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "fa_depo_date",
+  "dataType": "dateTime",
+  "sourceColumn": "fa_depo_date",
+  "formatString": "General Date",
+  "lineageTag": "9103770f-9c4a-4f85-890e-3222d81a6ce3",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "9227f31b-02a2-43ed-9d04-ce9fca006c36",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_8e7f466b-136a-4802-a13c-10ce5d9e893e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "59ac6c27-596f-4b70-bdd1-dea7267b4c5d",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_msj_hearing_date",
+  "toTable": "LocalDateTable_226ba0cd-9c39-4063-a355-a52c7db361f3",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

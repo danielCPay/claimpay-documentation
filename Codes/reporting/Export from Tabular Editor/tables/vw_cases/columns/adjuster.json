@@ -1,0 +1,14 @@
+{
+  "name": "adjuster",
+  "dataType": "int64",
+  "sourceColumn": "adjuster",
+  "formatString": "0",
+  "lineageTag": "05e95ea6-f8bc-47b3-9e84-4c6220ca417a",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

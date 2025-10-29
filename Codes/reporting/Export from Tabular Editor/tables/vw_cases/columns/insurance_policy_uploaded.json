@@ -1,0 +1,14 @@
+{
+  "name": "insurance_policy_uploaded",
+  "dataType": "int64",
+  "sourceColumn": "insurance_policy_uploaded",
+  "formatString": "0",
+  "lineageTag": "af3c8786-4079-486b-9c5f-e98e215eb3d4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

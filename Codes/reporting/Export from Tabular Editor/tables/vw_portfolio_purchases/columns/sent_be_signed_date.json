@@ -1,0 +1,29 @@
+{
+  "name": "sent_be_signed_date",
+  "dataType": "dateTime",
+  "sourceColumn": "sent_be_signed_date",
+  "formatString": "Long Date",
+  "lineageTag": "be0325e1-1501-4632-9366-338bc701a744",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "5c0251ce-393e-4f75-9b35-93ce6e06496c",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_23303c93-3aa7-42e8-ba48-aab813f8d744",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

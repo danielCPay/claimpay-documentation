@@ -1,0 +1,29 @@
+{
+  "name": "addendum_date",
+  "dataType": "dateTime",
+  "sourceColumn": "addendum_date",
+  "formatString": "Long Date",
+  "lineageTag": "580ce7b8-dea1-436b-bd82-0196b545b6d2",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "a5563ddb-6d43-4ca7-83e7-7c823fd07834",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_555b3a80-482c-432c-a739-065dffc78400",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

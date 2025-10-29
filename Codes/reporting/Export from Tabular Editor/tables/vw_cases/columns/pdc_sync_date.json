@@ -1,0 +1,25 @@
+{
+  "name": "pdc_sync_date",
+  "dataType": "dateTime",
+  "sourceColumn": "pdc_sync_date",
+  "formatString": "General Date",
+  "lineageTag": "160d098f-ac90-4532-ad5c-84835c452b6f",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "745da17c-3cd1-4511-af3f-4971bcc826bb",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_9c81fb91-0bf5-47aa-96f4-9902d984904f",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

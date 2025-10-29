@@ -1,0 +1,29 @@
+{
+  "name": "notice_of_appeal",
+  "dataType": "dateTime",
+  "sourceColumn": "notice_of_appeal",
+  "formatString": "Long Date",
+  "lineageTag": "036944c5-0645-4591-b6e6-d44fff2e143d",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "658a4ce6-d25c-43c7-a74d-1cb729ac8ee6",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_8c75fd10-8f29-4c45-8f03-d7272be8c1e7",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

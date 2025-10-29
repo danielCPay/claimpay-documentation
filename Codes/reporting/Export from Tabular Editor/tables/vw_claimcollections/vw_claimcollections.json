@@ -1,0 +1,10 @@
+{
+  "name": "vw_claimcollections",
+  "lineageTag": "09216714-6286-487a-b4df-dda93a757904",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

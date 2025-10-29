@@ -1,0 +1,13 @@
+{
+  "name": "need_labs",
+  "dataType": "string",
+  "sourceColumn": "need_labs",
+  "lineageTag": "b03d44ee-dd18-4788-b9fc-bf1c05ab1de5",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

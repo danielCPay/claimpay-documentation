@@ -1,0 +1,8 @@
+{
+  "name": "f58e892a-e6c9-423b-85e8-863b41d76ccc",
+  "fromTable": "vw_cases",
+  "fromColumn": "referral_date",
+  "toTable": "LocalDateTable_24f3021f-e5ae-4882-8ef8-45cf4e68fbfc",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "penalties",
+  "dataType": "double",
+  "sourceColumn": "penalties",
+  "lineageTag": "be3cf339-1543-4c5d-94c3-370c78aa3481",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

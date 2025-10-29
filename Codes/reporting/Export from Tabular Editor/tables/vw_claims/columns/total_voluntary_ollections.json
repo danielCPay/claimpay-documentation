@@ -1,0 +1,17 @@
+{
+  "name": "total_voluntary_ollections",
+  "dataType": "double",
+  "sourceColumn": "total_voluntary_ollections",
+  "lineageTag": "fe40ca85-1607-4f51-a357-2cc4f9d66dae",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

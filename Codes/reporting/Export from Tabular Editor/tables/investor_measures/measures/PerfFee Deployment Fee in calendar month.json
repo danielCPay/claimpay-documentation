@@ -1,0 +1,19 @@
+{
+  "name": "PerfFee Deployment Fee in calendar month",
+  "expression": [
+    "CALCULATE( ",
+    "\t\t\t\t[DeplFee Deployment Fee Charged], ",
+    "\t\t\t\tFILTER( purchase_aging, ",
+    "\t\t\t\t\tpurchase_aging[purchase_date] >= purchase_aging[aging_start_month] ",
+    "\t\t\t\t\t&& purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] ",
+    "\t\t\t\t\t) ",
+    "\t\t\t\t)"
+  ],
+  "lineageTag": "1010e453-ef50-407c-9bfb-08ead5741449",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

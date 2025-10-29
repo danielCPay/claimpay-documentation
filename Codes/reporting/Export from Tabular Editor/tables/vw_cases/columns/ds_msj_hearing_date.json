@@ -1,0 +1,29 @@
+{
+  "name": "ds_msj_hearing_date",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_msj_hearing_date",
+  "formatString": "Long Date",
+  "lineageTag": "60b0ecd8-aeb6-48a4-9d27-70fac78d6965",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "226be92c-76a9-490a-a27e-32c28b1a2397",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_1150aaea-3c73-4cc8-86db-0a45e87ecd52",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

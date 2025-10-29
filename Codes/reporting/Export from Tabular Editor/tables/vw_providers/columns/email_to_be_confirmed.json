@@ -1,0 +1,13 @@
+{
+  "name": "email_to_be_confirmed",
+  "dataType": "string",
+  "sourceColumn": "email_to_be_confirmed",
+  "lineageTag": "f1b6aad6-5fbe-4843-ba63-4a536a9a3886",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

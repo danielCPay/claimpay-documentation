@@ -1,0 +1,25 @@
+{
+  "name": "Investor Measure Value",
+  "expression": [
+    "",
+    "    SUMX( investor_measures, ",
+    "        SWITCH( [Selected Measure ID]",
+    "            , 1, [InvestorCF Purchase Value]",
+    "            , 2, [DeplFee Deployment Fee Charged]",
+    "            , 3, [AdminFee Admin Fee]",
+    "            , 4, [InvestorCF Collections Assigned Value]",
+    "            , 5, 0",
+    "            , 6, [PerfFee Catch-Up]",
+    "            , 7, [PerfFee Performance Fee]",
+    "            , 8, 0",
+    "            ) * investor_measures[investor_measure_multiplier]",
+    "    )"
+  ],
+  "lineageTag": "21a23488-4d58-4108-b48b-9590cd0edcb7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

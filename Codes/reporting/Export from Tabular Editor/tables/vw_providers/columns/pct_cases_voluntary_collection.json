@@ -1,0 +1,17 @@
+{
+  "name": "pct_cases_voluntary_collection",
+  "dataType": "double",
+  "sourceColumn": "pct_cases_voluntary_collection",
+  "lineageTag": "09f0e463-e4bc-46b7-9f61-89b77b3cf717",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

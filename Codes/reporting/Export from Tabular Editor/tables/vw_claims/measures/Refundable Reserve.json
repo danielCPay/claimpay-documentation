@@ -1,0 +1,11 @@
+{
+  "name": "Refundable Reserve",
+  "expression": "sum(vw_claims[refundable_reserve])",
+  "lineageTag": "07393f40-c8ee-4281-9cde-f07997ab56e3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

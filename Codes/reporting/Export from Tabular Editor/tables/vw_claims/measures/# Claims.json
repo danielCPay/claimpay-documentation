@@ -1,0 +1,6 @@
+{
+  "name": "# Claims",
+  "expression": "count(vw_claims[claim_id])",
+  "formatString": "0",
+  "lineageTag": "0ac4b072-e499-422f-bba1-0c30b4114f84"
+}

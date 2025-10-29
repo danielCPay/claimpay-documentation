@@ -1,0 +1,16 @@
+{
+  "name": "vw_claimcollections-e4904dce-2e4d-4c96-80f3-38c37607a59d",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "  Source = Csv.Document(Web.Contents(\"https://login.claimpay.net:8443/vw_claimcollections.csv\"),[Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+      "  #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+      "  #\"Changed Types\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"claimcollection\", Int64.Type}, {\"createdtime\", type datetime}, {\"claimcollectionsid\", Int64.Type}, {\"claim_collection_name\", type text}, {\"number\", type text}, {\"assigned_value\", type number}, {\"assigned_below_hurdle\", type number}, {\"assigned_refundable_reserve\", type number}, {\"assigned_limit_reserve\", type number}, {\"disbursed_date\", type date}, {\"collection\", Int64.Type}, {\"portfolio\", Int64.Type}, {\"claim\", Int64.Type}}, \"en-US\"),",
+      "  #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Types\", {})",
+      "in",
+      "  #\"Renamed Columns\""
+    ]
+  }
+}

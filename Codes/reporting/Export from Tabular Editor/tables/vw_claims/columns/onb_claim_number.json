@@ -1,0 +1,13 @@
+{
+  "name": "onb_claim_number",
+  "dataType": "string",
+  "sourceColumn": "onb_claim_number",
+  "lineageTag": "e506f208-b1a2-427a-9145-81dba7e9d6c2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

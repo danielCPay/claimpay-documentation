@@ -1,0 +1,6 @@
+{
+  "name": "Purchase Period Slicer Filter",
+  "expression": "if(SELECTEDVALUE('Purchase Periods'[Type])=\"Custom\",1,0)",
+  "formatString": "0",
+  "lineageTag": "c082c879-b954-43e4-b9ea-8660653570c7"
+}

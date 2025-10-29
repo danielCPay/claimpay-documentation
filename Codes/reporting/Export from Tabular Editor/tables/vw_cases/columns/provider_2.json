@@ -1,0 +1,14 @@
+{
+  "name": "provider_2",
+  "dataType": "int64",
+  "sourceColumn": "provider_2",
+  "formatString": "0",
+  "lineageTag": "a3651c86-4327-4cfc-8d15-6b6a7b05e1ee",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

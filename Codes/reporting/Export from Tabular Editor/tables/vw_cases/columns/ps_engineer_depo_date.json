@@ -1,0 +1,25 @@
+{
+  "name": "ps_engineer_depo_date",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_engineer_depo_date",
+  "formatString": "General Date",
+  "lineageTag": "8bb6bf63-2508-4434-81ba-abded493fe54",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "08101f50-4e1e-47b6-ad7e-c1793836ff05",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_4f805b56-302e-43c2-ac4c-357624f0916c",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

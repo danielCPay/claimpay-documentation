@@ -1,0 +1,29 @@
+{
+  "name": "disbursed_date",
+  "dataType": "dateTime",
+  "sourceColumn": "disbursed_date",
+  "formatString": "Long Date",
+  "lineageTag": "fde3c773-ffcd-4201-8bbd-5c18bf3d9391",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "8f99f15a-90a1-4208-b246-f2b89afb2244",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_8f918fc5-6b77-4db0-a583-d5359574a823",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

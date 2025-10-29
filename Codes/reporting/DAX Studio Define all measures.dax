@@ -1,0 +1,256 @@
+﻿DEFINE 
+
+---- MODEL MEASURES BEGIN ----
+MEASURE calendar_dates[Month End] = MAX(calendar_dates[month_end] )
+MEASURE calendar_dates[Month Start] = MIN( calendar_dates[month_start] )
+MEASURE calendar_dates[Month Start Next] = MAX( calendar_dates[month_end] ) + 1
+MEASURE investor_measures[AdminFee Admin Fee] = CALCULATE( 
+                    SUMX( purchase_aging, 
+                        IF ( MIN(purchase_aging[months_fwd]) < 24, 
+				            [AdminFee Outstanding Deployment] / 3 * IF( [AdminFee Total 0.625 Admin Fee] <= 6000000, 0.00625, 0.005 ), 
+				            BLANK()
+				            ) )
+                , FILTER( purchase_aging, purchase_aging[aging_to_date_eom] >= calendar_dates[Month Start] && purchase_aging[aging_to_date_eom] < calendar_dates[Month Start Next] 
+                        --&& purchase_aging[aging_to_date_eom] <= EOMONTH( TODAY(), 2 ) 
+                        )
+                )
+MEASURE investor_measures[AdminFee Aging to Date EO3M-1] = MIN(purchase_aging[aging_to_date_collections_eo3m-1])
+MEASURE investor_measures[AdminFee Collections to Date EO3M-1] = CALCULATE ( 
+				SUM( vw_claimcollections[assigned_value] )
+                , FILTER( purchase_aging, NOT ISBLANK( purchase_aging[purchase_date] ) )
+				, FILTER( vw_collections, [payment_date] <= [AdminFee Aging to Date EO3M-1] )
+				)
+MEASURE investor_measures[AdminFee Outstanding Deployment] = IF( [Purchase Value] - [AdminFee Collections to Date EO3M-1] > 0 && NOT ISBLANK([AdminFee Aging to Date EO3M-1]), 
+				SUMX(purchase_aging, [Purchase Value] - [AdminFee Collections to Date EO3M-1]), 
+				BLANK() 
+				)
+MEASURE investor_measures[AdminFee Total 0.625 Admin Fee] = CALCULATE( 
+				SUMX( purchase_aging, [AdminFee Outstanding Deployment] / 3 * 0.00625 ), 
+				FILTER( 
+					ALLEXCEPT(purchase_aging, purchase_aging[investor]), 
+					purchase_aging[purchase_date] >= DATE ( 2022, 1, 1 ) && [AdminFee Aging to Date EO3M-1] < TODAY() ) 
+				)	
+MEASURE investor_measures[DeplFee Calculated Deployment Fee] = 10/100 * [Total Invested]
+MEASURE investor_measures[DeplFee Capped Deployment Fee] = MIN( [DeplFee Calculated Deployment Fee], [DeplFee Capped Factor Fee] )
+MEASURE investor_measures[DeplFee Capped Factor Fee] = 25/100 * [Factor Fee]
+MEASURE investor_measures[DeplFee Deployment Fee Charged] = CALCULATE( 
+            SUMX( vw_portfolio_purchases,
+		        IF ( [DeplFee Total Roll Forward Amount] < 0,
+			        IF ( [DeplFee Capped Deployment Fee] < [DeplFee Capped Factor Fee], [DeplFee Capped Factor Fee], [DeplFee Capped Deployment Fee] ),
+			        [DeplFee Capped Deployment Fee]
+			        )
+            )
+        , FILTER( vw_portfolio_purchases, vw_portfolio_purchases[purchase_date] >= calendar_dates[Month Start] && vw_portfolio_purchases[purchase_date] < calendar_dates[Month Start Next] )
+)
+MEASURE investor_measures[DeplFee Maximum Factor Fee] = 30/100 * [Factor Fee]
+MEASURE investor_measures[DeplFee Roll Forward Amount] = 
+		IF ( [DeplFee Calculated Deployment Fee] > [DeplFee Maximum Factor Fee] && [DeplFee Calculated Deployment Fee] > [DeplFee Capped Factor Fee], 
+				[DeplFee Capped Deployment Fee] - [DeplFee Maximum Factor Fee], 
+				IF ( [DeplFee Calculated Deployment Fee] < [DeplFee Maximum Factor Fee] && [DeplFee Calculated Deployment Fee] > [DeplFee Capped Factor Fee], 
+					[DeplFee Capped Factor Fee] - [DeplFee Calculated Deployment Fee], 
+					[DeplFee Capped Factor Fee] - [DeplFee Calculated Deployment Fee]
+					)
+				)
+MEASURE investor_measures[DeplFee Total Roll Forward Amount] = 
+		VAR investor = min(vw_portfolio_purchases[investor])
+		VAR purchase_month = DATE(  YEAR(MIN(vw_portfolio_purchases[purchase_date])), MONTH(MIN(vw_portfolio_purchases[purchase_date])), 1 )
+		RETURN CALCULATE( SUMX( vw_portfolio_purchases, [DeplFee Roll Forward Amount]) 
+ 			, FILTER( 
+ 				ALL(vw_portfolio_purchases), 
+ 					vw_portfolio_purchases[investor] = investor 
+ 					&& vw_portfolio_purchases[purchase_date] < purchase_month 
+ 					&& vw_portfolio_purchases[createdtime] >= date(2020,1,1) 
+ 					&& vw_portfolio_purchases[purchase_date] >= date(2020,1,1)
+ 					)
+ 			)
+MEASURE investor_measures[Investor Measure] = 
+    SUMX( investor_measures, 
+        SWITCH( [Selected Measure ID]
+            , 1, [InvestorCF Purchase Value]
+            , 2, [DeplFee Deployment Fee Charged]
+            , 3, [AdminFee Admin Fee]
+            , 4, [InvestorCF Collections Assigned Value]
+            , 5, - [InvestorCF Purchase Value] - [DeplFee Deployment Fee Charged] - [AdminFee Admin Fee] + [InvestorCF Collections Assigned Value]
+            , 6, [PerfFee Catch-Up]
+            , 7, [PerfFee Performance Fee]
+            , 8, - [InvestorCF Purchase Value] - [DeplFee Deployment Fee Charged] - [AdminFee Admin Fee] + [InvestorCF Collections Assigned Value] - [PerfFee Catch-Up] - [PerfFee Performance Fee]
+            )
+    )
+MEASURE investor_measures[Investor Measure Value] = 
+    SUMX( investor_measures, 
+        SWITCH( [Selected Measure ID]
+            , 1, [InvestorCF Purchase Value]
+            , 2, [DeplFee Deployment Fee Charged]
+            , 3, [AdminFee Admin Fee]
+            , 4, [InvestorCF Collections Assigned Value]
+            , 5, 0
+            , 6, [PerfFee Catch-Up]
+            , 7, [PerfFee Performance Fee]
+            , 8, 0
+            ) * investor_measures[investor_measure_multiplier]
+    )
+MEASURE investor_measures[Investor Measure Value YTD] = TOTALYTD( [Investor Measure Value], calendar_dates[month_start], ALLEXCEPT(calendar_dates, calendar_dates[month_start]))
+MEASURE investor_measures[InvestorCF Collections Assigned Value] = CALCULATE(
+                                            SUMX( vw_claimcollections, vw_claimcollections[Assigned Value] ),
+                                            FILTER( vw_collections, vw_collections[payment_date] >= calendar_dates[Month Start] && vw_collections[payment_date] < calendar_dates[Month Start Next] )
+)
+MEASURE investor_measures[InvestorCF Purchase Value] = CALCULATE(
+                            SUMX( vw_portfolio_purchases, vw_portfolio_purchases[purchase_value] )
+                            , FILTER( vw_portfolio_purchases, vw_portfolio_purchases[purchase_date] >= calendar_dates[Month Start] && vw_portfolio_purchases[purchase_date] < calendar_dates[Month Start Next]
+                            ))
+MEASURE investor_measures[PerfFee Catch-Up] = CALCULATE( 20/100 * [PerfFee Cumulative CF], 	
+        					FILTER( purchase_aging,
+        						purchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					  			&& purchase_aging[aging_start_month] = [PerfFee IRR>10% Month]
+						  		)
+					  		)
+MEASURE investor_measures[PerfFee CF IRR] = XIRR( 
+					   	FILTER( ALL(purchase_cf), 
+					   		purchase_cf[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					   		&& purchase_cf[cf_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )
+					   		),
+					   	purchase_cf[cf_value], 
+					   	purchase_cf[cf_date], 
+					   	0.1, -1
+					   	)
+MEASURE investor_measures[PerfFee Collections in calendar month] = CALCULATE( 
+				SUM( vw_claimcollections[assigned_value] ), 
+				FILTER( vw_collections, 
+					vw_collections[payment_date] >= SELECTEDVALUE( purchase_aging[aging_start_month] )
+					&& vw_collections[payment_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] ) 
+					) 
+				)
+MEASURE investor_measures[PerfFee Collections to calendar month] = CALCULATE( 
+				SUM( vw_claimcollections[assigned_value] ), 
+				FILTER( vw_collections, 
+					vw_collections[payment_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )
+					) 
+				)
+MEASURE investor_measures[PerfFee Cumulative CF] = - [PerfFee Purchase to calendar month] - [PerfFee Deployment Fee to calendar month] + [PerfFee Collections to calendar month]
+MEASURE investor_measures[PerfFee Deployment Fee in calendar month] = CALCULATE( 
+				[DeplFee Deployment Fee Charged], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] >= purchase_aging[aging_start_month] 
+					&& purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] 
+					) 
+				)
+MEASURE investor_measures[PerfFee Deployment Fee to calendar month] = CALCULATE( 
+				[DeplFee Deployment Fee Charged], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] 
+					) 
+				)
+MEASURE investor_measures[PerfFee Incremental IRR] = CALCULATE([PerfFee CF IRR], 	
+        					FILTER( purchase_cf,
+					  			purchase_cf[portfolio_purchase] = MIN( purchase_aging[portfolio_purchase] ) 
+						 		&& purchase_cf[cf_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )
+						 		&& NOT( ISBLANK( purchase_cf[portfolio_purchase] ) ) 
+						 		&& NOT( ISBLANK( purchase_cf[cf_date] ) ) 
+						 		&& NOT( ISBLANK( purchase_cf[cf_value] ) ) 
+						 		&& purchase_cf[portfolio_purchase] = 1						 		
+						  		)
+					  		)
+MEASURE investor_measures[PerfFee IRR>10% Month] = CALCULATE( [PerfFee Months Fwd], 	
+        					FILTER( ALL( purchase_aging ),
+        						purchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					  			&& [PerfFee Incremental IRR] >=  10/100 -- -0.9991
+						  		)
+					  		)
+MEASURE investor_measures[PerfFee Monthly CF] = - [PerfFee Purchase in calendar month] - [PerfFee Deployment Fee in calendar month] + [PerfFee Collections in calendar month]
+MEASURE investor_measures[PerfFee Months Fwd] = MIN( purchase_aging[aging_start_month] )
+MEASURE investor_measures[PerfFee Performance Fee] = CALCULATE( 20/100 * [PerfFee Collections in calendar month], 	
+        					FILTER( purchase_aging,
+        						purchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					  			&& [PerfFee Incremental IRR] >= 10/100
+						  		)
+					  		)
+MEASURE investor_measures[PerfFee Purchase in calendar month] = CALCULATE( 
+				[Purchase Value], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] >= purchase_aging[aging_start_month] 
+					&& purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] 
+					) 
+				)
+MEASURE investor_measures[PerfFee Purchase to calendar month] = CALCULATE( 
+				[Purchase Value], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] < purchase_aging[aging_start_next_month]  
+					) 
+				)
+MEASURE investor_measures[Selected Measure ID] = max( investor_measures[investor_meausure_id] )
+MEASURE 'Purchase Periods'[Purchase Period Slicer Filter] = if(SELECTEDVALUE('Purchase Periods'[Type])="Custom",1,0)
+MEASURE purchase_aging[Aging to date] = min(purchase_aging[aging_to_date])
+MEASURE purchase_aging[Purchase_aging Purchase_Date] = min(purchase_aging[purchase_date])
+MEASURE purchase_cf[Cash Flow Value] = sum(purchase_cf[cf_value])
+MEASURE rep_history_statuses[# Actions] = SUM(rep_history_statuses[number_of_elements])
+MEASURE rep_history_statuses[# by Claim Status] = calculate([Last #],KEEPFILTERS( rep_history_statuses[status_area]="Claim Status" ))
+MEASURE rep_history_statuses[H # Claims Open] = calculate([Last #],KEEPFILTERS( rep_history_statuses[status_area]="Claim Status" && rep_history_statuses[status_value]="Open" ))
+MEASURE rep_history_statuses[Last #] = 
+var Last_Time = CALCULATE(MAX([Snapshot Date]),FILTER(rep_history_statuses,[Snapshot Date]=MAX([Snapshot Date])))
+return CALCULATE (
+        SUM( rep_history_statuses[number_of_elements] ),
+        FILTER ( rep_history_statuses, rep_history_statuses[Snapshot Date] = MAX ( [Snapshot Date] ) && Last_Time = [Snapshot Date] )
+    )
+MEASURE vw_claimcollections[Assigned Value] = sum(vw_claimcollections[assigned_value])
+MEASURE vw_claimcollections[Assigned Value TD] = CALCULATE([Assigned Value], filter(vw_collections, [payment_date]<=  [Aging to date] ))
+MEASURE vw_claims[# Aging] = divide([# PaidClosed TD],vw_portfolio_purchases[Inception Date])
+MEASURE vw_claims[# Buybacks] = CALCULATE([# Claims],KEEPFILTERS(vw_claims[claim_status]="Buyback"))
+MEASURE vw_claims[# Claims] = count(vw_claims[claim_id])
+MEASURE vw_claims[# Claims Open] = CALCULATE([# Claims], KEEPFILTERS(vw_claims[claim_status]="Open"))
+MEASURE vw_claims[# Claims Paid+Closed] = CALCULATE([# Claims],KEEPFILTERS(vw_claims[claim_status] in {"Closed", "Paid"} ))
+MEASURE vw_claims[# PaidClosed TD] = CALCULATE([# Claims Paid+Closed], filter(vw_claims, vw_claims[claim_paid_date]<=[Aging to date]))
+MEASURE vw_claims[% Collected] = [Total Collection]/([Total Invested])
+MEASURE vw_claims[Adjusted Face Value] = sum(vw_claims[adjusted_face_value])
+MEASURE vw_claims[Approval/Rejection Duration (average hours)] = SUMX( vw_claims, DATEDIFF( vw_claims[underwritten_time], vw_claims[approved_rejected_time], SECOND ) ) /3600
+        / SUMX( vw_claims, IF( ISBLANK( DATEDIFF( vw_claims[underwritten_time], vw_claims[approved_rejected_time], SECOND ) ), 0, 1 ) )
+MEASURE vw_claims[C Remaining Hurdle] = sum(vw_claims[remaining_to_hurdle])
+MEASURE vw_claims[Claim Profit] = sum(vw_claims[total_profit])
+MEASURE vw_claims[Claim Write-Off] = sum(vw_claims[write_off])
+MEASURE vw_claims[Face Value] = sum(vw_claims[total_bill_amount])
+
+MEASURE vw_claims[Factor Fee] = sum( vw_claims[factor_fee] )
+MEASURE vw_claims[First Claim Underwritten] = MIN( vw_claims[underwritten_time] )
+MEASURE vw_claims[First Claim Uploaded] = MIN( vw_claims[createdtime] )
+MEASURE vw_claims[Global Purchase Value] = CALCULATE([Total Invested], ALLSELECTED(vw_claims))
+MEASURE vw_claims[Hours from Underwritten to Approved] = DATEDIFF( [Last Claim Underwritten], [Last Claim Approved/Rejected], SECOND ) / 3600
+MEASURE vw_claims[Hours from uploaded to underwritten] = DATEDIFF( [First Claim Uploaded], [Last Claim Underwritten], SECOND ) / 3600
+MEASURE vw_claims[Last Claim Approved/Rejected] = MAX( vw_claims[approved_rejected_time] )
+MEASURE vw_claims[Last Claim Underwritten] = MAX( vw_claims[underwritten_time] )
+MEASURE vw_claims[Limit Reserve] = sum(vw_claims[limit_reserve])
+MEASURE vw_claims[Litigated Collection] = sum(vw_claims[total_litigated_collections])
+MEASURE vw_claims[Paid vs Purchased Claims #] = COALESCE(DIVIDE([# PaidClosed TD],[Total Collection]), 0)
+MEASURE vw_claims[Pre-Suit Collections] = sum(vw_claims[total_pre_suit_collections])
+MEASURE vw_claims[Purchase % Distribution] = [Total Invested]/[Global Purchase Value]
+MEASURE vw_claims[Refundable Reserve] = sum(vw_claims[refundable_reserve])
+MEASURE vw_claims[Total Buybacks] = sum(vw_claims[buyback_amount])
+MEASURE vw_claims[Total Collection] = sum(vw_claims[total_collections])
+MEASURE vw_claims[Total Invested] = sum(vw_claims[purchase_price])
+MEASURE vw_claims[Types of Service] = CALCULATE(CONCATENATEX(DISTINCT('vw_claims'[types_of_services]),'vw_claims'[types_of_services],", "))
+MEASURE vw_claims[Underwriting Duration (average hours)] = SUMX( vw_claims, DATEDIFF( IF(ISBLANK(vw_claims[underwriting_started_time]), vw_claims[createdtime], vw_claims[underwriting_started_time]), vw_claims[underwritten_time], SECOND ) ) / 3600
+        / SUMX( vw_claims, IF( ISBLANK(vw_claims[underwritten_time]), 0, 1 ) )
+MEASURE vw_claims[Underwriting Duration (total hours)] = SUMX( vw_claims, DATEDIFF( IF(ISBLANK(vw_claims[underwriting_started_time]), vw_claims[createdtime], vw_claims[underwriting_started_time]), vw_claims[underwritten_time], SECOND ) ) /3600
+MEASURE vw_claims[Voluntary Collection] = sum(vw_claims[total_voluntary_ollections])
+MEASURE vw_portfolio_purchases[Hours from Approved to Addendum Sent] = MAX( DATEDIFF( [Last Claim Approved/Rejected], [Purchase Addendum Sent Date], SECOND ), 0 ) / 3600
+MEASURE vw_portfolio_purchases[Inception Date] = min(vw_portfolio_purchases[purchase_date])
+MEASURE vw_portfolio_purchases[PP # Claims] = sum(vw_portfolio_purchases[total_number_of_claims])
+MEASURE vw_portfolio_purchases[Purchase Addendum Sent Date] = MAX(vw_portfolio_purchases[addendum_date] )
+MEASURE vw_portfolio_purchases[Purchase Value] = SUM(vw_portfolio_purchases[purchase_value])
+MEASURE vw_portfolio_purchases[Total Collection/Purchase Price] = COALESCE(DIVIDE(vw_claimcollections[Assigned Value TD], vw_portfolio_purchases[Purchase Value]), 0)
+MEASURE vw_portfolios[# of Portfolio Purchases] = count(vw_portfolio_purchases[Portfolio Purchase Name])
+MEASURE vw_portfolios[P # Buybacks] = sum(vw_portfolios[total_number_of_buybacks])
+MEASURE vw_portfolios[P # Claims Closed] = sum(vw_portfolios[total_number_of_paid_claims])
+MEASURE vw_portfolios[P # Claims Open] = [P # Claims Purchased] - [P # Claims Closed]
+MEASURE vw_portfolios[P # Claims Purchased] = sumx(vw_portfolios, vw_portfolios[total_number_accepted_claims])
+MEASURE vw_portfolios[P Total Invested] = sum(vw_portfolios[total_purchase_price])
+MEASURE vw_portfolios[Portfolio Adjusted Value] = SUM( vw_portfolios[adjusted_claim_value] )
+MEASURE vw_portfolios[Portfolio Collections] = SUM( vw_portfolios[total_collections] )
+MEASURE vw_portfolios[Portfolio Hurdle] = SUM( vw_portfolios[hurdle] )
+MEASURE vw_portfolios[Portfolio Profit] = sum(vw_portfolios[total_profit])
+MEASURE vw_portfolios[Portfolio Total Purchase Price] = SUM( vw_portfolios[total_purchase_price] )
+MEASURE vw_portfolios[Portfolio Write-off] = sum(vw_portfolios[portfolio_write_off])
+MEASURE vw_portfolios[Potential Refundable Reserve] = [Portfolio Adjusted Value] - [Portfolio Hurdle]
+MEASURE vw_portfolios[Remaining to Hurdle] = sum(vw_portfolios[remaining_to_hurdle])
+MEASURE vw_portfolios[Total Profit] = [Total Collection] - [Total Invested]-[Refundable Reserve]- [Limit Reserve]+[Total Buybacks]
+---- MODEL MEASURES END ----
+
+MEASURE aging_numbers[Aging number] = min(aging_numbers[months_fwd])

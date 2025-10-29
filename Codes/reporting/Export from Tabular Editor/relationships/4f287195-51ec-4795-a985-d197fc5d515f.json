@@ -1,0 +1,8 @@
+{
+  "name": "4f287195-51ec-4795-a985-d197fc5d515f",
+  "fromTable": "vw_cases",
+  "fromColumn": "inspection_requested",
+  "toTable": "LocalDateTable_5f1e7aee-65b6-4c15-8fff-651788c73aef",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

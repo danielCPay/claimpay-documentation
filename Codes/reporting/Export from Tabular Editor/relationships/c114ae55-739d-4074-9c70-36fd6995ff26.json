@@ -1,0 +1,8 @@
+{
+  "name": "c114ae55-739d-4074-9c70-36fd6995ff26",
+  "fromTable": "vw_claims",
+  "fromColumn": "createdtime",
+  "toTable": "LocalDateTable_9ddbd2b1-ddb6-4058-a028-15d502565200",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

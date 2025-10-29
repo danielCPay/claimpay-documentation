@@ -1,0 +1,16 @@
+{
+  "name": "vw_portfolios-b13f9182-12a0-44f1-964a-54b4e95d8f93",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "  Source = Csv.Document(Web.Contents(\"https://login.claimpay.net:8443/vw_portfolios.csv\"),[Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+      "  #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+      "  #\"Changed Types\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"portfolio\", Int64.Type}, {\"createdtime\", type datetime}, {\"portfoliosid\", Int64.Type}, {\"portfolio_id\", type text}, {\"number\", type text}, {\"provider\", Int64.Type}, {\"portfolio_status\", type text}, {\"program\", Int64.Type}, {\"created_date\", type date}, {\"proposal_underwriter\", Int64.Type}, {\"total_number_of_claims\", Int64.Type}, {\"total_claim_value\", type number}, {\"adjusted_claim_value\", type number}, {\"total_number_accepted_claims\", Int64.Type}, {\"total_value_accepted_claims\", type number}, {\"total_adjusted_face_value\", type number}, {\"total_purchase_price\", type number}, {\"total_voluntary_collections\", type number}, {\"total_presuit_collections\", type number}, {\"total_litigated_collections\", type number}, {\"total_buybacks\", type number}, {\"total_profit\", type number}, {\"total_reserves_to_be_released\", type number}, {\"note\", type text}, {\"investor\", Int64.Type}, {\"approved_date\", type date}, {\"opened_date\", type date}, {\"closed_date\", type date}, {\"total_number_of_aob_claims\", Int64.Type}, {\"total_num_of_rejected_claims\", Int64.Type}, {\"total_value_of_rejected_claims\", type number}, {\"total_reserves_released\", type number}, {\"last_reserves_released_date\", type date}, {\"lock_automation\", Int64.Type}, {\"total_reserves\", type number}, {\"total_limit_reserve\", type number}, {\"refundable_reserve\", type number}, {\"portfolio_write_off\", type number}, {\"remaining_to_hurdle\", type number}, {\"total_balance_owed\", type number}, {\"total_collections\", type number}, {\"portfolio_approver_name\", Int64.Type}, {\"total_number_of_paid_claims\", Int64.Type}, {\"total_factor_fee\", type number}, {\"hurdle\", type number}, {\"hurdle_percent\", type number}, {\"total_number_of_buybacks\", Int64.Type}}, \"en-US\"),",
+      "  #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Types\",{{\"portfolio_id\", \"Portfolio ID\"}})",
+      "in",
+      "  #\"Renamed Columns\""
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "pre_court_case_number",
+  "dataType": "string",
+  "sourceColumn": "pre_court_case_number",
+  "lineageTag": "66efc1e4-2a1a-4242-8e31-607dae5f4108",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

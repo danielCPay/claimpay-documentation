@@ -1,0 +1,13 @@
+{
+  "name": "conditions_to_meet_eligibility",
+  "dataType": "string",
+  "sourceColumn": "conditions_to_meet_eligibility",
+  "lineageTag": "1da2efd0-f41a-4d4a-bec0-96413bfa946c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

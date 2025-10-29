@@ -1,0 +1,13 @@
+{
+  "name": "Investor Name",
+  "dataType": "string",
+  "sourceColumn": "Investor Name",
+  "lineageTag": "8904540a-22c4-45ba-bb2b-8485c5cd243a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

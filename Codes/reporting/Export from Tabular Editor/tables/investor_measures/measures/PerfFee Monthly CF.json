@@ -1,0 +1,11 @@
+{
+  "name": "PerfFee Monthly CF",
+  "expression": "- [PerfFee Purchase in calendar month] - [PerfFee Deployment Fee in calendar month] + [PerfFee Collections in calendar month]",
+  "lineageTag": "31720409-b6b1-411d-82d0-43ccdd462de2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

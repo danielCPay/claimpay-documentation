@@ -1,0 +1,10 @@
+{
+  "name": "vw_outsidecases",
+  "lineageTag": "9c5e7357-d611-4a41-a2f6-669fe6271c19",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

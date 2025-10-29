@@ -1,0 +1,18 @@
+{
+  "name": "Claim Underwriter",
+  "dataType": "string",
+  "sourceColumn": "Claim Underwriter",
+  "sortByColumn": "last_name",
+  "lineageTag": "44321339-4be2-4444-ae30-e79450e18485",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    }
+  ]
+}

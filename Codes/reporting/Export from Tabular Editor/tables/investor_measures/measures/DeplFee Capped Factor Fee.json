@@ -1,0 +1,11 @@
+{
+  "name": "DeplFee Capped Factor Fee",
+  "expression": "25/100 * [Factor Fee]",
+  "lineageTag": "16ce9467-b050-4d57-afe4-78f0ec738dee",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

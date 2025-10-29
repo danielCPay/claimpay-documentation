@@ -1,0 +1,8 @@
+{
+  "name": "9427a718-5292-435e-afcd-08b9acd7f659",
+  "fromTable": "vw_cases",
+  "fromColumn": "date_of_service",
+  "toTable": "LocalDateTable_eaf5f4cb-15c4-49f9-84d3-51707e3436f2",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

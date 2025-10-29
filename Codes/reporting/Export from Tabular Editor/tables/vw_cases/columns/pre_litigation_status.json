@@ -1,0 +1,13 @@
+{
+  "name": "pre_litigation_status",
+  "dataType": "string",
+  "sourceColumn": "pre_litigation_status",
+  "lineageTag": "999f423e-12b9-4b6f-a15a-3332d740f0fe",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

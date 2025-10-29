@@ -1,0 +1,8 @@
+{
+  "name": "17570edf-c377-43af-96a1-4bcb9ab85cfe",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "provider",
+  "toTable": "vw_providers",
+  "toColumn": "provider",
+  "isActive": false
+}

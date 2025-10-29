@@ -1,0 +1,29 @@
+{
+  "name": "ds_mpo_fa",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_mpo_fa",
+  "formatString": "Long Date",
+  "lineageTag": "599d4e32-7164-49b2-b000-24fb47dab6d8",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "17ab9599-00f4-4ff3-a967-5104af70004e",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_4e24623a-213f-4ce5-9867-3a2a51d6364a",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

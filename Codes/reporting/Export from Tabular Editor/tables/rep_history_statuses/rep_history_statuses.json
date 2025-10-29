@@ -1,0 +1,10 @@
+{
+  "name": "rep_history_statuses",
+  "lineageTag": "015294ba-cb7f-4b21-8b5f-5968a7219ad7",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

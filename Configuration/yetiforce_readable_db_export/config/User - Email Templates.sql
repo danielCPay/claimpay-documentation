@@ -1,0 +1,1 @@
+SELECT * FROM u_yf_emailtemplates ORDER BY 1;

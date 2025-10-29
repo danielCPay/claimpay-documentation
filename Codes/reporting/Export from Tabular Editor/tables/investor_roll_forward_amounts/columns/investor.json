@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "investor",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[Investor]",
+  "formatString": "0",
+  "lineageTag": "1a57d99a-953d-4d7a-a8d6-60c950a43603",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

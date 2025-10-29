@@ -1,0 +1,13 @@
+{
+  "name": "PerfFee IRR>10% Month",
+  "expression": [
+    "CALCULATE( [PerfFee Months Fwd], \t",
+    "        \t\t\t\t\tFILTER( ALL( purchase_aging ),",
+    "        \t\t\t\t\t\tpurchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) ",
+    "\t\t\t\t\t  \t\t\t&& [PerfFee Incremental IRR] >=  10/100 -- -0.9991",
+    "\t\t\t\t\t\t  \t\t)",
+    "\t\t\t\t\t  \t\t)"
+  ],
+  "formatString": "General Date",
+  "lineageTag": "1ca67e7a-32e0-4e38-9925-8928bba81455"
+}

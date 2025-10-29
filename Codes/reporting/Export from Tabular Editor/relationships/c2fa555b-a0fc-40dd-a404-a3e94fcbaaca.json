@@ -1,0 +1,8 @@
+{
+  "name": "c2fa555b-a0fc-40dd-a404-a3e94fcbaaca",
+  "fromTable": "vw_cases",
+  "fromColumn": "motion_to_dismiss",
+  "toTable": "LocalDateTable_d75d6fbd-6e8a-4948-871c-9562bc14d56c",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

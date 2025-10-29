@@ -1,0 +1,21 @@
+{
+  "name": "PerfFee CF IRR",
+  "expression": [
+    "XIRR( ",
+    "\t\t\t\t\t   \tFILTER( ALL(purchase_cf), ",
+    "\t\t\t\t\t   \t\tpurchase_cf[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) ",
+    "\t\t\t\t\t   \t\t&& purchase_cf[cf_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )",
+    "\t\t\t\t\t   \t\t),",
+    "\t\t\t\t\t   \tpurchase_cf[cf_value], ",
+    "\t\t\t\t\t   \tpurchase_cf[cf_date], ",
+    "\t\t\t\t\t   \t0.1, -1",
+    "\t\t\t\t\t   \t)"
+  ],
+  "lineageTag": "a4a30a37-ff43-4fda-a998-dd2218b0ffe6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

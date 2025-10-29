@@ -1,0 +1,13 @@
+{
+  "name": "www",
+  "dataType": "string",
+  "sourceColumn": "www",
+  "lineageTag": "2cc3ffd6-7617-4f12-9cbd-f0eba5cf6e63",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

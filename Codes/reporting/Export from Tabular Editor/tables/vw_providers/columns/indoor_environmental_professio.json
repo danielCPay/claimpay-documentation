@@ -1,0 +1,14 @@
+{
+  "name": "indoor_environmental_professio",
+  "dataType": "int64",
+  "sourceColumn": "indoor_environmental_professio",
+  "formatString": "0",
+  "lineageTag": "5841dcdd-c41d-479b-ad7c-f641a91c53c5",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

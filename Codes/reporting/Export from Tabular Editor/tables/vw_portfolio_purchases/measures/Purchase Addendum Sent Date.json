@@ -1,0 +1,6 @@
+{
+  "name": "Purchase Addendum Sent Date",
+  "expression": "MAX(vw_portfolio_purchases[addendum_date] )",
+  "formatString": "General Date",
+  "lineageTag": "ea6fb952-ec55-4ea0-9751-edc2c5739a05"
+}

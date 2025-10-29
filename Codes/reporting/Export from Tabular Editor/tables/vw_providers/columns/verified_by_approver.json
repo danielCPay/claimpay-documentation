@@ -1,0 +1,14 @@
+{
+  "name": "verified_by_approver",
+  "dataType": "int64",
+  "sourceColumn": "verified_by_approver",
+  "formatString": "0",
+  "lineageTag": "93868e93-c6d3-41c3-a19d-3663f8878947",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

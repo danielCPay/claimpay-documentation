@@ -1,0 +1,7 @@
+{
+  "name": "6baca304-9cf4-44a7-a268-389dcf6d938d",
+  "fromTable": "vw_claims",
+  "fromColumn": "portfolio_purchase",
+  "toTable": "vw_portfolio_purchases",
+  "toColumn": "portfolio_purchase"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "insurance_shared",
+  "dataType": "int64",
+  "sourceColumn": "insurance_shared",
+  "formatString": "0",
+  "lineageTag": "08a455af-da6a-4ba5-ba18-957c199c1b5d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "sett_af",
+  "dataType": "double",
+  "sourceColumn": "sett_af",
+  "lineageTag": "3c14aa53-e960-4546-80dd-82abdb8b45f7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ps_corp_rep_depo_date",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_corp_rep_depo_date",
+  "formatString": "General Date",
+  "lineageTag": "9ff4d499-5b4e-4402-86b3-64e60322af50",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "ead8a22c-73b3-485a-84a9-651b9708c71f",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_6b3e883c-761f-44fd-884f-b8ddd5ca8500",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

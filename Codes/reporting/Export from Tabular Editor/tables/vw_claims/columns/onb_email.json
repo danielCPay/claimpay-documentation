@@ -1,0 +1,13 @@
+{
+  "name": "onb_email",
+  "dataType": "string",
+  "sourceColumn": "onb_email",
+  "lineageTag": "399244a7-8c1a-4160-8fb0-2f295c518635",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

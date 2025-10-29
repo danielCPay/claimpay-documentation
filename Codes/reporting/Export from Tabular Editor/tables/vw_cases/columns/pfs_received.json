@@ -1,0 +1,29 @@
+{
+  "name": "pfs_received",
+  "dataType": "dateTime",
+  "sourceColumn": "pfs_received",
+  "formatString": "Long Date",
+  "lineageTag": "17d0413d-7076-4d29-bc35-b4dfeed97bd6",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "2afdb1f9-8723-4518-bbb3-2b948d778c3a",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_9f58eac9-6526-48d5-8ab2-1c04258f522e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

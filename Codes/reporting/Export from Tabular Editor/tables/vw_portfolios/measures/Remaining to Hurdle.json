@@ -1,0 +1,11 @@
+{
+  "name": "Remaining to Hurdle",
+  "expression": "sum(vw_portfolios[remaining_to_hurdle])",
+  "lineageTag": "b1fc1ace-d943-4e0f-8fbf-45bfe2ac167e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

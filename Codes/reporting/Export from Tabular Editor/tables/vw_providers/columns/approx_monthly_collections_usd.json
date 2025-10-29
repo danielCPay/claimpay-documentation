@@ -1,0 +1,17 @@
+{
+  "name": "approx_monthly_collections_usd",
+  "dataType": "double",
+  "sourceColumn": "approx_monthly_collections_usd",
+  "lineageTag": "89b25ad1-6bb3-43de-89cb-4497761ca119",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

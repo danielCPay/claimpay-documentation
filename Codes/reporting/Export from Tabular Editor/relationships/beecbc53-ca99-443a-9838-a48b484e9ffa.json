@@ -1,0 +1,8 @@
+{
+  "name": "beecbc53-ca99-443a-9838-a48b484e9ffa",
+  "fromTable": "vw_outsidecases",
+  "fromColumn": "createdtime",
+  "toTable": "LocalDateTable_5d9e8817-e202-441b-bab9-cfb44afc32d3",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

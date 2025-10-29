@@ -1,0 +1,7 @@
+{
+  "name": "a7bc0e22-d272-49d7-956e-a1a4d1a71158",
+  "fromTable": "vw_claims",
+  "fromColumn": "claim_acceptant",
+  "toTable": "vw_users_claim_acceptant",
+  "toColumn": "user_id"
+}

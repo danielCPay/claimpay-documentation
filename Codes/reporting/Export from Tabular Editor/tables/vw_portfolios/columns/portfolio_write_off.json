@@ -1,0 +1,17 @@
+{
+  "name": "portfolio_write_off",
+  "dataType": "double",
+  "sourceColumn": "portfolio_write_off",
+  "lineageTag": "fa903a09-e189-49c6-9ade-33698162b6f5",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

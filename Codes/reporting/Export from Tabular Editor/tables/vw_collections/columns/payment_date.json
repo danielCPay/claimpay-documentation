@@ -1,0 +1,29 @@
+{
+  "name": "payment_date",
+  "dataType": "dateTime",
+  "sourceColumn": "payment_date",
+  "formatString": "Long Date",
+  "lineageTag": "daa3892b-b347-4a2a-a9f1-33b529de00be",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "1a4b674f-c940-4fe0-9520-13e7cd3d2ea8",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_3790639c-fea0-4bc1-a079-285b99858aac",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

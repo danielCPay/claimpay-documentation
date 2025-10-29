@@ -1,0 +1,13 @@
+{
+  "name": "validated_by_provider_note",
+  "dataType": "string",
+  "sourceColumn": "validated_by_provider_note",
+  "lineageTag": "0103024f-2b50-4577-abd1-08242493d7c7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

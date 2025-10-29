@@ -1,0 +1,11 @@
+{
+  "name": "DeplFee Calculated Deployment Fee",
+  "expression": "10/100 * [Total Invested]",
+  "lineageTag": "dbe61246-1fec-4c2d-94fa-2984b68fc8b3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "pmc",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "discourageImplicitMeasures": true,
+    "sourceQueryCulture": "pl-PL",
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.110.1161.0 (22.10)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"vw_claims\",\"vw_portfolio_purchases\",\"vw_portfolios\",\"vw_providers\",\"vw_insurancecompanies\",\"vw_investors\",\"vw_claimcollections\",\"vw_collections\",\"rep_history_statuses\",\"investor_measures\",\"vw_users\",\"vw_users_claim_underwriter\",\"vw_users_claim_acceptant\",\"vw_users_claim_assigned_to\",\"vw_investors_portfolio\",\"vw_insurancecompanies_case\",\"vw_insureds\",\"vw_outsidecases\",\"vw_cases\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Shared Expressions\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"]}"
+      }
+    ]
+  }
+}

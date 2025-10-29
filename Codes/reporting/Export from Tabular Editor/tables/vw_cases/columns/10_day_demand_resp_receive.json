@@ -1,0 +1,29 @@
+{
+  "name": "10_day_demand_resp_receive",
+  "dataType": "dateTime",
+  "sourceColumn": "10_day_demand_resp_receive",
+  "formatString": "Long Date",
+  "lineageTag": "5aab4d99-00a4-417d-9cc7-5bc01ece4b6b",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0509a487-568e-4a0d-9873-d02377dc9ead",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_6a35cfa9-2f3e-4b71-8aa1-0ae82e7ca48e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

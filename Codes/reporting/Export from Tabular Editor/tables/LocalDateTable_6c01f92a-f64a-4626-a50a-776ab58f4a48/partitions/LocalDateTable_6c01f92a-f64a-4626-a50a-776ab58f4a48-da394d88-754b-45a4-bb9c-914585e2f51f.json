@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_6c01f92a-f64a-4626-a50a-776ab58f4a48-da394d88-754b-45a4-bb9c-914585e2f51f",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('rep_history_statuses'[Snapshot Date])), 1, 1), Date(Year(MAX('rep_history_statuses'[Snapshot Date])), 12, 31))"
+  }
+}

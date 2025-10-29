@@ -1,0 +1,13 @@
+{
+  "name": "pre_attorney_name",
+  "dataType": "string",
+  "sourceColumn": "pre_attorney_name",
+  "lineageTag": "11427684-3d97-43c7-9bb3-5b0acb12b0ce",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

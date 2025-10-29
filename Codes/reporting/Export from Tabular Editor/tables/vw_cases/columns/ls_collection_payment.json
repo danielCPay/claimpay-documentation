@@ -1,0 +1,17 @@
+{
+  "name": "ls_collection_payment",
+  "dataType": "double",
+  "sourceColumn": "ls_collection_payment",
+  "lineageTag": "6f8d2681-6834-47cb-ab56-6b5c3ca21e6f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

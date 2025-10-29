@@ -1,0 +1,14 @@
+{
+  "name": "years_in_business",
+  "dataType": "int64",
+  "sourceColumn": "years_in_business",
+  "formatString": "0",
+  "lineageTag": "79ddc9ec-e1f0-46fe-b947-2d7e1ddb968d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

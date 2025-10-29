@@ -1,0 +1,8 @@
+{
+  "name": "a602de25-55ca-469c-beea-0e5fa5cf729e",
+  "fromTable": "vw_claims",
+  "fromColumn": "last_reserves_released_date",
+  "toTable": "LocalDateTable_242736c6-69c0-4b6b-9c4c-02c3aa8823c6",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "fe315da0-ea48-45d4-9dfc-21c3f5878dfd",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_exp_disco_set_agrd_due_date",
+  "toTable": "LocalDateTable_a156b004-0c38-4227-b92d-9a9387fa8ea3",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

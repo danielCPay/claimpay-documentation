@@ -1,0 +1,25 @@
+{
+  "name": "settl_negot_demand_last_date",
+  "dataType": "dateTime",
+  "sourceColumn": "settl_negot_demand_last_date",
+  "formatString": "General Date",
+  "lineageTag": "1b5ca0cf-6d4b-41e2-b72f-1e2506e0d144",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "3f42a79b-2675-43a8-931b-845dad4236b6",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_ae8e5095-5fb8-4990-8c30-29d75c3d3b62",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

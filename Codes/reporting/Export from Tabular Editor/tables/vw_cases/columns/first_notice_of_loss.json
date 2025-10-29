@@ -1,0 +1,29 @@
+{
+  "name": "first_notice_of_loss",
+  "dataType": "dateTime",
+  "sourceColumn": "first_notice_of_loss",
+  "formatString": "Long Date",
+  "lineageTag": "4dfbb69a-8eb8-4095-8f93-356353641d90",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "1f50ca6e-85e9-45e7-860c-7d38ba990303",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_15e2530b-36af-4de5-8def-9b1aca29bff1",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "host": "192.168.1.113",
+    "port": 4306,
+    "user": "yeti",
+    "password": "yetidbsecret",
+    "db": "yetiforce"
+}

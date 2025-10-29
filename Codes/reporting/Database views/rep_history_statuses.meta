@@ -1,0 +1,7 @@
+let
+  Source = Csv.Document(Web.Contents("https://login.claimpay.net:8443/rep_history_statuses.csv"),[Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+  #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+  #"Changed Types" = Table.TransformColumnTypes(#"Promoted Headers",{{"snapshot_date", type date}, {"status_area", type text}, {"status_value", type text}, {"number_of_elements", Int64.Type}}, "en-US"),
+  #"Renamed Columns" = Table.RenameColumns(#"Changed Types", {})
+in
+  #"Renamed Columns"

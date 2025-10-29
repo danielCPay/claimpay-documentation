@@ -1,0 +1,8 @@
+{
+  "name": "812a68d8-b808-4e46-a598-f0e21caa4a2e",
+  "fromTable": "vw_cases",
+  "fromColumn": "motion_in_limine_deadline",
+  "toTable": "LocalDateTable_ef41b948-62fa-44d4-bce8-4fb3b9446060",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

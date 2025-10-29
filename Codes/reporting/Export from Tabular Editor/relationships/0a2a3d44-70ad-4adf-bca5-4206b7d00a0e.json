@@ -1,0 +1,8 @@
+{
+  "name": "0a2a3d44-70ad-4adf-bca5-4206b7d00a0e",
+  "fromTable": "vw_collections",
+  "fromColumn": "deposit_date",
+  "toTable": "LocalDateTable_546c7fcd-1999-44ca-8656-5a9b9e5639ee",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

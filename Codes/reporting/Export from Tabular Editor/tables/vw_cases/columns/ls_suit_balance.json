@@ -1,0 +1,17 @@
+{
+  "name": "ls_suit_balance",
+  "dataType": "double",
+  "sourceColumn": "ls_suit_balance",
+  "lineageTag": "3a0bb601-3d57-42e7-9bbd-2a18a5efe52d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

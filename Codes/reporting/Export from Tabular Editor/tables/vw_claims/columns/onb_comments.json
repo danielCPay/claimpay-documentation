@@ -1,0 +1,13 @@
+{
+  "name": "onb_comments",
+  "dataType": "string",
+  "sourceColumn": "onb_comments",
+  "lineageTag": "beaacf0c-135a-44ab-ae51-a836e1ca188a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

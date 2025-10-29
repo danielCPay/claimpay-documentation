@@ -1,0 +1,12 @@
+{
+  "name": "Hours from uploaded to underwritten",
+  "expression": "DATEDIFF( [First Claim Uploaded], [Last Claim Underwritten], SECOND ) / 3600",
+  "formatString": "0.00",
+  "lineageTag": "e6214541-7334-458b-8b1e-241fc6f9be31",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

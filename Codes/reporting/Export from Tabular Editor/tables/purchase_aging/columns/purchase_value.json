@@ -1,0 +1,20 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "purchase_value",
+  "dataType": "double",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[purchase_value]",
+  "lineageTag": "5f3c9954-f5bc-45a5-b004-6e508cacac6a",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

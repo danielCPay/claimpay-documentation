@@ -1,0 +1,17 @@
+{
+  "name": "a_r_in_litigation",
+  "dataType": "double",
+  "sourceColumn": "a_r_in_litigation",
+  "lineageTag": "a4320d41-4284-46f3-9291-91c34cf2ebb0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "0a389225-76dd-44e7-9a28-53c716461d10",
+  "fromTable": "vw_claims",
+  "fromColumn": "purchased_time",
+  "toTable": "LocalDateTable_7e81376c-cd23-43be-9259-75da4da597a8",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

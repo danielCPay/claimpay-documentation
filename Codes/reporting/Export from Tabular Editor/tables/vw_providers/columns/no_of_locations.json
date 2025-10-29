@@ -1,0 +1,14 @@
+{
+  "name": "no_of_locations",
+  "dataType": "int64",
+  "sourceColumn": "no_of_locations",
+  "formatString": "0",
+  "lineageTag": "53c1bd77-f559-436d-a366-1b4c43d986a4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

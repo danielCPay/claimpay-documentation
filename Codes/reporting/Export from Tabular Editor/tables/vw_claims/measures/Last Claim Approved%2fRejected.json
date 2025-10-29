@@ -1,0 +1,6 @@
+{
+  "name": "Last Claim Approved/Rejected",
+  "expression": "MAX( vw_claims[approved_rejected_time] )",
+  "formatString": "General Date",
+  "lineageTag": "4f9a7756-f582-427b-a662-477ef4400689"
+}

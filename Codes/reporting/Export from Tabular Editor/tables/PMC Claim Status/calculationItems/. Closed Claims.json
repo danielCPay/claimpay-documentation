@@ -1,0 +1,10 @@
+{
+  "name": ". Closed Claims",
+  "expression": [
+    "CALCULATE (",
+    "    SELECTEDMEASURE (),",
+    "    KEEPFILTERS ( vw_claims[claim_status] = \"Closed\" )",
+    ")"
+  ],
+  "ordinal": 3
+}

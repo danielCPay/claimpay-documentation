@@ -1,0 +1,17 @@
+{
+  "name": "principal_amount_settled",
+  "dataType": "double",
+  "sourceColumn": "principal_amount_settled",
+  "lineageTag": "200a2dec-d320-4ab9-997f-6fd247907c27",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "motion_cut_off_date",
+  "dataType": "dateTime",
+  "sourceColumn": "motion_cut_off_date",
+  "formatString": "Long Date",
+  "lineageTag": "fd860caf-0971-4091-b3bb-95cd8e6b9898",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "cdedf53e-7ca4-42c1-8ae9-75311c828745",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_17b13492-9863-48f7-a943-5a8f474dd7c3",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "investor_purchase_month",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[investor_purchase_month]",
+  "lineageTag": "9c5aa69c-eb69-4b3f-b272-94fce8573351",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

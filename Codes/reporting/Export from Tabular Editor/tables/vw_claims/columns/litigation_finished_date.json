@@ -1,0 +1,29 @@
+{
+  "name": "litigation_finished_date",
+  "dataType": "dateTime",
+  "sourceColumn": "litigation_finished_date",
+  "formatString": "Long Date",
+  "lineageTag": "3698cacd-0c97-4eb7-9aef-36ced727e3dd",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "68f9dd52-cd83-4113-a6db-2ad18caeacd7",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_ed7aa0bf-1d28-42c1-8d68-437352990a61",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

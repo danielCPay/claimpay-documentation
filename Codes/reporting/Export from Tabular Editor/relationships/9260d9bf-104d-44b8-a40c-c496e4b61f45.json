@@ -1,0 +1,8 @@
+{
+  "name": "9260d9bf-104d-44b8-a40c-c496e4b61f45",
+  "fromTable": "calendar_dates",
+  "fromColumn": "month_end",
+  "toTable": "LocalDateTable_d870afa3-ba51-4e69-a486-d984af9ffca5",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

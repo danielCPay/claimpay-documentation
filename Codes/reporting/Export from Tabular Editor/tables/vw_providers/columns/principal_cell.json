@@ -1,0 +1,13 @@
+{
+  "name": "principal_cell",
+  "dataType": "string",
+  "sourceColumn": "principal_cell",
+  "lineageTag": "b1eaa1d9-66a7-434d-94fd-14b8d3ac4fdf",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "pre_suit_costs",
+  "dataType": "double",
+  "sourceColumn": "pre_suit_costs",
+  "lineageTag": "974be109-0bd8-4309-bd90-fcf8d35df62f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

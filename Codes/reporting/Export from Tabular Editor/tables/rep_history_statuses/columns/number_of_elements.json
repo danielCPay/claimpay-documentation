@@ -1,0 +1,14 @@
+{
+  "name": "number_of_elements",
+  "dataType": "int64",
+  "sourceColumn": "number_of_elements",
+  "formatString": "0",
+  "lineageTag": "ea740c99-5fd5-48ba-b843-fc24aba59960",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

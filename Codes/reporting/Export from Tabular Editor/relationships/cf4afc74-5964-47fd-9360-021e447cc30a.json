@@ -1,0 +1,8 @@
+{
+  "name": "cf4afc74-5964-47fd-9360-021e447cc30a",
+  "fromTable": "vw_providers",
+  "fromColumn": "master_purchase_agreement_date",
+  "toTable": "LocalDateTable_8b760550-8a6d-497f-bd7c-8ec5e885052e",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

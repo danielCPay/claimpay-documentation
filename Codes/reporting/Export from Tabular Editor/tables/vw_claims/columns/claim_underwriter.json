@@ -1,0 +1,14 @@
+{
+  "name": "claim_underwriter",
+  "dataType": "int64",
+  "sourceColumn": "claim_underwriter",
+  "formatString": "0",
+  "lineageTag": "48fa2055-2157-4401-af95-eca4dcffd532",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

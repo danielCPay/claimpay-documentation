@@ -1,0 +1,13 @@
+{
+  "name": "mediation_arbitration_status",
+  "dataType": "string",
+  "sourceColumn": "mediation_arbitration_status",
+  "lineageTag": "9c8d49c6-2f86-4035-b749-3e5507e0c3d9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

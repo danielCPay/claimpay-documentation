@@ -1,0 +1,17 @@
+{
+  "name": "percentage_aob_claims",
+  "dataType": "double",
+  "sourceColumn": "percentage_aob_claims",
+  "lineageTag": "6b85d326-e3c6-4a64-a818-5e7366a9e967",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "client_signature",
+  "dataType": "string",
+  "sourceColumn": "client_signature",
+  "lineageTag": "aa4a5f6e-6417-4d04-b4dd-4ab2f2bb15d9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

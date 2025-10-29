@@ -1,0 +1,17 @@
+{
+  "name": "buyback_clearance",
+  "dataType": "double",
+  "sourceColumn": "buyback_clearance",
+  "lineageTag": "56772de8-8a0c-44bc-85fb-ed5e157d333f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "purchase_date",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[purchase_date]",
+  "formatString": "General Date",
+  "lineageTag": "f3cc0b20-7ceb-4e27-83cf-a15a22850e38",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "fa0878e1-8446-4a4c-9ca7-521fc2bb9217",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_d8d48bc8-442c-4b3f-9a2f-d53b455f8916",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

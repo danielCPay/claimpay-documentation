@@ -1,0 +1,14 @@
+{
+  "name": "vw_investors",
+  "lineageTag": "828b410e-35b9-41bc-a8f7-f32b0344648a",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

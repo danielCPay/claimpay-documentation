@@ -1,0 +1,29 @@
+{
+  "name": "release_received",
+  "dataType": "dateTime",
+  "sourceColumn": "release_received",
+  "formatString": "Long Date",
+  "lineageTag": "694c3188-09fb-4e69-ae9e-6ec38051f2a7",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "3971a04c-137e-469a-8586-e17ad4e1457e",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_1d71fd23-72d8-433f-8e2b-9741aadf88c6",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

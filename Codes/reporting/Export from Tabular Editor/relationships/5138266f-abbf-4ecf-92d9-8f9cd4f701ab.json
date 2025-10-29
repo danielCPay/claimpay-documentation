@@ -1,0 +1,8 @@
+{
+  "name": "5138266f-abbf-4ecf-92d9-8f9cd4f701ab",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_motion_for_extension_of_tim",
+  "toTable": "LocalDateTable_7935ad46-621a-4484-8fab-5ce9285d62d4",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

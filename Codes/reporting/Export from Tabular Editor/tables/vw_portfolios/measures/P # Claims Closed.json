@@ -1,0 +1,6 @@
+{
+  "name": "P # Claims Closed",
+  "expression": "sum(vw_portfolios[total_number_of_paid_claims])",
+  "formatString": "0",
+  "lineageTag": "f8019aee-19a8-482f-bacd-b6a34cfe2b12"
+}

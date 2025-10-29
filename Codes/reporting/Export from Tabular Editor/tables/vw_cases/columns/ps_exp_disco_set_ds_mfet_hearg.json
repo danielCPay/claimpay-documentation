@@ -1,0 +1,29 @@
+{
+  "name": "ps_exp_disco_set_ds_mfet_hearg",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_exp_disco_set_ds_mfet_hearg",
+  "formatString": "Long Date",
+  "lineageTag": "57591550-972e-443c-8e69-dcf0e3698b7a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "05f61ed2-efc7-429c-809f-27162ac44250",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_76ee650e-b9b6-4012-bdf9-03683e563226",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

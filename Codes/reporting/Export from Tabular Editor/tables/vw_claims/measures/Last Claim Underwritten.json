@@ -1,0 +1,6 @@
+{
+  "name": "Last Claim Underwritten",
+  "expression": "MAX( vw_claims[underwritten_time] )",
+  "formatString": "General Date",
+  "lineageTag": "b83dbd1b-773b-43dd-b56e-d678a7436233"
+}

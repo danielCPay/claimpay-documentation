@@ -1,0 +1,29 @@
+{
+  "name": "dismissal_date",
+  "dataType": "dateTime",
+  "sourceColumn": "dismissal_date",
+  "formatString": "Long Date",
+  "lineageTag": "7956c919-f0c8-4ddd-b49b-a48ba620c975",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "8a83c93e-dd21-4856-987a-81fe056c81d2",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_9cf1a429-48ba-4efc-97b2-ad090c30b5a4",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

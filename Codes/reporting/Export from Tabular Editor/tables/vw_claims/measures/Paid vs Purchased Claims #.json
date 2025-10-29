@@ -1,0 +1,12 @@
+{
+  "name": "Paid vs Purchased Claims #",
+  "expression": "COALESCE(DIVIDE([# PaidClosed TD],[Total Collection]), 0)",
+  "formatString": "0.00%;-0.00%;0.00%",
+  "lineageTag": "992386b8-efba-4be4-a60b-9a784592f05d",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

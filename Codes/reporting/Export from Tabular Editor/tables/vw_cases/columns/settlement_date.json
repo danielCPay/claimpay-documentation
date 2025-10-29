@@ -1,0 +1,29 @@
+{
+  "name": "settlement_date",
+  "dataType": "dateTime",
+  "sourceColumn": "settlement_date",
+  "formatString": "Long Date",
+  "lineageTag": "a05e9422-8c0f-43f8-a126-0bbbb78844af",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "5c7ef8dc-f8a0-4f56-b43b-dbc8016b06ee",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_49a347c8-bde2-41c3-81e4-5ad006d1f5b1",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

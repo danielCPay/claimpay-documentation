@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Hurdle",
+  "expression": "SUM( vw_portfolios[hurdle] )",
+  "lineageTag": "29f913d7-5866-41bb-805a-20f6faa12255",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

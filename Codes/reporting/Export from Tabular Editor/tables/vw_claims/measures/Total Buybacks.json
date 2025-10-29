@@ -1,0 +1,11 @@
+{
+  "name": "Total Buybacks",
+  "expression": "sum(vw_claims[buyback_amount])",
+  "lineageTag": "8b2dd943-9c08-4e2e-8125-d397dfbe463a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

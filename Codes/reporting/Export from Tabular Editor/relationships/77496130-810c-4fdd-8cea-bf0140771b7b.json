@@ -1,0 +1,8 @@
+{
+  "name": "77496130-810c-4fdd-8cea-bf0140771b7b",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_mpo_engineer",
+  "toTable": "LocalDateTable_0ab8659b-8dbd-4fae-bf48-eab0f663870c",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

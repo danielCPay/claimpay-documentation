@@ -1,0 +1,14 @@
+{
+  "name": "judge",
+  "dataType": "int64",
+  "sourceColumn": "judge",
+  "formatString": "0",
+  "lineageTag": "cb540300-3783-4f6f-8d85-a3d86a2ec0eb",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

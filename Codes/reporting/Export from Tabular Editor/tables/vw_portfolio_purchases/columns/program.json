@@ -1,0 +1,14 @@
+{
+  "name": "program",
+  "dataType": "int64",
+  "sourceColumn": "program",
+  "formatString": "0",
+  "lineageTag": "d9ce350b-9510-48c3-b7dd-044667f75a31",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

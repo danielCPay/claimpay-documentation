@@ -1,0 +1,13 @@
+{
+  "name": "provider_abbreviation",
+  "dataType": "string",
+  "sourceColumn": "provider_abbreviation",
+  "lineageTag": "63bc6645-d466-4d3d-a9a0-55bf6a909243",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

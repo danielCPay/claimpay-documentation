@@ -1,0 +1,14 @@
+{
+  "name": "investorsid",
+  "dataType": "int64",
+  "sourceColumn": "investorsid",
+  "formatString": "0",
+  "lineageTag": "5df442bc-a1b4-443d-bd06-45081c7fd7db",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

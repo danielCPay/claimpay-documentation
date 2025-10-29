@@ -1,0 +1,18 @@
+{
+  "name": "user_full_name",
+  "dataType": "string",
+  "sourceColumn": "user_full_name",
+  "sortByColumn": "last_name",
+  "lineageTag": "12c748d8-0f21-4494-97bd-669e6a6c0495",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    }
+  ]
+}

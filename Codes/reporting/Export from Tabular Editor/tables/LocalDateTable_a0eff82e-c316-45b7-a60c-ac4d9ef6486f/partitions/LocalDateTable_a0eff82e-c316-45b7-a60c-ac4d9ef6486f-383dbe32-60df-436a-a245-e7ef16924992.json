@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_a0eff82e-c316-45b7-a60c-ac4d9ef6486f-383dbe32-60df-436a-a245-e7ef16924992",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[policy_valid_from])), 1, 1), Date(Year(MAX('vw_cases'[policy_valid_from])), 12, 31))"
+  }
+}

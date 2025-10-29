@@ -1,0 +1,8 @@
+{
+  "name": "8b52c58f-baf3-4827-b2db-45d9d0f14c81",
+  "fromTable": "vw_claims",
+  "fromColumn": "date_of_first_notification",
+  "toTable": "LocalDateTable_8a3bd6fe-b328-42f1-8730-80cee4fb3090",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

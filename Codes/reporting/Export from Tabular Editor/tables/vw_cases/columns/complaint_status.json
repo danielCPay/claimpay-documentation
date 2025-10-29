@@ -1,0 +1,13 @@
+{
+  "name": "complaint_status",
+  "dataType": "string",
+  "sourceColumn": "complaint_status",
+  "lineageTag": "4b05cf92-4510-4cb6-bb33-7ae6732f05a6",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

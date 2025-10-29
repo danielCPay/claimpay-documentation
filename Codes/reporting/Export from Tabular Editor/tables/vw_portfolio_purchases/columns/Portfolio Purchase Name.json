@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio Purchase Name",
+  "dataType": "string",
+  "sourceColumn": "Portfolio Purchase Name",
+  "lineageTag": "b4b302ad-5833-4509-b94f-0cbdf4c006e9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

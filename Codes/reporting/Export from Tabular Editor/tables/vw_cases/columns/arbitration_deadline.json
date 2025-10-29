@@ -1,0 +1,29 @@
+{
+  "name": "arbitration_deadline",
+  "dataType": "dateTime",
+  "sourceColumn": "arbitration_deadline",
+  "formatString": "Long Date",
+  "lineageTag": "0ada4797-e893-45cc-ab72-37c119991f57",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "6fd4cf5a-9be1-48f9-959c-be7d81b26aec",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_a296e58e-b029-43b2-a368-e7bd72f39a3f",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

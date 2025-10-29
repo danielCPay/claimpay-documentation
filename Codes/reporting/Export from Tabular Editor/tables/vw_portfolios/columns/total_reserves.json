@@ -1,0 +1,17 @@
+{
+  "name": "total_reserves",
+  "dataType": "double",
+  "sourceColumn": "total_reserves",
+  "lineageTag": "51aea2eb-e1f4-4d99-9666-1d01a382eba4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

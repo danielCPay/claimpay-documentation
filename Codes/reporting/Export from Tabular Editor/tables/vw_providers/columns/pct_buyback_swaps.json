@@ -1,0 +1,17 @@
+{
+  "name": "pct_buyback_swaps",
+  "dataType": "double",
+  "sourceColumn": "pct_buyback_swaps",
+  "lineageTag": "d78eda82-8925-43c8-88af-707be11d364b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

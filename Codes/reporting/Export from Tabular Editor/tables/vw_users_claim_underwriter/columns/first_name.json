@@ -1,0 +1,13 @@
+{
+  "name": "first_name",
+  "dataType": "string",
+  "sourceColumn": "first_name",
+  "lineageTag": "b43876d3-0de8-4866-abb4-d9a8f1c34fe6",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

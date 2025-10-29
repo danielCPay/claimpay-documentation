@@ -1,0 +1,8 @@
+{
+  "name": "f4ac988e-67f1-4001-ade8-3550b673467e",
+  "fromTable": "Purchase Periods",
+  "fromColumn": "Date",
+  "toTable": "LocalDateTable_0eea98c0-961e-4acf-a3e9-1570febeb4ad",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Order",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[Order]",
+  "formatString": "0",
+  "lineageTag": "31e703d4-c44f-45a1-8b66-930bc137f465",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    }
+  ]
+}

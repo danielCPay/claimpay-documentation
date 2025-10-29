@@ -1,0 +1,29 @@
+{
+  "name": "ps_mpo_pricing_exp",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_mpo_pricing_exp",
+  "formatString": "Long Date",
+  "lineageTag": "f8ff7ca1-a780-4906-8b44-20e6f1cb39b1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "a2184da3-bccd-46f8-a401-da6628393584",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_ab1d9c77-63ca-4cf1-9b65-aa16b0eeba48",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

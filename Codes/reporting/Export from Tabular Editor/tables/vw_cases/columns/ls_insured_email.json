@@ -1,0 +1,13 @@
+{
+  "name": "ls_insured_email",
+  "dataType": "string",
+  "sourceColumn": "ls_insured_email",
+  "lineageTag": "b5dfce06-5576-436d-8344-e4e4ae2ad649",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

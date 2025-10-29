@@ -1,0 +1,7 @@
+{
+  "name": "5ef713e1-44e4-425c-8e3e-0051b542ec33",
+  "fromTable": "purchase_aging",
+  "fromColumn": "portfolio_purchase",
+  "toTable": "vw_portfolio_purchases",
+  "toColumn": "portfolio_purchase"
+}

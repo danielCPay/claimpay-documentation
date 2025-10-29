@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_09d336a5-0802-42cb-9225-0bd0285edd67-bde6bde9-d7f2-4a2f-8e66-5cf2be38b160",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[date_of_award_legal_fees])), 1, 1), Date(Year(MAX('vw_cases'[date_of_award_legal_fees])), 12, 31))"
+  }
+}

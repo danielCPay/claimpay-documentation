@@ -1,0 +1,13 @@
+{
+  "name": "plaintiff_msj_status",
+  "dataType": "string",
+  "sourceColumn": "plaintiff_msj_status",
+  "lineageTag": "9890eb51-34ab-4db8-b6c3-3fd66d96a47c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "29b8d720-42e3-4341-9c1b-1c6ee947844b",
+  "fromTable": "purchase_aging",
+  "fromColumn": "months_fwd",
+  "toTable": "aging_numbers",
+  "toColumn": "months_fwd"
+}

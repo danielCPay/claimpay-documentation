@@ -1,0 +1,8 @@
+{
+  "name": "f6cfd0aa-141a-411c-9f31-f5bd4773e28b",
+  "fromTable": "vw_cases",
+  "fromColumn": "summons_issued",
+  "toTable": "LocalDateTable_c522468c-7c3f-4a90-a17c-2f76ad229670",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

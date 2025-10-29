@@ -1,0 +1,6 @@
+{
+  "name": "Month End",
+  "expression": "MAX(calendar_dates[month_end] )",
+  "formatString": "General Date",
+  "lineageTag": "bd74a825-fd67-4ceb-a24a-acf36271fd0f"
+}

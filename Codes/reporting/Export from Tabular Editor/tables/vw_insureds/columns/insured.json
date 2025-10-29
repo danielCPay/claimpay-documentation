@@ -1,0 +1,14 @@
+{
+  "name": "insured",
+  "dataType": "int64",
+  "sourceColumn": "insured",
+  "formatString": "0",
+  "lineageTag": "c4f33fd0-4451-42c5-bd10-02c1a79916d3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

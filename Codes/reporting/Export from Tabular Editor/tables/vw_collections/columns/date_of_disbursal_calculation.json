@@ -1,0 +1,25 @@
+{
+  "name": "date_of_disbursal_calculation",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_disbursal_calculation",
+  "formatString": "General Date",
+  "lineageTag": "e8009350-492a-47f4-99a8-74d4c20738b7",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f32c4127-a72d-4a40-8222-277dede38152",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_773c249e-4ad7-41f3-97a3-5a598dca7765",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

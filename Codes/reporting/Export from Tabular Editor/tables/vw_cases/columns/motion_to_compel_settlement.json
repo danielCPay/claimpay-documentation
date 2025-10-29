@@ -1,0 +1,29 @@
+{
+  "name": "motion_to_compel_settlement",
+  "dataType": "dateTime",
+  "sourceColumn": "motion_to_compel_settlement",
+  "formatString": "Long Date",
+  "lineageTag": "93e302d7-5fe5-48f7-a7b2-0ded9cd0ee2c",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0b3f8938-6ff6-487b-a618-0bd23490ac71",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_41570b2a-f53e-4504-add3-4c1af8205f0e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

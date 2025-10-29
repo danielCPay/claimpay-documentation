@@ -1,0 +1,13 @@
+{
+  "name": "dummy_plaintiff_deposition",
+  "dataType": "string",
+  "sourceColumn": "dummy_plaintiff_deposition",
+  "lineageTag": "055b49de-0f3e-4e1f-96f9-4d3cb37c74ca",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

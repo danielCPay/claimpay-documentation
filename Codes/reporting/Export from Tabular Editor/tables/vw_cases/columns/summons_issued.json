@@ -1,0 +1,29 @@
+{
+  "name": "summons_issued",
+  "dataType": "dateTime",
+  "sourceColumn": "summons_issued",
+  "formatString": "Long Date",
+  "lineageTag": "057632c5-28e9-4abb-9ce7-f05b8c238452",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f6cfd0aa-141a-411c-9f31-f5bd4773e28b",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_c522468c-7c3f-4a90-a17c-2f76ad229670",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "complaint_package_prepared",
+  "dataType": "dateTime",
+  "sourceColumn": "complaint_package_prepared",
+  "formatString": "Long Date",
+  "lineageTag": "e0bb78a8-a8d1-4874-a7e9-4beb7b9ec0c4",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "926f6b98-d7a5-46c6-8f1a-ccd4c57e7e57",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_aa556b06-f5de-4803-9d83-efc6867a1749",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

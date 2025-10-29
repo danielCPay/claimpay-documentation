@@ -1,0 +1,11 @@
+{
+  "name": "PP # Claims",
+  "expression": "sum(vw_portfolio_purchases[total_number_of_claims])",
+  "lineageTag": "0b3b2657-d3b6-4ac2-8853-cb5f6663425a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

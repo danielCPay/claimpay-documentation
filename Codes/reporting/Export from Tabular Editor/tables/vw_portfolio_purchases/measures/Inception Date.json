@@ -1,0 +1,6 @@
+{
+  "name": "Inception Date",
+  "expression": "min(vw_portfolio_purchases[purchase_date])",
+  "formatString": "General Date",
+  "lineageTag": "550a97af-272d-41ab-a440-e77ec6566906"
+}

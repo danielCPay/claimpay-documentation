@@ -1,0 +1,14 @@
+{
+  "name": "corporate_representative",
+  "dataType": "int64",
+  "sourceColumn": "corporate_representative",
+  "formatString": "0",
+  "lineageTag": "061a8509-1d4f-4079-92d9-a7ef5fa8dd22",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

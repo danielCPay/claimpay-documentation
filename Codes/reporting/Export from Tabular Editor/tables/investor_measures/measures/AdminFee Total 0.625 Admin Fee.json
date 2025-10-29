@@ -1,0 +1,12 @@
+{
+  "name": "AdminFee Total 0.625 Admin Fee",
+  "expression": [
+    "CALCULATE( ",
+    "\t\t\t\tSUMX( purchase_aging, [AdminFee Outstanding Deployment] / 3 * 0.00625 ), ",
+    "\t\t\t\tFILTER( ",
+    "\t\t\t\t\tALLEXCEPT(purchase_aging, purchase_aging[investor]), ",
+    "\t\t\t\t\tpurchase_aging[purchase_date] >= DATE ( 2022, 1, 1 ) && [AdminFee Aging to Date EO3M-1] < TODAY() ) ",
+    "\t\t\t\t)\t"
+  ],
+  "lineageTag": "e53664c4-2dd8-489c-b977-a69a8cf591ae"
+}

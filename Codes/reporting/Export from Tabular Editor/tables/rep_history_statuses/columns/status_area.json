@@ -1,0 +1,13 @@
+{
+  "name": "status_area",
+  "dataType": "string",
+  "sourceColumn": "status_area",
+  "lineageTag": "f351edfb-ef54-4c63-83fe-a2b13f9d8881",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

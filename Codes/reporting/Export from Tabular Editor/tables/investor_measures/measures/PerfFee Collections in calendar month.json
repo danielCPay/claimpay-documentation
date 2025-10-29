@@ -1,0 +1,19 @@
+{
+  "name": "PerfFee Collections in calendar month",
+  "expression": [
+    "CALCULATE( ",
+    "\t\t\t\tSUM( vw_claimcollections[assigned_value] ), ",
+    "\t\t\t\tFILTER( vw_collections, ",
+    "\t\t\t\t\tvw_collections[payment_date] >= SELECTEDVALUE( purchase_aging[aging_start_month] )",
+    "\t\t\t\t\t&& vw_collections[payment_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] ) ",
+    "\t\t\t\t\t) ",
+    "\t\t\t\t)"
+  ],
+  "lineageTag": "f078e6c8-53e2-463f-b7fd-2aa3f01aad12",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

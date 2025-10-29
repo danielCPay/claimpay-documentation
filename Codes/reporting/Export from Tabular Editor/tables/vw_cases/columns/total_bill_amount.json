@@ -1,0 +1,17 @@
+{
+  "name": "total_bill_amount",
+  "dataType": "double",
+  "sourceColumn": "total_bill_amount",
+  "lineageTag": "bebaa0a1-cf02-41c9-a21c-4172ab60e690",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

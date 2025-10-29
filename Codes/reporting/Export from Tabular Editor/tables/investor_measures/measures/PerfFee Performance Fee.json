@@ -1,0 +1,18 @@
+{
+  "name": "PerfFee Performance Fee",
+  "expression": [
+    "CALCULATE( 20/100 * [PerfFee Collections in calendar month], \t",
+    "        \t\t\t\t\tFILTER( purchase_aging,",
+    "        \t\t\t\t\t\tpurchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) ",
+    "\t\t\t\t\t  \t\t\t&& [PerfFee Incremental IRR] >= 10/100",
+    "\t\t\t\t\t\t  \t\t)",
+    "\t\t\t\t\t  \t\t)"
+  ],
+  "lineageTag": "fcf99214-db4b-4eb7-8c7b-156d1e540048",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

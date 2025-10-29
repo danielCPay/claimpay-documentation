@@ -1,0 +1,13 @@
+{
+  "name": "plaintiff_deposition_status",
+  "dataType": "string",
+  "sourceColumn": "plaintiff_deposition_status",
+  "lineageTag": "3429a87b-c9cd-48db-b150-3f484ee4bba4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

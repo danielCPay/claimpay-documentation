@@ -1,0 +1,13 @@
+{
+  "name": "Last #",
+  "expression": [
+    "",
+    "var Last_Time = CALCULATE(MAX([Snapshot Date]),FILTER(rep_history_statuses,[Snapshot Date]=MAX([Snapshot Date])))",
+    "return CALCULATE (",
+    "        SUM( rep_history_statuses[number_of_elements] ),",
+    "        FILTER ( rep_history_statuses, rep_history_statuses[Snapshot Date] = MAX ( [Snapshot Date] ) && Last_Time = [Snapshot Date] )",
+    "    )"
+  ],
+  "formatString": "0",
+  "lineageTag": "10e5d04a-b894-435e-b943-b9c277889b64"
+}

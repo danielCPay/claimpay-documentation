@@ -1,0 +1,8 @@
+{
+  "name": "053ac95c-ace0-4fce-9c64-e5eb245a720d",
+  "fromTable": "vw_cases",
+  "fromColumn": "depo_of_plaintiff_date",
+  "toTable": "LocalDateTable_cd914b52-5ee3-4416-a8bf-1c8df25958c3",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

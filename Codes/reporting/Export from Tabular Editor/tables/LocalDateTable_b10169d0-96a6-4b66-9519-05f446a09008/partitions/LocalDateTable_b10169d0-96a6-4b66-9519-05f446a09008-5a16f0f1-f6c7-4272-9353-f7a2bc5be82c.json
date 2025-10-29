@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_b10169d0-96a6-4b66-9519-05f446a09008-5a16f0f1-f6c7-4272-9353-f7a2bc5be82c",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_collections'[createdtime])), 1, 1), Date(Year(MAX('vw_collections'[createdtime])), 12, 31))"
+  }
+}

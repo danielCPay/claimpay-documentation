@@ -1,0 +1,11 @@
+{
+  "name": "Total Profit",
+  "expression": "[Total Collection] - [Total Invested]-[Refundable Reserve]- [Limit Reserve]+[Total Buybacks]",
+  "lineageTag": "16494d48-ec91-4346-b117-4d5e8b1e9c50",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

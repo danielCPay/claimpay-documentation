@@ -1,0 +1,7 @@
+let
+  Source = Csv.Document(Web.Contents("https://login.claimpay.net:8443/vw_collections.csv"),[Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+  #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+  #"Changed Types" = Table.TransformColumnTypes(#"Promoted Headers",{{"collection", Int64.Type}, {"createdtime", type datetime}, {"collectionsid", Int64.Type}, {"collection_name", type text}, {"number", type text}, {"insurance_company", Int64.Type}, {"case", Int64.Type}, {"payment_date", type date}, {"deposit_date", type date}, {"disbursed_date", type date}, {"payment_method", type text}, {"collection_type", type text}, {"value", type number}, {"status_col", type text}, {"source_bank_account", type text}, {"destination_bank_account", type text}, {"check_number", type text}, {"date_of_calculations", type datetime}, {"value_to_apply_to_claims", type number}, {"limit_reserve_to_apply_to_clai", type number}, {"attorney_fees", type number}, {"value_plus_attorney_fees", type number}, {"outside_case", Int64.Type}, {"date_of_disbursal_calculation", type datetime}}, "en-US"),
+  #"Renamed Columns" = Table.RenameColumns(#"Changed Types", {})
+in
+  #"Renamed Columns"

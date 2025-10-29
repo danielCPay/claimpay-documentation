@@ -1,0 +1,17 @@
+{
+  "name": "pre_suit_attorneys_fees",
+  "dataType": "double",
+  "sourceColumn": "pre_suit_attorneys_fees",
+  "lineageTag": "b3d1e79f-27d2-49ac-b77a-6be09cdf060a",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

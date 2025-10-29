@@ -1,0 +1,8 @@
+{
+  "name": "8993c262-ed70-46e4-bcc7-a4319538674d",
+  "fromTable": "investor_roll_forward_amounts",
+  "fromColumn": "purchase_month",
+  "toTable": "LocalDateTable_2411881a-5936-4d3c-ad2f-42059eb0002e",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

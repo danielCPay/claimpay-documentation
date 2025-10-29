@@ -1,0 +1,13 @@
+{
+  "name": "vw_insurancecompanies_case-daa2adf6-ec87-443d-8e45-739d4d6f8c68",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = vw_insurancecompanies",
+      "in",
+      "    Source"
+    ]
+  }
+}

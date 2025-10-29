@@ -1,0 +1,8 @@
+{
+  "name": "fc2fac50-89c9-4a6b-9904-4ddeff5e7687",
+  "fromTable": "vw_cases",
+  "fromColumn": "settl_negot_offer_last_date",
+  "toTable": "LocalDateTable_9b3fe765-ab95-4845-b971-3d08d75b39d6",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AdminFee Aging to Date EO3M-1",
+  "expression": "MIN(purchase_aging[aging_to_date_collections_eo3m-1])",
+  "formatString": "General Date",
+  "lineageTag": "6ef8df12-0ec8-46f8-ad51-64de5418e8c0"
+}

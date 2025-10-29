@@ -1,0 +1,17 @@
+{
+  "name": "settl_negot_offer",
+  "dataType": "double",
+  "sourceColumn": "settl_negot_offer",
+  "lineageTag": "b5f8e046-1bac-4a5c-a04c-dc0bb45131f3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

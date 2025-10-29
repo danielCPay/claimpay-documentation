@@ -1,0 +1,29 @@
+{
+  "name": "ptc_small_claims",
+  "dataType": "dateTime",
+  "sourceColumn": "ptc_small_claims",
+  "formatString": "Long Date",
+  "lineageTag": "857af8a8-499f-4391-9f99-2efb76135370",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0058651f-9477-4ffe-b0ca-8026174e6258",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_59d1622a-5e75-4da4-bf51-c0e6e7814440",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "arbitration_award",
+  "dataType": "dateTime",
+  "sourceColumn": "arbitration_award",
+  "formatString": "Long Date",
+  "lineageTag": "14370b16-3102-4674-ae20-f1b0ed1ebd0f",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "eabe176b-b1a3-4318-ab85-20e8d2e0de2c",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_10f7eac8-b18c-4428-aaed-3f7ded4ec21f",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

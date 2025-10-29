@@ -1,0 +1,11 @@
+{
+  "name": "Global Purchase Value",
+  "expression": "CALCULATE([Total Invested], ALLSELECTED(vw_claims))",
+  "lineageTag": "013fef14-2748-4242-807b-bfdf8a595f74",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "buyback_reason",
+  "dataType": "string",
+  "sourceColumn": "buyback_reason",
+  "lineageTag": "1f798ad7-9434-472e-9bce-9758d5efdf21",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

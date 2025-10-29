@@ -1,0 +1,8 @@
+{
+  "name": "3fc99c0d-b763-40c0-81e0-e001c9924186",
+  "fromTable": "vw_cases",
+  "fromColumn": "recorded_statement_requested",
+  "toTable": "LocalDateTable_276f01be-3959-4e00-9ff2-4b46de3744c9",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

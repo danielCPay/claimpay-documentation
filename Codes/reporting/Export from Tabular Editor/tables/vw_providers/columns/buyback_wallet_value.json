@@ -1,0 +1,17 @@
+{
+  "name": "buyback_wallet_value",
+  "dataType": "double",
+  "sourceColumn": "buyback_wallet_value",
+  "lineageTag": "a7db75df-f628-4274-b3bf-0ad550fe9708",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

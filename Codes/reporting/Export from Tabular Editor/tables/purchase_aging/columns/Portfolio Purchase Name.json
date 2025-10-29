@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Portfolio Purchase Name",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[Portfolio Purchase Name]",
+  "lineageTag": "2c054267-8289-4024-8b81-9d2c2ee8c99c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

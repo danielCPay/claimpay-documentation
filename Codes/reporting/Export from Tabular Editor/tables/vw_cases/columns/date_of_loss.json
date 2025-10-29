@@ -1,0 +1,29 @@
+{
+  "name": "date_of_loss",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_loss",
+  "formatString": "Long Date",
+  "lineageTag": "f112b1e4-59c4-49e9-ab28-f7f6f90bf412",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "ac077fdd-a365-4d2e-8c9c-56db9ca70a6f",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_70973a85-e327-4bf4-83a8-46ee796dbd1e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

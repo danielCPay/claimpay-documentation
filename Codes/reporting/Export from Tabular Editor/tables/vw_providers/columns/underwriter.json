@@ -1,0 +1,14 @@
+{
+  "name": "underwriter",
+  "dataType": "int64",
+  "sourceColumn": "underwriter",
+  "formatString": "0",
+  "lineageTag": "d031d374-8f5a-4c71-a3cf-211be5879aa0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

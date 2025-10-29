@@ -1,0 +1,17 @@
+{
+  "name": "personal_property_policy_limit",
+  "dataType": "double",
+  "sourceColumn": "personal_property_policy_limit",
+  "lineageTag": "f7900828-6352-4ad4-96a9-71b9ea75bd07",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

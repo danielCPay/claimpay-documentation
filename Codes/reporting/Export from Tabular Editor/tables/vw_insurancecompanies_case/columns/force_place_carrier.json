@@ -1,0 +1,13 @@
+{
+  "name": "force_place_carrier",
+  "dataType": "string",
+  "sourceColumn": "force_place_carrier",
+  "lineageTag": "eae4c99e-d58b-4a9e-9859-569ab8779ecf",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

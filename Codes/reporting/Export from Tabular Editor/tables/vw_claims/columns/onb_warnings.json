@@ -1,0 +1,13 @@
+{
+  "name": "onb_warnings",
+  "dataType": "string",
+  "sourceColumn": "onb_warnings",
+  "lineageTag": "bee948f3-59f1-4228-a978-95e7a4ec9dd9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

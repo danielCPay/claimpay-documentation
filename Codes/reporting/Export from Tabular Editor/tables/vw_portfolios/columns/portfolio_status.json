@@ -1,0 +1,13 @@
+{
+  "name": "portfolio_status",
+  "dataType": "string",
+  "sourceColumn": "portfolio_status",
+  "lineageTag": "8a9952d2-34b9-4fdf-8415-60e953170987",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

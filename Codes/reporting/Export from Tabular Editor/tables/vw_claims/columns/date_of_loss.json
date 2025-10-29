@@ -1,0 +1,29 @@
+{
+  "name": "date_of_loss",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_loss",
+  "formatString": "Long Date",
+  "lineageTag": "dee55843-0e23-47f0-afff-05d207089dad",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "4dc92e11-5f95-4bad-99ba-6443b1fae0a0",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_97ba7544-e3b3-42d3-8f69-353f30bbffdc",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

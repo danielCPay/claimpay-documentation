@@ -1,0 +1,17 @@
+{
+  "name": "settl_negot_demand",
+  "dataType": "double",
+  "sourceColumn": "settl_negot_demand",
+  "lineageTag": "6002bca9-7a45-40be-940d-6413ea8b69e1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

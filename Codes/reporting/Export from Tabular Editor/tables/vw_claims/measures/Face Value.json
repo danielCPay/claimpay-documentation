@@ -1,0 +1,8 @@
+{
+  "name": "Face Value",
+  "expression": [
+    "sum(vw_claims[total_bill_amount])",
+    ""
+  ],
+  "lineageTag": "2ec26b90-a95d-4a14-a02a-263b8ef6470e"
+}

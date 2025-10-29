@@ -1,0 +1,14 @@
+{
+  "name": "total_number_accepted_claims",
+  "dataType": "int64",
+  "sourceColumn": "total_number_accepted_claims",
+  "formatString": "0",
+  "lineageTag": "713b81e7-f308-45c3-9260-9001915cbfd3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

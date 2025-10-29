@@ -1,0 +1,8 @@
+{
+  "name": "d8b318b1-1701-4d66-b040-be09c4a702df",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_mpo_insured",
+  "toTable": "LocalDateTable_03272a29-71cc-4033-9eee-962cda78d2ce",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

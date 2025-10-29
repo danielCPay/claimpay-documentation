@@ -1,0 +1,13 @@
+{
+  "name": "settl_negot_demand_notes",
+  "dataType": "string",
+  "sourceColumn": "settl_negot_demand_notes",
+  "lineageTag": "803f65e8-2ac2-4da5-9dc5-1a3ab8db9b1e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

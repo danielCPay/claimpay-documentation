@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Write-off",
+  "expression": "sum(vw_portfolios[portfolio_write_off])",
+  "lineageTag": "a06b3276-76aa-4782-9bf2-f746fc9274e4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

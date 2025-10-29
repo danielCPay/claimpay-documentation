@@ -1,0 +1,14 @@
+{
+  "name": "county",
+  "dataType": "int64",
+  "sourceColumn": "county",
+  "formatString": "0",
+  "lineageTag": "084ab837-b144-4213-b2de-b704ba4e49f5",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

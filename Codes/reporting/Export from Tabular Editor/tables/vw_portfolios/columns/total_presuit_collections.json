@@ -1,0 +1,17 @@
+{
+  "name": "total_presuit_collections",
+  "dataType": "double",
+  "sourceColumn": "total_presuit_collections",
+  "lineageTag": "0b1cd239-eb27-4061-8297-5528f5b8c40b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

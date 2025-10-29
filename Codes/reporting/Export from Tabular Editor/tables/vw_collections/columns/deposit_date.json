@@ -1,0 +1,29 @@
+{
+  "name": "deposit_date",
+  "dataType": "dateTime",
+  "sourceColumn": "deposit_date",
+  "formatString": "Long Date",
+  "lineageTag": "9203c7ab-9f1f-417a-8cfc-f6919816c1fa",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0a2a3d44-70ad-4adf-bca5-4206b7d00a0e",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_546c7fcd-1999-44ca-8656-5a9b9e5639ee",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

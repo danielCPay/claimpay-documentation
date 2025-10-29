@@ -1,0 +1,13 @@
+{
+  "name": "vw_users_claim_assigned_to-3b244886-83b1-4c79-b668-9fc39674df0f",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = vw_users",
+      "in",
+      "    Source"
+    ]
+  }
+}

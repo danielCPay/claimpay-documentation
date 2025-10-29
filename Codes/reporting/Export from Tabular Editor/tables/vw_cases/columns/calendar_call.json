@@ -1,0 +1,25 @@
+{
+  "name": "calendar_call",
+  "dataType": "dateTime",
+  "sourceColumn": "calendar_call",
+  "formatString": "General Date",
+  "lineageTag": "34910210-367f-4b34-bb56-4b1b7f70b818",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "9601c6dd-7f16-4149-9f18-478aab965907",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_095d441f-1fb3-4fc5-a195-e0733586627c",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

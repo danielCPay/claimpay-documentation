@@ -1,0 +1,8 @@
+{
+  "name": "90051de0-41ca-464f-be6c-917933dc799b",
+  "fromTable": "purchase_aging",
+  "fromColumn": "aging_to_date_collections_eo3m-1",
+  "toTable": "LocalDateTable_65cf8ec6-071b-4dfb-b7b6-de4c18a5360f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

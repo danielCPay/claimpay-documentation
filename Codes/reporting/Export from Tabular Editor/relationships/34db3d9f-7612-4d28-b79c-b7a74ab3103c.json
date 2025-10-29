@@ -1,0 +1,8 @@
+{
+  "name": "34db3d9f-7612-4d28-b79c-b7a74ab3103c",
+  "fromTable": "vw_cases",
+  "fromColumn": "discovery_cut_off_date",
+  "toTable": "LocalDateTable_6cf81d46-6e1f-43da-a3fb-8115eca06075",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

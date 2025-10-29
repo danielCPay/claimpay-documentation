@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Investor Name",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[Investor Name]",
+  "lineageTag": "2fe9e89c-2164-45fa-a38a-79b45c9d1e41",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

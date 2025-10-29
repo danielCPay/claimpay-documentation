@@ -1,0 +1,17 @@
+{
+  "name": "avg_claims_handled_per_month",
+  "dataType": "double",
+  "sourceColumn": "avg_claims_handled_per_month",
+  "lineageTag": "ca2f1ab9-6407-4752-b93c-4185f2e2b20c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

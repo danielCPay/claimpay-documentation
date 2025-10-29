@@ -1,0 +1,8 @@
+{
+  "name": "71d71d53-d4d9-4170-9df6-0384e027c7dc",
+  "fromTable": "vw_outsidecases",
+  "fromColumn": "first_notice_of_loss",
+  "toTable": "LocalDateTable_1f6f19d1-1e2b-478c-94b1-8b5c1f057e70",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

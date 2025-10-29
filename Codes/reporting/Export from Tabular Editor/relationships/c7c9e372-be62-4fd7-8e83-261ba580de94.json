@@ -1,0 +1,8 @@
+{
+  "name": "c7c9e372-be62-4fd7-8e83-261ba580de94",
+  "fromTable": "vw_collections",
+  "fromColumn": "createdtime",
+  "toTable": "LocalDateTable_b10169d0-96a6-4b66-9519-05f446a09008",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

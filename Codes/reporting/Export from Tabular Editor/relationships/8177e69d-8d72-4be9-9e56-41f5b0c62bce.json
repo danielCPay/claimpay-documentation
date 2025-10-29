@@ -1,0 +1,8 @@
+{
+  "name": "8177e69d-8d72-4be9-9e56-41f5b0c62bce",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_mpo_plaintiff",
+  "toTable": "LocalDateTable_3e0e3a00-e182-4898-ad32-b25256fcb291",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

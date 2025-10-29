@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "aging_to_date",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[aging_to_date]",
+  "formatString": "General Date",
+  "lineageTag": "1dcba048-cd7e-4862-b958-f06d3660a971",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "5b7d44df-743c-42d4-93ed-752ac5ddb13d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_fa0e5dbb-8ab6-4f58-9d3f-e06c42e5b4a1",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

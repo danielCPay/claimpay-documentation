@@ -1,0 +1,14 @@
+{
+  "name": "avg_face_value_of_claims",
+  "dataType": "int64",
+  "sourceColumn": "avg_face_value_of_claims",
+  "formatString": "0",
+  "lineageTag": "29b7b20c-48d1-45b6-b816-7f7822d28f45",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

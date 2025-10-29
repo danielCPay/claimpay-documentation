@@ -1,0 +1,13 @@
+{
+  "name": "ls_opened_by",
+  "dataType": "string",
+  "sourceColumn": "ls_opened_by",
+  "lineageTag": "d9ba744d-3aef-430c-ab9d-507d180c0ad0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

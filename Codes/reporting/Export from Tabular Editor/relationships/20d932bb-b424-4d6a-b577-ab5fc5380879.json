@@ -1,0 +1,8 @@
+{
+  "name": "20d932bb-b424-4d6a-b577-ab5fc5380879",
+  "fromTable": "vw_cases",
+  "fromColumn": "insured_depo_date_pd",
+  "toTable": "LocalDateTable_8bd5af10-5f85-4898-a222-ef661658e1b8",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "internal_financing_amount_usd",
+  "dataType": "double",
+  "sourceColumn": "internal_financing_amount_usd",
+  "lineageTag": "4e480b12-6fb0-440d-93f1-ccb8409744fe",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "conducted_by",
+  "dataType": "string",
+  "sourceColumn": "conducted_by",
+  "lineageTag": "ae4a4e59-c640-41cf-8007-01ed7f648881",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

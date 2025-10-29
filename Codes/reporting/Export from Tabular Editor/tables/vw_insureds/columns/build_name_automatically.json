@@ -1,0 +1,14 @@
+{
+  "name": "build_name_automatically",
+  "dataType": "int64",
+  "sourceColumn": "build_name_automatically",
+  "formatString": "0",
+  "lineageTag": "f2a773dc-1f62-4900-b7cc-1001ba58da75",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

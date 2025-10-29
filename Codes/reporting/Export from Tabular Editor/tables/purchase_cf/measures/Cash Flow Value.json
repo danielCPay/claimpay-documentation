@@ -1,0 +1,11 @@
+{
+  "name": "Cash Flow Value",
+  "expression": "sum(purchase_cf[cf_value])",
+  "lineageTag": "875ac254-7a04-4552-88c1-3c83f4384718",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

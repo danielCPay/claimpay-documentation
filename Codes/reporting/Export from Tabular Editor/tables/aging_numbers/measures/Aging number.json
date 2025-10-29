@@ -1,0 +1,6 @@
+{
+  "name": "Aging number",
+  "expression": "min(aging_numbers[months_fwd])",
+  "formatString": "0",
+  "lineageTag": "6fe6dc02-3f7e-4e3b-9ae1-5eb515318c06"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "next_hearing_date",
+  "dataType": "dateTime",
+  "sourceColumn": "next_hearing_date",
+  "formatString": "General Date",
+  "lineageTag": "9ebdcad5-8c7d-4e4e-98b9-5e441f2be058",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "370b8160-0044-4549-ada7-1e240f832fac",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_62ccc40e-2a6b-45f2-9a65-95ccb8fdfb43",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

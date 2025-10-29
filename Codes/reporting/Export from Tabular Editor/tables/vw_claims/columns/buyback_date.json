@@ -1,0 +1,29 @@
+{
+  "name": "buyback_date",
+  "dataType": "dateTime",
+  "sourceColumn": "buyback_date",
+  "formatString": "Long Date",
+  "lineageTag": "9b044e23-aead-4a7b-83bd-9e992bd0eb06",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "bbf4df88-ddd6-428b-9792-8889c7feb25c",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_adb45ce8-f46b-415c-8fcf-da2abae4d983",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "purchase_cf-143dc2b7-3c0d-4dfb-82ad-d3102dce3b5d",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "UNION( ",
+      "\t\t\t\tSELECTCOLUMNS( ",
+      "\t\t\t\t\tFILTER(",
+      "\t\t\t\t\t\tvw_portfolio_purchases,",
+      "\t\t\t\t\t\tNOT ISBLANK( vw_portfolio_purchases[purchase_date] ) && NOT ISBLANK( vw_portfolio_purchases[purchase_value] )",
+      "\t\t\t\t\t\t)",
+      "\t\t\t\t\t, \"investor\", vw_portfolio_purchases[investor]",
+      "\t\t\t\t\t, \"portfolio_purchase\", vw_portfolio_purchases[portfolio_purchase]",
+      "\t\t\t\t\t, \"cf_date\", DATE( YEAR(vw_portfolio_purchases[purchase_date]), MONTH(vw_portfolio_purchases[purchase_date]), DAY(vw_portfolio_purchases[purchase_date]) )",
+      "\t\t\t\t\t, \"cf_value\", - vw_portfolio_purchases[purchase_value] ",
+      "\t\t\t\t\t)",
+      "\t\t\t\t,",
+      "\t\t\t\tSELECTCOLUMNS(",
+      "\t\t\t\t\tFILTER(",
+      "\t\t\t\t\t\tvw_claimcollections,",
+      "\t\t\t\t\t\tNOT ISBLANK( RELATED( vw_collections[payment_date] ) ) && NOT ISBLANK( vw_claimcollections[assigned_value] )",
+      "\t\t\t\t\t\t)",
+      "\t\t\t\t\t, RELATED( vw_portfolio_purchases[investor] )",
+      "\t\t\t\t\t, RELATED( vw_portfolio_purchases[portfolio_purchase] )",
+      "\t\t\t\t\t, RELATED( vw_collections[payment_date] )",
+      "\t\t\t\t\t, vw_claimcollections[assigned_value]",
+      "\t\t\t\t\t)",
+      "\t\t\t\t)"
+    ]
+  }
+}

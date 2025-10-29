@@ -1,0 +1,14 @@
+{
+  "name": "lock_automation",
+  "dataType": "int64",
+  "sourceColumn": "lock_automation",
+  "formatString": "0",
+  "lineageTag": "6a23912c-0a78-4b34-8649-cf8157561407",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

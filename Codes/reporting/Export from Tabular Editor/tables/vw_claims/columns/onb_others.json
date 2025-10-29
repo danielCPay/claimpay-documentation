@@ -1,0 +1,13 @@
+{
+  "name": "onb_others",
+  "dataType": "string",
+  "sourceColumn": "onb_others",
+  "lineageTag": "f00ecd22-6a4e-47a1-8987-0f975276321b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Claim Write-Off",
+  "expression": "sum(vw_claims[write_off])",
+  "lineageTag": "02487b6f-f1d7-4768-97c4-ad8e8f77b89c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": 3507,
+    "user": "metabase",
+    "password": "meta!2022$",
+    "db": "metabase"
+}

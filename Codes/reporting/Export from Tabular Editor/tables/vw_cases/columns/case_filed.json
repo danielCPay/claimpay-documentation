@@ -1,0 +1,29 @@
+{
+  "name": "case_filed",
+  "dataType": "dateTime",
+  "sourceColumn": "case_filed",
+  "formatString": "Long Date",
+  "lineageTag": "3b3394e7-fc59-4de3-ac85-6e3b4e2c0ad0",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "a2c4e790-1337-4c09-ad5d-838b640aabdf",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_5cebe004-d491-4e20-aa47-634a40feb6bb",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

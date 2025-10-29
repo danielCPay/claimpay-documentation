@@ -1,0 +1,13 @@
+{
+  "name": "dummy_complaint",
+  "dataType": "string",
+  "sourceColumn": "dummy_complaint",
+  "lineageTag": "8048bd6e-7525-470d-9726-b52997426a3b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

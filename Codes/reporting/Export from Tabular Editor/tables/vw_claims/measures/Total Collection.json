@@ -1,0 +1,11 @@
+{
+  "name": "Total Collection",
+  "expression": "sum(vw_claims[total_collections])",
+  "lineageTag": "73fe64c7-a576-4474-ab2f-781359bf3fa5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

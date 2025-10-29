@@ -1,0 +1,8 @@
+{
+  "name": "3e742b29-5f1b-4b51-ac6e-655a78aaf28c",
+  "fromTable": "vw_claims",
+  "fromColumn": "policy_valid_to",
+  "toTable": "LocalDateTable_e1951cf9-c626-4cd1-8933-e8fb85855b9f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

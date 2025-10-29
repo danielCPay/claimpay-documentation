@@ -1,0 +1,13 @@
+{
+  "name": "ls_defense_status",
+  "dataType": "string",
+  "sourceColumn": "ls_defense_status",
+  "lineageTag": "80d737cb-04d6-4f94-b21a-c553122b388c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

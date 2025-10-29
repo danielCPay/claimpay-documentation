@@ -1,0 +1,8 @@
+{
+  "name": "ff78e365-80b2-4e94-afa2-972c9110ee35",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_expert_disco_set_served",
+  "toTable": "LocalDateTable_7f902f4f-8814-42bf-9826-2870f0a88d36",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

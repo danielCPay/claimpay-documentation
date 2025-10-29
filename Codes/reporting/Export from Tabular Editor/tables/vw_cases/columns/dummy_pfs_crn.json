@@ -1,0 +1,13 @@
+{
+  "name": "dummy_pfs_crn",
+  "dataType": "string",
+  "sourceColumn": "dummy_pfs_crn",
+  "lineageTag": "f3da13cc-01fd-421b-b0ae-ceff3cae4fad",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

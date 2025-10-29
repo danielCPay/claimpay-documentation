@@ -1,0 +1,17 @@
+{
+  "name": "typical_negotiated_reduction",
+  "dataType": "double",
+  "sourceColumn": "typical_negotiated_reduction",
+  "lineageTag": "c1d4a64a-82ee-4bb4-8984-b51ec4d12f49",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

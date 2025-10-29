@@ -1,0 +1,13 @@
+{
+  "name": "defendant_deposition_status",
+  "dataType": "string",
+  "sourceColumn": "defendant_deposition_status",
+  "lineageTag": "f26b8ec6-f162-4348-b19a-cd757d0a65c3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

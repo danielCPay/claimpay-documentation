@@ -1,0 +1,13 @@
+{
+  "name": "home_owner_signature",
+  "dataType": "string",
+  "sourceColumn": "home_owner_signature",
+  "lineageTag": "7e9c93d3-0cee-41c8-b9d8-fe3e643d18f9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

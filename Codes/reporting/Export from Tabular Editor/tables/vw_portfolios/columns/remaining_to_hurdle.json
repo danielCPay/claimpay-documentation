@@ -1,0 +1,17 @@
+{
+  "name": "remaining_to_hurdle",
+  "dataType": "double",
+  "sourceColumn": "remaining_to_hurdle",
+  "lineageTag": "9c89d890-77c3-40ab-b611-09c38a8aec4a",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

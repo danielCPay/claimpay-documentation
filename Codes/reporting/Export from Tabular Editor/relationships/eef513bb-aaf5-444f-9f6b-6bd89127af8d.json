@@ -1,0 +1,8 @@
+{
+  "name": "eef513bb-aaf5-444f-9f6b-6bd89127af8d",
+  "fromTable": "vw_providers",
+  "fromColumn": "date_of_license_to_do_business",
+  "toTable": "LocalDateTable_96fe52d1-0b9a-4389-a5eb-947df324f9ea",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

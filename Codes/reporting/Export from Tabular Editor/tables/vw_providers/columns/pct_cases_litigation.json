@@ -1,0 +1,17 @@
+{
+  "name": "pct_cases_litigation",
+  "dataType": "double",
+  "sourceColumn": "pct_cases_litigation",
+  "lineageTag": "cab8b6e6-8434-40c7-93bc-c3b1c37e0f11",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

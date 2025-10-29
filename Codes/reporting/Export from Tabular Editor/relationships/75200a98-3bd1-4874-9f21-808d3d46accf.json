@@ -1,0 +1,8 @@
+{
+  "name": "75200a98-3bd1-4874-9f21-808d3d46accf",
+  "fromTable": "vw_portfolios",
+  "fromColumn": "opened_date",
+  "toTable": "LocalDateTable_0b2d8d73-6408-47e1-b290-163f85c59f2a",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ps_2_disco_set_resp_received",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_2_disco_set_resp_received",
+  "formatString": "Long Date",
+  "lineageTag": "ebe63c5c-2298-4705-bcb8-db2f9de597c5",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "35f7ef77-8557-4a95-aabc-3ae205787b18",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_b328daf5-ebc9-4592-a7ae-2cbe30608290",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

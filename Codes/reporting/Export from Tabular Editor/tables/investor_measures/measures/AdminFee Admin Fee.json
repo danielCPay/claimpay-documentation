@@ -1,0 +1,22 @@
+{
+  "name": "AdminFee Admin Fee",
+  "expression": [
+    "CALCULATE( ",
+    "                    SUMX( purchase_aging, ",
+    "                        IF ( MIN(purchase_aging[months_fwd]) < 24, ",
+    "\t\t\t\t            [AdminFee Outstanding Deployment] / 3 * IF( [AdminFee Total 0.625 Admin Fee] <= 6000000, 0.00625, 0.005 ), ",
+    "\t\t\t\t            BLANK()",
+    "\t\t\t\t            ) )",
+    "                , FILTER( purchase_aging, purchase_aging[aging_to_date_eom] >= calendar_dates[Month Start] && purchase_aging[aging_to_date_eom] < calendar_dates[Month Start Next] ",
+    "                        --&& purchase_aging[aging_to_date_eom] <= EOMONTH( TODAY(), 2 ) ",
+    "                        )",
+    "                )"
+  ],
+  "lineageTag": "395f060c-40c9-403f-b361-c17b52283439",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

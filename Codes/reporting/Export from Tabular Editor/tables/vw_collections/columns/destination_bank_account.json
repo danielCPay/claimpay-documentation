@@ -1,0 +1,13 @@
+{
+  "name": "destination_bank_account",
+  "dataType": "string",
+  "sourceColumn": "destination_bank_account",
+  "lineageTag": "622f0f57-05af-411b-97f9-74694db0bebc",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "PerfFee Incremental IRR",
+  "expression": [
+    "CALCULATE([PerfFee CF IRR], \t",
+    "        \t\t\t\t\tFILTER( purchase_cf,",
+    "\t\t\t\t\t  \t\t\tpurchase_cf[portfolio_purchase] = MIN( purchase_aging[portfolio_purchase] ) ",
+    "\t\t\t\t\t\t \t\t&& purchase_cf[cf_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )",
+    "\t\t\t\t\t\t \t\t&& NOT( ISBLANK( purchase_cf[portfolio_purchase] ) ) ",
+    "\t\t\t\t\t\t \t\t&& NOT( ISBLANK( purchase_cf[cf_date] ) ) ",
+    "\t\t\t\t\t\t \t\t&& NOT( ISBLANK( purchase_cf[cf_value] ) ) ",
+    "\t\t\t\t\t\t \t\t&& purchase_cf[portfolio_purchase] = 1\t\t\t\t\t\t \t\t",
+    "\t\t\t\t\t\t  \t\t)",
+    "\t\t\t\t\t  \t\t)"
+  ],
+  "lineageTag": "efdae9c5-b209-4009-a16e-8880a5c343ef",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

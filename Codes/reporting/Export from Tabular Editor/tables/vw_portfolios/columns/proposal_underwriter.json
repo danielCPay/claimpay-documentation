@@ -1,0 +1,14 @@
+{
+  "name": "proposal_underwriter",
+  "dataType": "int64",
+  "sourceColumn": "proposal_underwriter",
+  "formatString": "0",
+  "lineageTag": "471ff8a0-3485-4fa3-b673-7e0e774031ec",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

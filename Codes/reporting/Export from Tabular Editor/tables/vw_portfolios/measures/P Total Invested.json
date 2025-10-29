@@ -1,0 +1,11 @@
+{
+  "name": "P Total Invested",
+  "expression": "sum(vw_portfolios[total_purchase_price])",
+  "lineageTag": "8c5ca985-7d03-481a-ad81-98c4e3de1674",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

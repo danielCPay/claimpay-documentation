@@ -1,0 +1,17 @@
+{
+  "name": "total_value_of_rejected_claims",
+  "dataType": "double",
+  "sourceColumn": "total_value_of_rejected_claims",
+  "lineageTag": "56264901-7a45-483c-81c8-2f258e780fde",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

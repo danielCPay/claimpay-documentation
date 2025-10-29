@@ -1,0 +1,17 @@
+{
+  "name": "total_pre_suit_collections",
+  "dataType": "double",
+  "sourceColumn": "total_pre_suit_collections",
+  "lineageTag": "1a9e694f-c339-493a-8f2b-c3418b123f44",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

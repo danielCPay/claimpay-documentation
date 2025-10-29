@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_0eea98c0-961e-4acf-a3e9-1570febeb4ad-a184025a-cf84-4107-88b5-6a9fd996eb70",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('Purchase Periods'[Date])), 1, 1), Date(Year(MAX('Purchase Periods'[Date])), 12, 31))"
+  }
+}

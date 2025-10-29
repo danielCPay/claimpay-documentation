@@ -1,0 +1,8 @@
+{
+  "name": "e009324a-ec35-4162-b804-1736661b90e6",
+  "fromTable": "vw_cases",
+  "fromColumn": "policy_valid_from",
+  "toTable": "LocalDateTable_a0eff82e-c316-45b7-a60c-ac4d9ef6486f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

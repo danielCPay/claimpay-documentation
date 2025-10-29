@@ -1,0 +1,14 @@
+{
+  "name": "engineer",
+  "dataType": "int64",
+  "sourceColumn": "engineer",
+  "formatString": "0",
+  "lineageTag": "2eb88a16-36c1-4328-8c16-7b7bd26fe9cc",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

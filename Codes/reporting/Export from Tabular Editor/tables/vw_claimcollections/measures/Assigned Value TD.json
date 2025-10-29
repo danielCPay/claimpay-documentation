@@ -1,0 +1,11 @@
+{
+  "name": "Assigned Value TD",
+  "expression": "CALCULATE([Assigned Value], filter(vw_collections, [payment_date]<=  [Aging to date] ))",
+  "lineageTag": "360a3c40-0485-40d8-a613-893e1fde915d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_dcf713bb-a2ce-4a4e-bf59-023b42ec1699-797ebf84-638a-461c-881f-1088e245e96f",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_claims'[underwriting_started_time])), 1, 1), Date(Year(MAX('vw_claims'[underwriting_started_time])), 12, 31))"
+  }
+}

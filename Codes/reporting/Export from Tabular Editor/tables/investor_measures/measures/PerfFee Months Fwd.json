@@ -1,0 +1,6 @@
+{
+  "name": "PerfFee Months Fwd",
+  "expression": "MIN( purchase_aging[aging_start_month] )",
+  "formatString": "General Date",
+  "lineageTag": "85d6a33a-c53e-4a47-aa91-ce3f60a00421"
+}

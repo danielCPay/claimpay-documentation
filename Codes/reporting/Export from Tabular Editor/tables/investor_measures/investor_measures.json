@@ -1,0 +1,10 @@
+{
+  "name": "investor_measures",
+  "lineageTag": "f7ed792e-e813-4547-a2a4-6d7ade13f494",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

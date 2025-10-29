@@ -1,0 +1,29 @@
+{
+  "name": "safe_harbor_letter_received",
+  "dataType": "dateTime",
+  "sourceColumn": "safe_harbor_letter_received",
+  "formatString": "Long Date",
+  "lineageTag": "ba1e34d3-ca59-4f43-8954-fd71820d7a67",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "18f71316-7eb6-49b2-8581-4e39570a7813",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_f365d95f-50f4-4fcc-8ad8-d57064da9536",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

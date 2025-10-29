@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Profit",
+  "expression": "sum(vw_portfolios[total_profit])",
+  "lineageTag": "389a2662-b151-4501-86a0-122004d2b7cb",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

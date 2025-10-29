@@ -1,0 +1,17 @@
+{
+  "name": "total_claim_value",
+  "dataType": "double",
+  "sourceColumn": "total_claim_value",
+  "lineageTag": "ec598c76-8503-41ef-b0c6-46c49916b328",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

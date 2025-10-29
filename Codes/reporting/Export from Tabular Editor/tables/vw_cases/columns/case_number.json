@@ -1,0 +1,13 @@
+{
+  "name": "case_number",
+  "dataType": "string",
+  "sourceColumn": "case_number",
+  "lineageTag": "950269d5-d9e0-47f3-af71-fcb352bfb72e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

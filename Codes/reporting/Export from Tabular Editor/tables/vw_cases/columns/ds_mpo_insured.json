@@ -1,0 +1,29 @@
+{
+  "name": "ds_mpo_insured",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_mpo_insured",
+  "formatString": "Long Date",
+  "lineageTag": "098e4496-266d-4866-88a5-255bbc4ded4a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "1417ffe1-1328-48fc-8561-640706e485bc",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_435205d7-6854-4c23-8fad-93f55500c7ad",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

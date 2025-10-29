@@ -1,0 +1,8 @@
+{
+  "name": "eaf1818d-2b3e-4b3e-8eeb-cbedd478220b",
+  "fromTable": "vw_investors_portfolio",
+  "fromColumn": "createdtime",
+  "toTable": "LocalDateTable_fb2a3152-8eb0-404a-9b24-2216bee75604",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

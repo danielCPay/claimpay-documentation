@@ -1,0 +1,25 @@
+{
+  "name": "purchased_time",
+  "dataType": "dateTime",
+  "sourceColumn": "purchased_time",
+  "formatString": "General Date",
+  "lineageTag": "3e3dd32a-6be4-45bf-8530-440418968074",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0a389225-76dd-44e7-9a28-53c716461d10",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_7e81376c-cd23-43be-9259-75da4da597a8",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

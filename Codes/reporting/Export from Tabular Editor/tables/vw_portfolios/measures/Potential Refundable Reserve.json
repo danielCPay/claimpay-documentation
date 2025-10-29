@@ -1,0 +1,11 @@
+{
+  "name": "Potential Refundable Reserve",
+  "expression": "[Portfolio Adjusted Value] - [Portfolio Hurdle]",
+  "lineageTag": "5575cbc4-5706-4fc4-b150-fc54b3f86d72",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

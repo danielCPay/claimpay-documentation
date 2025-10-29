@@ -1,0 +1,13 @@
+{
+  "name": "lop_on_file",
+  "dataType": "string",
+  "sourceColumn": "lop_on_file",
+  "lineageTag": "964640ef-ac1d-4e07-a6b2-450cbd9c1d3a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

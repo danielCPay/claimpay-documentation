@@ -1,0 +1,10 @@
+{
+  "name": "vw_insureds",
+  "lineageTag": "2ab0149d-d311-404e-b4b2-5d2f9018a165",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

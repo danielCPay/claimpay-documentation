@@ -1,0 +1,10 @@
+{
+  "name": "vw_cases",
+  "lineageTag": "eb1491bd-e00a-4eb6-8ebd-0ba77053fae1",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

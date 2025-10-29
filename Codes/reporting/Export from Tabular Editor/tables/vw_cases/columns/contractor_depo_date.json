@@ -1,0 +1,25 @@
+{
+  "name": "contractor_depo_date",
+  "dataType": "dateTime",
+  "sourceColumn": "contractor_depo_date",
+  "formatString": "General Date",
+  "lineageTag": "39686d10-8ab5-4f7c-9642-0f86a86831db",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e2f82a87-9795-4d5b-a0d1-88f41f701ca2",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_277df6f0-0a04-4687-8629-fba3e55fa046",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

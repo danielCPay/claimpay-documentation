@@ -1,0 +1,8 @@
+{
+  "name": "fcfa8303-b977-41df-ab04-37a1592af79d",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "funded_date",
+  "toTable": "LocalDateTable_a97c9716-3885-483e-b15b-e27f23a51e88",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

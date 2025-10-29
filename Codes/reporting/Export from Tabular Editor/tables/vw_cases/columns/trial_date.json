@@ -1,0 +1,25 @@
+{
+  "name": "trial_date",
+  "dataType": "dateTime",
+  "sourceColumn": "trial_date",
+  "formatString": "General Date",
+  "lineageTag": "79de40b3-f0a7-4f4d-9005-1fe9e748f533",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f3a3b8e3-876d-40bf-8aee-e3c906086bf1",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_335233ce-736d-4753-9143-12eae8c7de8e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

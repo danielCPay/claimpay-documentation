@@ -1,0 +1,20 @@
+{
+  "name": "DeplFee Roll Forward Amount",
+  "expression": [
+    "",
+    "\t\tIF ( [DeplFee Calculated Deployment Fee] > [DeplFee Maximum Factor Fee] && [DeplFee Calculated Deployment Fee] > [DeplFee Capped Factor Fee], ",
+    "\t\t\t\t[DeplFee Capped Deployment Fee] - [DeplFee Maximum Factor Fee], ",
+    "\t\t\t\tIF ( [DeplFee Calculated Deployment Fee] < [DeplFee Maximum Factor Fee] && [DeplFee Calculated Deployment Fee] > [DeplFee Capped Factor Fee], ",
+    "\t\t\t\t\t[DeplFee Capped Factor Fee] - [DeplFee Calculated Deployment Fee], ",
+    "\t\t\t\t\t[DeplFee Capped Factor Fee] - [DeplFee Calculated Deployment Fee]",
+    "\t\t\t\t\t)",
+    "\t\t\t\t)"
+  ],
+  "lineageTag": "5fb38b04-fd33-4844-8f6e-5341d0b7e9a9",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

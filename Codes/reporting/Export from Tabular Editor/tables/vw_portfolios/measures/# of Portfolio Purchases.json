@@ -1,0 +1,6 @@
+{
+  "name": "# of Portfolio Purchases",
+  "expression": "count(vw_portfolio_purchases[Portfolio Purchase Name])",
+  "formatString": "0",
+  "lineageTag": "90c40100-fc2f-443e-b8f1-6f1a16e13367"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "noi_filed",
+  "dataType": "dateTime",
+  "sourceColumn": "noi_filed",
+  "formatString": "Long Date",
+  "lineageTag": "47ddce68-a56b-4704-b42c-f2aeaf02b2a7",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "2d1c59da-08dc-4a4a-bc8c-475d687fd9c2",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_c41219b6-9e3a-4d1b-8a53-14b9aff7c9f8",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

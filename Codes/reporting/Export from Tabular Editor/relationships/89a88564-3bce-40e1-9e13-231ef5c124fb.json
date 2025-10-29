@@ -1,0 +1,8 @@
+{
+  "name": "89a88564-3bce-40e1-9e13-231ef5c124fb",
+  "fromTable": "vw_cases",
+  "fromColumn": "crn_filed",
+  "toTable": "LocalDateTable_9211bed7-2d61-4384-b6f6-0d9e9e12b1c0",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

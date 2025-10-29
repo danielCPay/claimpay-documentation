@@ -1,0 +1,29 @@
+{
+  "name": "arbitration_date",
+  "dataType": "dateTime",
+  "sourceColumn": "arbitration_date",
+  "formatString": "Long Date",
+  "lineageTag": "81f55ad7-c3a7-452d-988e-48a60ab7a6b0",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "df2df74f-834d-4722-846d-3ad803f66f9a",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_53f83e2b-49ea-443b-8158-c0bb52b0f75d",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

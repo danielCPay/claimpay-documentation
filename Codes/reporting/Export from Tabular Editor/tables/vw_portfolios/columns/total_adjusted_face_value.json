@@ -1,0 +1,17 @@
+{
+  "name": "total_adjusted_face_value",
+  "dataType": "double",
+  "sourceColumn": "total_adjusted_face_value",
+  "lineageTag": "3b42ed10-74f7-4d2f-aafc-9daf87ebe0f2",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

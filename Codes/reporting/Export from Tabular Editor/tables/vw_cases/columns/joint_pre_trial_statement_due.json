@@ -1,0 +1,25 @@
+{
+  "name": "joint_pre_trial_statement_due",
+  "dataType": "dateTime",
+  "sourceColumn": "joint_pre_trial_statement_due",
+  "formatString": "General Date",
+  "lineageTag": "6cef8c2e-5696-4085-b38b-c2daf0d62527",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "4237960d-48c8-4882-8ec6-cd9a2216b96e",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_301653f4-7ae5-4db8-96b9-1b87348f2113",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "motion_to_dismiss",
+  "dataType": "dateTime",
+  "sourceColumn": "motion_to_dismiss",
+  "formatString": "Long Date",
+  "lineageTag": "159708e5-65e9-4b72-97f1-ef74eb3155c1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "c2fa555b-a0fc-40dd-a404-a3e94fcbaaca",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_d75d6fbd-6e8a-4948-871c-9562bc14d56c",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

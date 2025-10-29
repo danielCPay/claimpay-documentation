@@ -1,0 +1,25 @@
+{
+  "name": "createdtime",
+  "dataType": "dateTime",
+  "sourceColumn": "createdtime",
+  "formatString": "General Date",
+  "lineageTag": "8b8d695c-7cfd-4ce8-ab7b-4fa09f940bfc",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "2d30ca01-5042-4503-923a-9f40f254b40d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_d8fb36be-26c0-43e8-84f2-0d326dded54d",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

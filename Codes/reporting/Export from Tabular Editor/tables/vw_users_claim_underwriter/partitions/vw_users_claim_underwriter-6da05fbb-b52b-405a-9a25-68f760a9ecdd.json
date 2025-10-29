@@ -1,0 +1,14 @@
+{
+  "name": "vw_users_claim_underwriter-6da05fbb-b52b-405a-9a25-68f760a9ecdd",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = vw_users,",
+      "    #\"Renamed Columns\" = Table.RenameColumns(Source,{{\"user_full_name\", \"Claim Underwriter\"}})",
+      "in",
+      "    #\"Renamed Columns\""
+    ]
+  }
+}

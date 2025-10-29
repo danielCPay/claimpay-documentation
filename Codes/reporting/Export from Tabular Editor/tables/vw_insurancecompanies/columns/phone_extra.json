@@ -1,0 +1,13 @@
+{
+  "name": "phone_extra",
+  "dataType": "string",
+  "sourceColumn": "phone_extra",
+  "lineageTag": "a2d464b6-9993-4b1a-93d8-3032b301c675",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

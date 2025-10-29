@@ -1,0 +1,8 @@
+{
+  "name": "41973344-0a3a-4b4a-bab7-3c3b6b91ad6d",
+  "fromTable": "calendar_dates",
+  "fromColumn": "Date",
+  "toTable": "LocalDateTable_70df5943-a601-4f78-ac71-a5a1db5e9d4a",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

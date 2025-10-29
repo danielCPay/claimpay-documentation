@@ -1,0 +1,8 @@
+{
+  "name": "2d324d8d-18d7-4f2a-8e03-1fa769cb79a2",
+  "fromTable": "vw_claims",
+  "fromColumn": "underwritten_time",
+  "toTable": "LocalDateTable_02e2b784-868f-4a61-92f6-e1b03cefaa11",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

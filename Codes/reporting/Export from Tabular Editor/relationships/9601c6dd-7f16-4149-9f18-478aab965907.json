@@ -1,0 +1,8 @@
+{
+  "name": "9601c6dd-7f16-4149-9f18-478aab965907",
+  "fromTable": "vw_cases",
+  "fromColumn": "calendar_call",
+  "toTable": "LocalDateTable_095d441f-1fb3-4fc5-a195-e0733586627c",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

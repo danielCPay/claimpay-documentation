@@ -1,0 +1,13 @@
+{
+  "name": "pfs_crn_57_105_status",
+  "dataType": "string",
+  "sourceColumn": "pfs_crn_57_105_status",
+  "lineageTag": "502489aa-c304-488c-8c37-04d06b2860e0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "% Collected",
+  "expression": "[Total Collection]/([Total Invested])",
+  "formatString": "0.00%;-0.00%;0.00%",
+  "lineageTag": "61e2984d-a856-4acf-a4f6-5941d3686999",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

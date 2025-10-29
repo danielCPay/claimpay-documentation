@@ -1,0 +1,8 @@
+{
+  "name": "4406258b-3ebe-46c3-a28b-77025c4fa3af",
+  "fromTable": "vw_cases",
+  "fromColumn": "ls_defense_status_date",
+  "toTable": "LocalDateTable_565b9869-c926-4526-a2ae-03b16754e933",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

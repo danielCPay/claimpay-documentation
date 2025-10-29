@@ -1,0 +1,13 @@
+{
+  "name": "contact_person",
+  "dataType": "string",
+  "sourceColumn": "contact_person",
+  "lineageTag": "e2b1f6e5-5910-4007-83e9-620a174ee8fe",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ds_expert_disco_set_received",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_expert_disco_set_received",
+  "formatString": "Long Date",
+  "lineageTag": "9cd610a0-923a-4c35-9d69-3481e8f030d1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "63ca8c27-9485-493c-819f-fd3a516da22c",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_5b955d3f-af1e-4705-afe2-109c95c5c76a",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

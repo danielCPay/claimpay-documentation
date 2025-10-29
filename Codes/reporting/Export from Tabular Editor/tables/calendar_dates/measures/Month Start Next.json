@@ -1,0 +1,6 @@
+{
+  "name": "Month Start Next",
+  "expression": "MAX( calendar_dates[month_end] ) + 1",
+  "formatString": "General Date",
+  "lineageTag": "bcb10c3e-4921-489e-9656-1617a2fdf1ec"
+}

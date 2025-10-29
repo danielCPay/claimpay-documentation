@@ -1,0 +1,25 @@
+{
+  "name": "corp_rep_depo_date",
+  "dataType": "dateTime",
+  "sourceColumn": "corp_rep_depo_date",
+  "formatString": "General Date",
+  "lineageTag": "3f1a3751-3543-4db5-b6a7-e3154bf83a81",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "520fcfd8-a32f-4d10-8c85-315c02b38a24",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_3eb67d6c-fd98-4f79-83e8-b7dc278eea4b",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

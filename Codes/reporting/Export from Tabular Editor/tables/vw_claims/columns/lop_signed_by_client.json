@@ -1,0 +1,13 @@
+{
+  "name": "lop_signed_by_client",
+  "dataType": "string",
+  "sourceColumn": "lop_signed_by_client",
+  "lineageTag": "5a2f9862-01aa-4d6b-8c04-d290ed251215",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

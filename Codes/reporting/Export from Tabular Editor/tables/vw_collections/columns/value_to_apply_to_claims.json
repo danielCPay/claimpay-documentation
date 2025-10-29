@@ -1,0 +1,17 @@
+{
+  "name": "value_to_apply_to_claims",
+  "dataType": "double",
+  "sourceColumn": "value_to_apply_to_claims",
+  "lineageTag": "88fb88bc-ff3c-4f32-ab8d-6b43c38fef0d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

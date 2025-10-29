@@ -1,0 +1,17 @@
+{
+  "name": "value",
+  "dataType": "double",
+  "sourceColumn": "value",
+  "lineageTag": "1e32daee-4a69-40d1-893b-fa63ade2cc55",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

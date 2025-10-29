@@ -1,0 +1,25 @@
+{
+  "name": "insured_depo_date_pd",
+  "dataType": "dateTime",
+  "sourceColumn": "insured_depo_date_pd",
+  "formatString": "General Date",
+  "lineageTag": "a6777904-decb-408f-8350-3b6c9a1f3457",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "20d932bb-b424-4d6a-b577-ab5fc5380879",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_8bd5af10-5f85-4898-a222-ef661658e1b8",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

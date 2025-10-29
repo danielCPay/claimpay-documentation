@@ -1,0 +1,17 @@
+{
+  "name": "total_pmc_collections",
+  "dataType": "double",
+  "sourceColumn": "total_pmc_collections",
+  "lineageTag": "421ef355-9b8a-4830-be92-9c803ee2f808",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

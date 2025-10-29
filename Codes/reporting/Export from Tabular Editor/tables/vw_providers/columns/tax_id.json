@@ -1,0 +1,13 @@
+{
+  "name": "tax_id",
+  "dataType": "string",
+  "sourceColumn": "tax_id",
+  "lineageTag": "aa157aef-cb7f-4c37-8213-3e9f000061da",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Adjusted Face Value",
+  "expression": "sum(vw_claims[adjusted_face_value])",
+  "lineageTag": "b3ea6ce2-23eb-43fb-a322-312e2a8ec31a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

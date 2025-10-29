@@ -1,0 +1,14 @@
+{
+  "name": "days_apart_dofn_aob",
+  "dataType": "int64",
+  "sourceColumn": "days_apart_dofn_aob",
+  "formatString": "0",
+  "lineageTag": "cf3be99e-d09c-4361-8a71-3c23b2896f90",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

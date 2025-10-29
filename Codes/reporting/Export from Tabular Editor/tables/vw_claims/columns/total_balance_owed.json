@@ -1,0 +1,17 @@
+{
+  "name": "total_balance_owed",
+  "dataType": "double",
+  "sourceColumn": "total_balance_owed",
+  "lineageTag": "4dbdc999-1dda-4c25-9afd-1d14182e70d7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

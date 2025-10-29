@@ -1,0 +1,13 @@
+{
+  "name": "provider_status",
+  "dataType": "string",
+  "sourceColumn": "provider_status",
+  "lineageTag": "89cd88ab-bbd9-4970-accd-1dbdc6f46ace",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

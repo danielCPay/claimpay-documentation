@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio ID",
+  "dataType": "string",
+  "sourceColumn": "Portfolio ID",
+  "lineageTag": "0f3226b2-ecea-4ab2-8f99-288bdeffdf6b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

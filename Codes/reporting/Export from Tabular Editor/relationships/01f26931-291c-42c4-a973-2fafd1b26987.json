@@ -1,0 +1,8 @@
+{
+  "name": "01f26931-291c-42c4-a973-2fafd1b26987",
+  "fromTable": "vw_cases",
+  "fromColumn": "executed_release_sent_to_oc",
+  "toTable": "LocalDateTable_5feef7bf-4cd1-49da-9dfc-b5443ec0f6af",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

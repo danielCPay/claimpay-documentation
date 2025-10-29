@@ -1,0 +1,13 @@
+{
+  "name": "pmc_case_id",
+  "dataType": "string",
+  "sourceColumn": "pmc_case_id",
+  "lineageTag": "165d423b-6723-4a40-a324-8959ece1257c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

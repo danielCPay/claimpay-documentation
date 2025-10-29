@@ -1,0 +1,15 @@
+{
+  "type": "calculated",
+  "name": "investor_purchase_month",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "expression": "CONCATENATE( vw_portfolio_purchases[investor], CONCATENATE( \"-\",  CONCATENATE( YEAR(vw_portfolio_purchases[purchase_date]), CONCATENATE( \".\", MONTH(vw_portfolio_purchases[purchase_date]) ) ) ) ) ",
+  "lineageTag": "87d7c485-d71f-4fd6-a23f-642863206b2d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

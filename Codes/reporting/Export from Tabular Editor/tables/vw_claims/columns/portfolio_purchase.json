@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_purchase",
+  "dataType": "int64",
+  "sourceColumn": "portfolio_purchase",
+  "formatString": "0",
+  "lineageTag": "1331e9d0-d4ae-4ce0-8408-f3b415b4d771",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

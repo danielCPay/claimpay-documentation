@@ -1,0 +1,8 @@
+{
+  "name": "18f71316-7eb6-49b2-8581-4e39570a7813",
+  "fromTable": "vw_cases",
+  "fromColumn": "safe_harbor_letter_received",
+  "toTable": "LocalDateTable_f365d95f-50f4-4fcc-8ad8-d57064da9536",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

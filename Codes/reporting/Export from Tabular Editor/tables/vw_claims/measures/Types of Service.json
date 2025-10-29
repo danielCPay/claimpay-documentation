@@ -1,0 +1,5 @@
+{
+  "name": "Types of Service",
+  "expression": "CALCULATE(CONCATENATEX(DISTINCT('vw_claims'[types_of_services]),'vw_claims'[types_of_services],\", \"))",
+  "lineageTag": "75edf692-1ece-4025-9c70-fbd1ecbe5725"
+}

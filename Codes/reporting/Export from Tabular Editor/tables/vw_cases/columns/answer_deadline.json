@@ -1,0 +1,29 @@
+{
+  "name": "answer_deadline",
+  "dataType": "dateTime",
+  "sourceColumn": "answer_deadline",
+  "formatString": "Long Date",
+  "lineageTag": "b3a2daac-b624-4391-8edb-9745934ea0b5",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "bbd2ab22-a666-4edf-a9bf-226fae9380ec",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_66c5544b-4d89-49f4-abb7-d21624b939aa",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

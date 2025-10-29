@@ -1,0 +1,1026 @@
+<!doctype html><html lang="en"><head></head><body>
+
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <dark-mode permanent="true" style="position: fixed; top: 8px; left: 10px; z-index: 999;" dark="Dark" light="Light"></dark-mode><script>const t=document;const e="_dark_mode_theme_";const s="permanent";const o="colorschemechange";const i="permanentcolorscheme";const h="light";const r="dark";const n=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){const t=this.getAttribute(e);return t===null?"":t},set(t){this.setAttribute(e,t)}})};const c=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){return this.hasAttribute(e)},set(t){if(t){this.setAttribute(e,"")}else{this.removeAttribute(e)}}})};class a extends HTMLElement{static get observedAttributes(){return["mode",h,r,s]}LOCAL_NANE=e;constructor(){super();this.t()}connectedCallback(){n(this,"mode");n(this,r);n(this,h);c(this,s);const a=localStorage.getItem(e);if(a&&[h,r].includes(a)){this.mode=a;this.permanent=true}if(this.permanent&&!a){localStorage.setItem(e,this.mode)}const l=[h,r].includes(a);if(this.permanent&&a){this.o()}else{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){this.mode=r;this.o()}if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches){this.mode=h;this.o()}}if(!this.permanent&&!l){window.matchMedia("(prefers-color-scheme: light)").onchange=t=>{this.mode=t.matches?h:r;this.o()};window.matchMedia("(prefers-color-scheme: dark)").onchange=t=>{this.mode=t.matches?r:h;this.o()}}const d=new MutationObserver(((s,h)=>{this.mode=t.documentElement.dataset.colorMode;if(this.permanent&&l){localStorage.setItem(e,this.mode);this.i(i,{permanent:this.permanent})}this.h();this.i(o,{colorScheme:this.mode})}));d.observe(t.documentElement,{attributes:true});this.i(o,{colorScheme:this.mode});this.h()}attributeChangedCallback(t,s,o){if(t==="mode"&&s!==o&&[h,r].includes(o)){const t=localStorage.getItem(e);if(this.mode===t){this.mode=o;this.h();this.o()}else if(this.mode&&this.mode!==t){this.h();this.o()}}else if((t===h||t===r)&&s!==o){this.h()}if(t==="permanent"&&typeof this.permanent==="boolean"){this.permanent?localStorage.setItem(e,this.mode):localStorage.removeItem(e)}}o(){t.documentElement.setAttribute("data-color-mode",this.mode)}h(){this.icon.textContent=this.mode===h?"🌒":"🌞";this.text.textContent=this.mode===h?this.getAttribute(r):this.getAttribute(h)}t(){var s=this.attachShadow({mode:"open"});this.label=t.createElement("span");this.label.setAttribute("class","wrapper");this.label.onclick=()=>{this.mode=this.mode===h?r:h;if(this.permanent){localStorage.setItem(e,this.mode)}this.o();this.h()};s.appendChild(this.label);this.icon=t.createElement("span");this.label.appendChild(this.icon);this.text=t.createElement("span");this.label.appendChild(this.text);const o=`
+[data-color-mode*='dark'], [data-color-mode*='dark'] body {
+  color-scheme: dark;
+  --color-theme-bg: #0d1117;
+  --color-theme-text: #c9d1d9;
+  background-color: var(--color-theme-bg);
+  color: var(--color-theme-text);
+}
+
+[data-color-mode*='light'], [data-color-mode*='light'] body {
+  color-scheme: light;
+  --color-theme-bg: #fff;
+  --color-theme-text: #24292f;
+  background-color: var(--color-theme-bg);
+  color: var(--color-theme-text);
+}`;const i="_dark_mode_style_";const n=t.getElementById(i);if(!n){var c=t.createElement("style");c.id=i;c.textContent=o;t.head.appendChild(c)}var a=t.createElement("style");a.textContent=`
+    .wrapper { cursor: pointer; user-select: none; position: relative; }
+    .wrapper > span + span { margin-left: .4rem; }
+    `;s.appendChild(a)}i(t,e){this.dispatchEvent(new CustomEvent(t,{bubbles:true,composed:true,detail:e}))}}customElements.define("dark-mode",a);</script><script>const __TEMPLATE__ = document.createElement('template');
+__TEMPLATE__.innerHTML = `
+<style>
+
+markdown-style h1:hover a.anchor .octicon-link:before,
+markdown-style h2:hover a.anchor .octicon-link:before,
+markdown-style h3:hover a.anchor .octicon-link:before,
+markdown-style h4:hover a.anchor .octicon-link:before,
+markdown-style h5:hover a.anchor .octicon-link:before,
+markdown-style h6:hover a.anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+[data-color-mode*='light'], [data-color-mode*='light'] body, markdown-style[theme*='light'] { --color-prettylights-syntax-comment: #6e7781; --color-prettylights-syntax-constant: #0550ae; --color-prettylights-syntax-entity: #8250df; --color-prettylights-syntax-storage-modifier-import: #24292f; --color-prettylights-syntax-entity-tag: #116329; --color-prettylights-syntax-keyword: #cf222e; --color-prettylights-syntax-string: #0a3069; --color-prettylights-syntax-variable: #953800; --color-prettylights-syntax-brackethighlighter-unmatched: #82071e; --color-prettylights-syntax-invalid-illegal-text: #f6f8fa; --color-prettylights-syntax-invalid-illegal-bg: #82071e; --color-prettylights-syntax-carriage-return-text: #f6f8fa; --color-prettylights-syntax-carriage-return-bg: #cf222e; --color-prettylights-syntax-string-regexp: #116329; --color-prettylights-syntax-markup-list: #3b2300; --color-prettylights-syntax-markup-heading: #0550ae; --color-prettylights-syntax-markup-italic: #24292f; --color-prettylights-syntax-markup-bold: #24292f; --color-prettylights-syntax-markup-deleted-text: #82071e; --color-prettylights-syntax-markup-deleted-bg: #FFEBE9; --color-prettylights-syntax-markup-inserted-text: #116329; --color-prettylights-syntax-markup-inserted-bg: #dafbe1; --color-prettylights-syntax-markup-changed-text: #953800; --color-prettylights-syntax-markup-changed-bg: #ffd8b5; --color-prettylights-syntax-markup-ignored-text: #eaeef2; --color-prettylights-syntax-markup-ignored-bg: #0550ae; --color-prettylights-syntax-meta-diff-range: #8250df; --color-prettylights-syntax-brackethighlighter-angle: #57606a; --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f; --color-prettylights-syntax-constant-other-reference-link: #0a3069; --color-fg-default: #24292f; --color-fg-muted: #57606a; --color-fg-subtle: #6e7781; --color-canvas-default: #ffffff; --color-canvas-subtle: #f6f8fa; --color-border-default: #d0d7de; --color-border-muted: hsla(210,18%,87%,1); --color-neutral-muted: rgba(175,184,193,0.2); --color-accent-fg: #0969da; --color-accent-emphasis: #0969da; --color-attention-subtle: #fff8c5; --color-danger-fg: #cf222e; } [data-color-mode*='dark'], [data-color-mode*='dark'] body, markdown-style[theme*='dark'] { --color-prettylights-syntax-comment: #8b949e; --color-prettylights-syntax-constant: #79c0ff; --color-prettylights-syntax-entity: #d2a8ff; --color-prettylights-syntax-storage-modifier-import: #c9d1d9; --color-prettylights-syntax-entity-tag: #7ee787; --color-prettylights-syntax-keyword: #ff7b72; --color-prettylights-syntax-string: #a5d6ff; --color-prettylights-syntax-variable: #ffa657; --color-prettylights-syntax-brackethighlighter-unmatched: #f85149; --color-prettylights-syntax-invalid-illegal-text: #f0f6fc; --color-prettylights-syntax-invalid-illegal-bg: #8e1519; --color-prettylights-syntax-carriage-return-text: #f0f6fc; --color-prettylights-syntax-carriage-return-bg: #b62324; --color-prettylights-syntax-string-regexp: #7ee787; --color-prettylights-syntax-markup-list: #f2cc60; --color-prettylights-syntax-markup-heading: #1f6feb; --color-prettylights-syntax-markup-italic: #c9d1d9; --color-prettylights-syntax-markup-bold: #c9d1d9; --color-prettylights-syntax-markup-deleted-text: #ffdcd7; --color-prettylights-syntax-markup-deleted-bg: #67060c; --color-prettylights-syntax-markup-inserted-text: #aff5b4; --color-prettylights-syntax-markup-inserted-bg: #033a16; --color-prettylights-syntax-markup-changed-text: #ffdfb6; --color-prettylights-syntax-markup-changed-bg: #5a1e02; --color-prettylights-syntax-markup-ignored-text: #c9d1d9; --color-prettylights-syntax-markup-ignored-bg: #1158c7; --color-prettylights-syntax-meta-diff-range: #d2a8ff; --color-prettylights-syntax-brackethighlighter-angle: #8b949e; --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58; --color-prettylights-syntax-constant-other-reference-link: #a5d6ff; --color-fg-default: #c9d1d9; --color-fg-muted: #8b949e; --color-fg-subtle: #484f58; --color-canvas-default: #0d1117; --color-canvas-subtle: #161b22; --color-border-default: #30363d; --color-border-muted: #21262d; --color-neutral-muted: rgba(110,118,129,0.4); --color-accent-fg: #58a6ff; --color-accent-emphasis: #1f6feb; --color-attention-subtle: rgba(187,128,9,0.15); --color-danger-fg: #f85149; } markdown-style { display: block; -webkit-text-size-adjust: 100%; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; font-size: 16px; line-height: 1.5; word-wrap: break-word; color: var(--color-fg-default); background-color: var(--color-canvas-default); } markdown-style details, markdown-style figcaption, markdown-style figure { display: block; } markdown-style summary { display: list-item; } markdown-style [hidden] { display: none !important; } markdown-style a { background-color: transparent; color: var(--color-accent-fg); text-decoration: none; } markdown-style a:active, markdown-style a:hover { outline-width: 0; } markdown-style abbr[title] { border-bottom: none; text-decoration: underline dotted; } markdown-style b, markdown-style strong { font-weight: 600; } markdown-style dfn { font-style: italic; } markdown-style h1 { margin: .67em 0; font-weight: 600; padding-bottom: .3em; font-size: 2em; border-bottom: 1px solid var(--color-border-muted); } markdown-style mark { background-color: var(--color-attention-subtle); color: var(--color-text-primary); } markdown-style small { font-size: 90%; } markdown-style sub, markdown-style sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; } markdown-style sub { bottom: -0.25em; } markdown-style sup { top: -0.5em; } markdown-style img { border-style: none; max-width: 100%; box-sizing: content-box; background-color: var(--color-canvas-default); } markdown-style code, markdown-style kbd, markdown-style pre, markdown-style samp { font-family: monospace,monospace; font-size: 1em; } markdown-style figure { margin: 1em 40px; } markdown-style hr { box-sizing: content-box; overflow: hidden; background: transparent; border-bottom: 1px solid var(--color-border-muted); height: .25em; padding: 0; margin: 24px 0; background-color: var(--color-border-default); border: 0; } markdown-style input { font: inherit; margin: 0; overflow: visible; font-family: inherit; font-size: inherit; line-height: inherit; } markdown-style [type=button], markdown-style [type=reset], markdown-style [type=submit] { -webkit-appearance: button; } markdown-style [type=button]::-moz-focus-inner, markdown-style [type=reset]::-moz-focus-inner, markdown-style [type=submit]::-moz-focus-inner { border-style: none; padding: 0; } markdown-style [type=button]:-moz-focusring, markdown-style [type=reset]:-moz-focusring, markdown-style [type=submit]:-moz-focusring { outline: 1px dotted ButtonText; } markdown-style [type=checkbox], markdown-style [type=radio] { box-sizing: border-box; padding: 0; } markdown-style [type=number]::-webkit-inner-spin-button, markdown-style [type=number]::-webkit-outer-spin-button { height: auto; } markdown-style [type=search] { -webkit-appearance: textfield; outline-offset: -2px; } markdown-style [type=search]::-webkit-search-cancel-button, markdown-style [type=search]::-webkit-search-decoration { -webkit-appearance: none; } markdown-style ::-webkit-input-placeholder { color: inherit; opacity: .54; } markdown-style ::-webkit-file-upload-button { -webkit-appearance: button; font: inherit; } markdown-style a:hover { text-decoration: underline; } markdown-style hr::before { display: table; content: ""; } markdown-style hr::after { display: table; clear: both; content: ""; } markdown-style table { border-spacing: 0; border-collapse: collapse; display: block; width: max-content; max-width: 100%; overflow: auto; } markdown-style td, markdown-style th { padding: 0; } markdown-style details summary { cursor: pointer; } markdown-style details:not([open])>*:not(summary) { display: none !important; } markdown-style kbd { display: inline-block; padding: 3px 5px; font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; line-height: 10px; color: var(--color-fg-default); vertical-align: middle; background-color: var(--color-canvas-subtle); border: solid 1px var(--color-neutral-muted); border-bottom-color: var(--color-neutral-muted); border-radius: 6px; box-shadow: inset 0 -1px 0 var(--color-neutral-muted); } markdown-style h1, markdown-style h2, markdown-style h3, markdown-style h4, markdown-style h5, markdown-style h6 { margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; } markdown-style h2 { font-weight: 600; padding-bottom: .3em; font-size: 1.5em; border-bottom: 1px solid var(--color-border-muted); } markdown-style h3 { font-weight: 600; font-size: 1.25em; } markdown-style h4 { font-weight: 600; font-size: 1em; } markdown-style h5 { font-weight: 600; font-size: .875em; } markdown-style h6 { font-weight: 600; font-size: .85em; color: var(--color-fg-muted); } markdown-style p { margin-top: 0; margin-bottom: 10px; } markdown-style blockquote { margin: 0; padding: 0 1em; color: var(--color-fg-muted); border-left: .25em solid var(--color-border-default); } markdown-style ul, markdown-style ol { margin-top: 0; margin-bottom: 0; padding-left: 2em; } markdown-style ol ol, markdown-style ul ol { list-style-type: lower-roman; } markdown-style ul ul ol, markdown-style ul ol ol, markdown-style ol ul ol, markdown-style ol ol ol { list-style-type: lower-alpha; } markdown-style dd { margin-left: 0; } markdown-style tt, markdown-style code { font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; font-size: 12px; } markdown-style pre { margin-top: 0; margin-bottom: 0; font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; font-size: 12px; word-wrap: normal; } markdown-style .octicon { display: inline-block; overflow: visible !important; vertical-align: text-bottom; fill: currentColor; } markdown-style ::placeholder { color: var(--color-fg-subtle); opacity: 1; } markdown-style input::-webkit-outer-spin-button, markdown-style input::-webkit-inner-spin-button { margin: 0; -webkit-appearance: none; appearance: none; }
+markdown-style .token.comment, markdown-style .token.prolog, markdown-style .token.doctype, markdown-style .token.cdata { color: var(--color-prettylights-syntax-comment); } markdown-style .token.namespace { opacity: 0.7; } markdown-style .token.tag, markdown-style .token.selector, markdown-style .token.constant, markdown-style .token.symbol, markdown-style .token.deleted { color: var(--color-prettylights-syntax-entity-tag); } markdown-style .token.maybe-class-name { color: var(--color-prettylights-syntax-variable); } markdown-style .token.property-access, markdown-style .token.operator, markdown-style .token.boolean, markdown-style .token.number, markdown-style .token.selector markdown-style .token.class, markdown-style .token.attr-name, markdown-style .token.string, markdown-style .token.char, markdown-style .token.builtin { color: var(--color-prettylights-syntax-constant); } markdown-style .token.deleted { color: var(--color-prettylights-syntax-markup-deleted-text); } markdown-style .token.property { color: var(--color-prettylights-syntax-constant); } markdown-style .token.punctuation { color: var(--color-prettylights-syntax-markup-bold); } markdown-style .token.function { color: var(--color-prettylights-syntax-entity); } markdown-style .code-line .token.deleted { background-color: var(--color-prettylights-syntax-markup-deleted-bg); } markdown-style .token.inserted { color: var(--color-prettylights-syntax-markup-inserted-text); } markdown-style .code-line .token.inserted { background-color: var(--color-prettylights-syntax-markup-inserted-bg); } markdown-style .token.variable { color: var(--color-prettylights-syntax-constant); } markdown-style .token.entity, markdown-style .token.url, .language-css markdown-style .token.string, .style markdown-style .token.string { color: var(--color-prettylights-syntax-string); } markdown-style .token.color, markdown-style .token.atrule, markdown-style .token.attr-value, markdown-style .token.function, markdown-style .token.class-name { color: var(--color-prettylights-syntax-string); } markdown-style .token.rule, markdown-style .token.regex, markdown-style .token.important, markdown-style .token.keyword { color: var(--color-prettylights-syntax-keyword); } markdown-style .token.coord { color: var(--color-prettylights-syntax-meta-diff-range); } markdown-style .token.important, markdown-style .token.bold { font-weight: bold; } markdown-style .token.italic { font-style: italic; } markdown-style .token.entity { cursor: help; }
+markdown-style [data-catalyst] { display: block; } markdown-style g-emoji { font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 1em; font-style: normal !important; font-weight: 400; line-height: 1; vertical-align: -0.075em; } markdown-style g-emoji img { width: 1em; height: 1em; } markdown-style::before { display: table; content: ""; } markdown-style::after { display: table; clear: both; content: ""; } markdown-style>*:first-child { margin-top: 0 !important; } markdown-style>*:last-child { margin-bottom: 0 !important; } markdown-style a:not([href]) { color: inherit; text-decoration: none; } markdown-style .absent { color: var(--color-danger-fg); } markdown-style a.anchor { float: left; padding-right: 4px; margin-left: -20px; line-height: 1; } markdown-style a.anchor:focus { outline: none; } markdown-style p, markdown-style blockquote, markdown-style ul, markdown-style ol, markdown-style dl, markdown-style table, markdown-style pre, markdown-style details { margin-top: 0; margin-bottom: 16px; } markdown-style blockquote>:first-child { margin-top: 0; } markdown-style blockquote>:last-child { margin-bottom: 0; } markdown-style sup>a::before { content: "["; } markdown-style sup>a::after { content: "]"; }
+markdown-style .octicon-video { border: 1px solid #d0d7de !important; border-radius: 6px !important; display: block; } markdown-style .octicon-video summary { border-bottom: 1px solid #d0d7de !important; padding: 8px 16px !important; cursor: pointer; } markdown-style .octicon-video > video { display: block !important; max-width: 100% !important; padding: 2px; box-sizing: border-box; border-bottom-right-radius: 6px !important; border-bottom-left-radius: 6px !important; } markdown-style details.octicon-video:not([open])>*:not(summary) { display: none !important; } markdown-style details.octicon-video:not([open]) > summary { border-bottom: 0 !important; } markdown-style h1 .octicon-link, markdown-style h2 .octicon-link, markdown-style h3 .octicon-link, markdown-style h4 .octicon-link, markdown-style h5 .octicon-link, markdown-style h6 .octicon-link { color: var(--color-fg-default); vertical-align: middle; visibility: hidden; } markdown-style h1:hover .anchor, markdown-style h2:hover .anchor, markdown-style h3:hover .anchor, markdown-style h4:hover .anchor, markdown-style h5:hover .anchor, markdown-style h6:hover .anchor { text-decoration: none; } markdown-style h1:hover .anchor .octicon-link, markdown-style h2:hover .anchor .octicon-link, markdown-style h3:hover .anchor .octicon-link, markdown-style h4:hover .anchor .octicon-link, markdown-style h5:hover .anchor .octicon-link, markdown-style h6:hover .anchor .octicon-link { visibility: visible; } markdown-style h1 tt, markdown-style h1 code, markdown-style h2 tt, markdown-style h2 code, markdown-style h3 tt, markdown-style h3 code, markdown-style h4 tt, markdown-style h4 code, markdown-style h5 tt, markdown-style h5 code, markdown-style h6 tt, markdown-style h6 code { padding: 0 .2em; font-size: inherit; } markdown-style ul.no-list, markdown-style ol.no-list { padding: 0; list-style-type: none; } markdown-style ol[type="1"] { list-style-type: decimal; } markdown-style ol[type=a] { list-style-type: lower-alpha; } markdown-style ol[type=i] { list-style-type: lower-roman; } markdown-style div>ol:not([type]) { list-style-type: decimal; } markdown-style ul ul, markdown-style ul ol, markdown-style ol ol, markdown-style ol ul { margin-top: 0; margin-bottom: 0; } markdown-style li>p { margin-top: 16px; } markdown-style li+li { margin-top: .25em; } markdown-style dl { padding: 0; } markdown-style dl dt { padding: 0; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: 600; } markdown-style dl dd { padding: 0 16px; margin-bottom: 16px; } markdown-style table th { font-weight: 600; } markdown-style table th, markdown-style table td { padding: 6px 13px; border: 1px solid var(--color-border-default); } markdown-style table tr { background-color: var(--color-canvas-default); border-top: 1px solid var(--color-border-muted); } markdown-style table tr:nth-child(2n) { background-color: var(--color-canvas-subtle); } markdown-style table img { background-color: transparent; vertical-align: middle; } markdown-style img[align=right] { padding-left: 20px; } markdown-style img[align=left] { padding-right: 20px; } markdown-style .emoji { max-width: none; vertical-align: text-top; background-color: transparent; } markdown-style span.frame { display: block; overflow: hidden; } markdown-style span.frame>span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0 0; overflow: hidden; border: 1px solid var(--color-border-default); } markdown-style span.frame span img { display: block; float: left; } markdown-style span.frame span span { display: block; padding: 5px 0 0; clear: both; color: var(--color-fg-default); } markdown-style span.align-center { display: block; overflow: hidden; clear: both; } markdown-style span.align-center>span { display: block; margin: 13px auto 0; overflow: hidden; text-align: center; } markdown-style span.align-center span img { margin: 0 auto; text-align: center; } markdown-style span.align-right { display: block; overflow: hidden; clear: both; } markdown-style span.align-right>span { display: block; margin: 13px 0 0; overflow: hidden; text-align: right; } markdown-style span.align-right span img { margin: 0; text-align: right; } markdown-style span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; } markdown-style span.float-left span { margin: 13px 0 0; } markdown-style span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; } markdown-style span.float-right>span { display: block; margin: 13px auto 0; overflow: hidden; text-align: right; } markdown-style code, markdown-style tt { padding: .2em .4em; margin: 0; font-size: 85%; background-color: var(--color-neutral-muted); border-radius: 6px; } markdown-style code br, markdown-style tt br { display: none; } markdown-style del code { text-decoration: inherit; } markdown-style pre code { font-size: 100%; } markdown-style pre>code { padding: 0; margin: 0; word-break: normal; white-space: pre; background: transparent; border: 0; } markdown-style pre { position: relative; font-size: 85%; line-height: 1.45; background-color: var(--color-canvas-subtle); border-radius: 6px; } markdown-style pre code, markdown-style pre tt { display: inline; max-width: auto; padding: 0; margin: 0; overflow: visible; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0; } markdown-style pre > code { padding: 16px; overflow: auto; display: block; } markdown-style .csv-data td, markdown-style .csv-data th { padding: 5px; overflow: hidden; font-size: 12px; line-height: 1; text-align: left; white-space: nowrap; } markdown-style .csv-data .blob-num { padding: 10px 8px 9px; text-align: right; background: var(--color-canvas-default); border: 0; } markdown-style .csv-data tr { border-top: 0; } markdown-style .csv-data th { font-weight: 600; background: var(--color-canvas-subtle); border-top: 0; } markdown-style .footnotes { font-size: 12px; color: var(--color-fg-muted); border-top: 1px solid var(--color-border-default); } markdown-style .footnotes ol { padding-left: 16px; } markdown-style .footnotes li { position: relative; } markdown-style .footnotes li:target::before { position: absolute; top: -8px; right: -8px; bottom: -8px; left: -24px; pointer-events: none; content: ""; border: 2px solid var(--color-accent-emphasis); border-radius: 6px; } markdown-style .footnotes li:target { color: var(--color-fg-default); } markdown-style .footnotes .data-footnote-backref g-emoji { font-family: monospace; } markdown-style .task-list-item { list-style-type: none; } markdown-style .task-list-item label { font-weight: 400; } markdown-style .task-list-item.enabled label { cursor: pointer; } markdown-style .task-list-item+.task-list-item { margin-top: 3px; } markdown-style .task-list-item .handle { display: none; } markdown-style .task-list-item-checkbox, markdown-style input[type="checkbox"] { margin: 0 .2em .25em -1.6em; vertical-align: middle; } markdown-style .contains-task-list:dir(rtl) .task-list-item-checkbox, markdown-style .contains-task-list:dir(rtl) input[type="checkbox"] { margin: 0 -1.6em .25em .2em; } markdown-style ::-webkit-calendar-picker-indicator { filter: invert(50%); }
+</style>
+<slot></slot>
+`;
+class MarkdownStyle extends HTMLElement {
+    constructor() {
+        super();
+        this.shadow = this.attachShadow({ mode: 'open' });
+        this.shadow.appendChild(__TEMPLATE__.content.cloneNode(true));
+        const style = Array.prototype.slice
+            .call(this.shadow.children)
+            .find((item) => item.tagName === 'STYLE');
+        if (style) {
+            const id = '__MARKDOWN_STYLE__';
+            const findStyle = document.getElementById(id);
+            if (!findStyle) {
+                style.id = id;
+                document.head.append(style);
+            }
+        }
+    }
+    get theme() {
+        const value = this.getAttribute('theme');
+        return value === null ? '' : value;
+    }
+    set theme(name) {
+        this.setAttribute('theme', name);
+    }
+    connectedCallback() {
+        if (!this.theme) {
+            const { colorMode } = document.documentElement.dataset;
+            this.theme = colorMode;
+            const observer = new MutationObserver((mutationsList, observer) => {
+                this.theme = document.documentElement.dataset.colorMode;
+            });
+            observer.observe(document.documentElement, { attributes: true });
+            window.matchMedia('(prefers-color-scheme: light)').onchange = (event) => {
+                this.theme = event.matches ? 'light' : 'dark';
+            };
+            window.matchMedia('(prefers-color-scheme: dark)').onchange = (event) => {
+                this.theme = event.matches ? 'dark' : 'light';
+            };
+        }
+    }
+}
+customElements.define('markdown-style', MarkdownStyle);</script><markdown-style style="max-width: 960px; margin: 0 auto 60px auto; padding: 8px" class="markdown-style">
+    <h1 id="module-cases-section-complaint"><a class="anchor" aria-hidden="true" tabindex="-1" href="#module-cases-section-complaint"><span class="octicon octicon-link"></span></a>Module: Cases, Section: Complaint</h1>
+    <ul>
+      <li><a href="#wf-313"> "1 day after Ds Notice of Appearance Entered is set"</a></li>
+      <li><a href="#wf-590"> "2 days after Complaint Status set to Filing Team"</a></li>
+      <li><a href="#wf-314"> "3 day after Ds Notice of Appearance Entered is set"</a></li>
+      <li><a href="#wf-567"> "90 days after Service of Process change (AOB)"</a></li>
+      <li><a href="#wf-296"> "Answer changed"</a></li>
+      <li><a href="#wf-565"> "Answer date (Complaint stage) changed (AOB or HO Cases)"</a></li>
+      <li><a href="#wf-297"> "Answer Deadline changed"</a></li>
+      <li><a href="#wf-298"> "Answer field empty 7 days after after Answer Deadline"</a></li>
+      <li><a href="#wf-177"> "Change of Complaint Status"</a></li>
+      <li><a href="#wf-717"> "Complaint Status change to Case Closed-Plaintiff to pay Fees/Costs"</a></li>
+      <li><a href="#wf-283"> "Complaint Status change to Case Filed (Total Balance >=15000)"</a></li>
+      <li><a href="#wf-618"> "Complaint Status change to Case Filed (Total Balance&#x3C;15000)"</a></li>
+      <li><a href="#wf-615"> "Complaint Status change to Complaint Printed"</a></li>
+      <li><a href="#wf-286"> "Complaint Status change to Correction Queue - in Eportal"</a></li>
+      <li><a href="#wf-293"> "Complaint Status change to Dismissed - Failure to Appear PTC"</a></li>
+      <li><a href="#wf-294"> "Complaint Status change to Dismissed - Not Served"</a></li>
+      <li><a href="#wf-295"> "Complaint Status change to FWOP - need to set aside"</a></li>
+      <li><a href="#wf-285"> "Complaint Status change to LSOP Case - Pending Pmt"</a></li>
+      <li><a href="#wf-616"> "Complaint Status change to LSOP Case - Service Pending"</a></li>
+      <li><a href="#wf-594"> "Complaint Status change to LSOP Package Prepared"</a></li>
+      <li><a href="#wf-288"> "Complaint Status change to Motion to Compel Answer"</a></li>
+      <li><a href="#wf-290"> "Complaint Status change to Motion to Set Aside Dismissal - Filed"</a></li>
+      <li><a href="#wf-291"> "Complaint Status change to Motion to Set Aside Dismissal- Prepared"</a></li>
+      <li><a href="#wf-591"> "Complaint Status change to Need to Reissue or Pay for Summons"</a></li>
+      <li><a href="#wf-595"> "Complaint Status change to Pending Filing"</a></li>
+      <li><a href="#wf-596"> "Complaint Status change to Possible Paid Prior to Filing"</a></li>
+      <li><a href="#wf-592"> "Complaint Status change to Summons - Reissued"</a></li>
+      <li><a href="#wf-593"> "Complaint Status change to Summons - Reissued Miami Dade"</a></li>
+      <li><a href="#wf-638"> "Complaint Status change to Voluntary Dismissal w/ Prejudice"</a></li>
+      <li><a href="#wf-637"> "Complaint Status change to Voluntary Dismissal w/o Prejudice - No Fees"</a></li>
+      <li><a href="#wf-636"> "Complaint Status change to Voluntary Dismissal w/o Prejudice - Re-file"</a></li>
+      <li><a href="#wf-724"> "Complaint Status change to Withdrew as Counsel"</a></li>
+      <li><a href="#wf-311"> "Ds MFET to File Answer changed"</a></li>
+      <li><a href="#wf-310"> "Empty Answer date and and Ds MFET to File Answer = current day + 120"</a></li>
+      <li><a href="#wf-289"> "Motion to Dismiss changed"</a></li>
+      <li><a href="#wf-292"> "PTC (Small Claims) changed"</a></li>
+      <li><a href="#wf-502"> "Service of Process date changed"</a></li>
+      <li><a href="#wf-617"> "Service of Process has changed"</a></li>
+      <li><a href="#wf-843"> "Set Final Status to CLOSED when Complaint Status changed to No Longer Attorney-Attorney Lien Filed "</a></li>
+      <li><a href="#wf-844"> "Set Final Status to CLOSED when Complaint Status changed to Voluntary Dismissal w/o Prejudice-Recover in HOS"</a></li>
+      <li><a href="#wf-673"> "Set Lock Automation when Complaint status changed to FIGA - Litigation Stay"</a></li>
+      <li><a href="#wf-287"> "Summons Issued changed"</a></li>
+    </ul>
+    <hr>
+    <p><a id="wf-313" href="#wf-313"></a></p>
+    <h2 id="1-day-after-ds-notice-of-appearance-entered-is-set"><a class="anchor" aria-hidden="true" tabindex="-1" href="#1-day-after-ds-notice-of-appearance-entered-is-set"><span class="octicon octicon-link"></span></a>"1 day after Ds Notice of Appearance Entered is set"</h2>
+    <h3 id="conditions"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Ds Notice of Appearance Entered</strong> is not empty</li>
+          <li><strong>Ds Notice of Appearance Entered</strong> days ago <em>1</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        send email template "Ps Depo Requests" to OPPOSING_COUNSEL_EMAIL
+        <a id="wf-590" href="#wf-590"></a>
+      </li>
+    </ul>
+    <h2 id="2-days-after-complaint-status-set-to-filing-team"><a class="anchor" aria-hidden="true" tabindex="-1" href="#2-days-after-complaint-status-set-to-filing-team"><span class="octicon octicon-link"></span></a>"2 days after Complaint Status set to Filing Team"</h2>
+    <h3 id="conditions-1"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-1"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Stage</strong> is <em>Complaint</em></li>
+          <li><strong>Status</strong> is <em>Case Filed</em></li>
+          <li><strong>Status Age</strong> equal to <em>2</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-1"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-1"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Case Manager in 2 days to after Complayant status is set to Case Filed "Check docket for executed summons for"
+        <a id="wf-314" href="#wf-314"></a>
+      </li>
+    </ul>
+    <h2 id="3-day-after-ds-notice-of-appearance-entered-is-set"><a class="anchor" aria-hidden="true" tabindex="-1" href="#3-day-after-ds-notice-of-appearance-entered-is-set"><span class="octicon octicon-link"></span></a>"3 day after Ds Notice of Appearance Entered is set"</h2>
+    <h3 id="conditions-2"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-2"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Ds Notice of Appearance Entered</strong> is not empty</li>
+          <li><strong>Ds Notice of Appearance Entered</strong> days ago <em>3</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-2"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-2"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>create task for Scheduling Team - Depoitions to "Coordinate Deposition of D's Corp Rep and Field Adjuster in"</li>
+      <li>
+        create task for Case Manager to "Add Opposing Counsel's info to file in"
+        <a id="wf-567" href="#wf-567"></a>
+      </li>
+    </ul>
+    <h2 id="90-days-after-service-of-process-change-aob"><a class="anchor" aria-hidden="true" tabindex="-1" href="#90-days-after-service-of-process-change-aob"><span class="octicon octicon-link"></span></a>"90 days after Service of Process change (AOB)"</h2>
+    <h3 id="conditions-3"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-3"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Type of Claim</strong> is <em>AOB</em></li>
+          <li><strong>Service of Process</strong> is not empty</li>
+          <li><strong>Service of Process</strong> days ago <em>90</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-3"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-3"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>create document template "Ps PFS"</li>
+      <li>
+        create task for Assigned Attorney to "Review and Edit Ps PFS to send to Defendant in AOB case re:"
+        <a id="wf-296" href="#wf-296"></a>
+      </li>
+    </ul>
+    <h2 id="answer-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#answer-changed"><span class="octicon octicon-link"></span></a>"Answer changed"</h2>
+    <h3 id="conditions-4"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-4"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Answer</strong> has changed</li>
+          <li><strong>Answer</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-4"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-4"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>create task for Assigned Attorney to Review Answer and Affirmative Defenses for possible Motion to Strike in @@CASE ID@@ @@INJUREDPARTY_NAME@@</del></li>
+      <li><del>draft package Reply</del></li>
+      <li><del>set Complaint status to Answer</del></li>
+      <li>Generate package Reply</li>
+      <li>create task for Assigned Attorney to Review Answer and Affirmative Defenses for possible Motion to Strike in @@CASE ID@@ @@INJUREDPARTY_NAME@@</li>
+      <li>
+        set Complaint status to Answer
+        <a id="wf-565" href="#wf-565"></a>
+      </li>
+    </ul>
+    <h2 id="answer-date-complaint-stage-changed-aob-or-ho-cases"><a class="anchor" aria-hidden="true" tabindex="-1" href="#answer-date-complaint-stage-changed-aob-or-ho-cases"><span class="octicon octicon-link"></span></a>"Answer date (Complaint stage) changed (AOB or HO Cases)"</h2>
+    <h3 id="conditions-5"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-5"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Answer</strong> has changed</li>
+          <li><strong>Answer</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+          <li><strong>Insurance Company</strong> does not contain <em>Citizens Property</em></li>
+        </ul>
+      </li>
+      <li>At least one:
+        <ul>
+          <li><strong>Type of Claim</strong> is <em>HO</em></li>
+          <li><strong>Type of Claim</strong> is <em>AOB</em></li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="tasks-5"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-5"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>generate package CRN</li>
+      <li>
+        create task for RPA Team to "Send @@CASE_ID@@ Civil Remedy Notice CRN"
+        <a id="wf-297" href="#wf-297"></a>
+      </li>
+    </ul>
+    <h2 id="answer-deadline-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#answer-deadline-changed"><span class="octicon octicon-link"></span></a>"Answer Deadline changed"</h2>
+    <h3 id="conditions-6"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-6"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Answer Deadline</strong> has changed</li>
+          <li><strong>Answer Deadline</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-6"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-6"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add event to Attorney and Case Manager calendar "Answer Due in"
+        <a id="wf-298" href="#wf-298"></a>
+      </li>
+    </ul>
+    <h2 id="answer-field-empty-7-days-after-after-answer-deadline"><a class="anchor" aria-hidden="true" tabindex="-1" href="#answer-field-empty-7-days-after-after-answer-deadline"><span class="octicon octicon-link"></span></a>"Answer field empty 7 days after after Answer Deadline"</h2>
+    <h3 id="conditions-7"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-7"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Answer</strong> is empty</li>
+          <li><strong>Answer Deadline</strong> is not empty</li>
+          <li><strong>Answer Deadline</strong> days ago <em>7</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-7"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-7"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>change Complaint status to Answer Overdue</del></li>
+      <li><del>draft package Motion for Default</del></li>
+      <li><del>create task for Scheduling Team - Hearings to "Unilaterally set Ps Motion for Default for hearing in"</del></li>
+      <li>Generate package Motion for Default</li>
+      <li>create task for Scheduling Team - Hearings to "Unilaterally set Ps Motion for Default for hearing in"</li>
+      <li>
+        change Complaint status to Answer Overdue
+        <a id="wf-177" href="#wf-177"></a>
+      </li>
+    </ul>
+    <h2 id="change-of-complaint-status"><a class="anchor" aria-hidden="true" tabindex="-1" href="#change-of-complaint-status"><span class="octicon octicon-link"></span></a>"Change of Complaint Status"</h2>
+    <h3 id="conditions-8"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-8"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is not empty</li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-8"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-8"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Update Previous Stage, Previous Status, Status, Status Age, Status Date, Stage
+        <a id="wf-717" href="#wf-717"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-case-closed-plaintiff-to-pay-feescosts"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-case-closed-plaintiff-to-pay-feescosts"><span class="octicon octicon-link"></span></a>"Complaint Status change to Case Closed-Plaintiff to pay Fees/Costs"</h2>
+    <h3 id="conditions-9"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-9"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed to <em>Case Closed-Plaintiff to pay Fees/Costs</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-9"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-9"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Set Lock automation
+        <a id="wf-283" href="#wf-283"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-case-filed-total-balance-15000"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-case-filed-total-balance-15000"><span class="octicon octicon-link"></span></a>"Complaint Status change to Case Filed (Total Balance >=15000)"</h2>
+    <h3 id="conditions-10"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-10"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> is <em>Case Filed</em></li>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+          <li><strong>Total Balance</strong> greater than or equal to <em>15000</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-10"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-10"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>add task for Case Manager in 2 days to "Check docket for executed summons for"</del></li>
+      <li>Set Case Filed date</li>
+      <li>
+        add entry to Costs Tab/Module for "Fililing Fee in the amount of $424.35"
+        <a id="wf-618" href="#wf-618"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-case-filed-total-balance15000"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-case-filed-total-balance15000"><span class="octicon octicon-link"></span></a>"Complaint Status change to Case Filed (Total Balance&#x3C;15000)"</h2>
+    <h3 id="conditions-11"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-11"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> is <em>Case Filed</em></li>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+          <li><strong>Total Balance</strong> less than <em>15000</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-11"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-11"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>add task for Case Manager in 2 days to "Check docket for executed summons for"</del></li>
+      <li>Set Case Filed date</li>
+      <li>
+        add entry to Costs Tab/Module for "Fililing Fee in the amount of $320.85"
+        <a id="wf-615" href="#wf-615"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-complaint-printed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-complaint-printed"><span class="octicon octicon-link"></span></a>"Complaint Status change to Complaint Printed"</h2>
+    <h3 id="conditions-12"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-12"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Complaint Printed</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-12"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-12"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>create package "Complaint Package"</del></li>
+      <li><del>create task for Case Manager to "Go to Dropbox and File Complaint Package for @@CASE ID@@ @@INJUREDPARTY_NAME@@; once filed change status to Case Filed."</del></li>
+      <li><del>set Complaint Package Prepared</del></li>
+      <li>Generate package "Complaint Package"</li>
+      <li>create task for Case Manager to "Go to Dropbox and File Complaint Package for @@CASE ID@@ @@INJUREDPARTY_NAME@@; once filed change status to Case Filed."</li>
+      <li>
+        set Complaint Package Prepared
+        <a id="wf-286" href="#wf-286"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-correction-queue---in-eportal"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-correction-queue---in-eportal"><span class="octicon octicon-link"></span></a>"Complaint Status change to Correction Queue - in Eportal"</h2>
+    <h3 id="conditions-13"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-13"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Correction Queue - in Eportal</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-13"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-13"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Case mamager to "Review Correction Queue for"
+        <a id="wf-293" href="#wf-293"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-dismissed---failure-to-appear-ptc"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-dismissed---failure-to-appear-ptc"><span class="octicon octicon-link"></span></a>"Complaint Status change to Dismissed - Failure to Appear PTC"</h2>
+    <h3 id="conditions-14"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-14"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Dismissed - Failure to Appear PTC</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-14"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-14"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Assigned Attorney to "Draft Motion to Set Asside Dismissal for"
+        <a id="wf-294" href="#wf-294"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-dismissed---not-served"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-dismissed---not-served"><span class="octicon octicon-link"></span></a>"Complaint Status change to Dismissed - Not Served"</h2>
+    <h3 id="conditions-15"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-15"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Dismissed - Not Served</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-15"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-15"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Assigned Attorney to "Draft Motion to Set Asside Dismissal for"
+        <a id="wf-295" href="#wf-295"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-fwop---need-to-set-aside"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-fwop---need-to-set-aside"><span class="octicon octicon-link"></span></a>"Complaint Status change to FWOP - need to set aside"</h2>
+    <h3 id="conditions-16"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-16"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>FWOP - need to set aside</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-16"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-16"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        create task for Assigned Attorney to "Draft Motion to Set Aside FWOP for"
+        <a id="wf-285" href="#wf-285"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-lsop-case---pending-pmt"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-lsop-case---pending-pmt"><span class="octicon octicon-link"></span></a>"Complaint Status change to LSOP Case - Pending Pmt"</h2>
+    <h3 id="conditions-17"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-17"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>LSOP Case - Pending Pmt</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-17"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-17"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>add task for SUPERVISOR to "Pay LSOP for"</li>
+      <li>add entry to Costs Tab/Module for "Service Fee in the amount of $15.55"</li>
+      <li>
+        set Complaint Status to LSOP Case - Service Pending
+        <a id="wf-616" href="#wf-616"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-lsop-case---service-pending"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-lsop-case---service-pending"><span class="octicon octicon-link"></span></a>"Complaint Status change to LSOP Case - Service Pending"</h2>
+    <h3 id="conditions-18"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-18"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>LSOP Case - Service Pending</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-18"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-18"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        create task for Case Manager "Check for and add Notice of Service of Process to @@CASE ID@@ @@INJUREDPARTY_NAME@@; once added change status to LSOP Case - Served."
+        <a id="wf-594" href="#wf-594"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-lsop-package-prepared"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-lsop-package-prepared"><span class="octicon octicon-link"></span></a>"Complaint Status change to LSOP Package Prepared"</h2>
+    <h3 id="conditions-19"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-19"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>LSOP Package Prepared</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-19"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-19"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Case Manager "Serve LSOP PACKAGE through LSOP website
+        <a id="wf-288" href="#wf-288"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-motion-to-compel-answer"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-motion-to-compel-answer"><span class="octicon octicon-link"></span></a>"Complaint Status change to Motion to Compel Answer"</h2>
+    <h3 id="conditions-20"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-20"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Motion to Compel Answer</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-20"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-20"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        create task for Scheduling Team - Hearing to "Coordinate hearing on Motion to Compel Answer"
+        <a id="wf-290" href="#wf-290"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-motion-to-set-aside-dismissal---filed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-motion-to-set-aside-dismissal---filed"><span class="octicon octicon-link"></span></a>"Complaint Status change to Motion to Set Aside Dismissal - Filed"</h2>
+    <h3 id="conditions-21"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-21"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Motion to Set Aside Dismissal - Filed</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-21"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-21"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        create task for Scheduling Team - Hearings to "Coordinate hearing on Motion to Set Aside Dismissal in"
+        <a id="wf-291" href="#wf-291"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-motion-to-set-aside-dismissal--prepared"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-motion-to-set-aside-dismissal--prepared"><span class="octicon octicon-link"></span></a>"Complaint Status change to Motion to Set Aside Dismissal- Prepared"</h2>
+    <h3 id="conditions-22"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-22"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Motion to Set Aside Dismissal- Prepared</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-22"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-22"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        create task for Case Manager to "File Motion to Set Aside Dismissal in"
+        <a id="wf-591" href="#wf-591"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-need-to-reissue-or-pay-for-summons"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-need-to-reissue-or-pay-for-summons"><span class="octicon octicon-link"></span></a>"Complaint Status change to Need to Reissue or Pay for Summons"</h2>
+    <h3 id="conditions-23"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-23"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Need to Reissue or Pay for Summons</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-23"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-23"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Reissue or Pay for Summons for Case Manager
+        <a id="wf-595" href="#wf-595"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-pending-filing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-pending-filing"><span class="octicon octicon-link"></span></a>"Complaint Status change to Pending Filing"</h2>
+    <h3 id="conditions-24"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-24"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Pending Filing</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-24"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-24"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Case Manager "E-file initial package in Florida E-file Portal
+        <a id="wf-596" href="#wf-596"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-possible-paid-prior-to-filing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-possible-paid-prior-to-filing"><span class="octicon octicon-link"></span></a>"Complaint Status change to Possible Paid Prior to Filing"</h2>
+    <h3 id="conditions-25"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-25"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Possible Paid Prior to Filing</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-25"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-25"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for SUPERVISOR "Check with Claimpay and/or client for possible payment prior to filing"
+        <a id="wf-592" href="#wf-592"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-summons---reissued"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-summons---reissued"><span class="octicon octicon-link"></span></a>"Complaint Status change to Summons - Reissued"</h2>
+    <h3 id="conditions-26"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-26"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Summons - Reissued</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-26"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-26"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Case Manager "Serve Summons on Defendant via LSOP
+        <a id="wf-593" href="#wf-593"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-summons---reissued-miami-dade"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-summons---reissued-miami-dade"><span class="octicon octicon-link"></span></a>"Complaint Status change to Summons - Reissued Miami Dade"</h2>
+    <h3 id="conditions-27"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-27"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Summons - Reissued Miami Dade</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-27"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-27"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        add task for Case Manager "Serve Summons on Defendant
+        <a id="wf-638" href="#wf-638"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-voluntary-dismissal-w-prejudice"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-voluntary-dismissal-w-prejudice"><span class="octicon octicon-link"></span></a>"Complaint Status change to Voluntary Dismissal w/ Prejudice"</h2>
+    <h3 id="conditions-28"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-28"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Voluntary Dismissal w/ Prejudice</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-28"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-28"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>set Complaint Package Prepared, Final Status</li>
+      <li>
+        send e-mail template Closing Email - Voluntary Dismissal w Prejudice
+        <a id="wf-637" href="#wf-637"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-voluntary-dismissal-wo-prejudice---no-fees"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-voluntary-dismissal-wo-prejudice---no-fees"><span class="octicon octicon-link"></span></a>"Complaint Status change to Voluntary Dismissal w/o Prejudice - No Fees"</h2>
+    <h3 id="conditions-29"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-29"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Voluntary Dismissal w/o Prejudice - No Fees</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-29"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-29"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>set Complaint Package Prepared, Final Status</li>
+      <li>
+        send e-mail template Closing Email - Voluntary Dismissal wo Prejudice No Fees
+        <a id="wf-636" href="#wf-636"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-voluntary-dismissal-wo-prejudice---re-file"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-voluntary-dismissal-wo-prejudice---re-file"><span class="octicon octicon-link"></span></a>"Complaint Status change to Voluntary Dismissal w/o Prejudice - Re-file"</h2>
+    <h3 id="conditions-30"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-30"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed</li>
+          <li><strong>Complaint Status</strong> is <em>Voluntary Dismissal w/o Prejudice - Re-file</em></li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-30"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-30"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>set Complaint Package Prepared</li>
+      <li>send e-mail template Closing Email - Voluntary Dismissal wo Prejudice Re-File</li>
+      <li>
+        create task for Case Manager to "Review case for deficiencies to cure before re-filing".
+        <a id="wf-724" href="#wf-724"></a>
+      </li>
+    </ul>
+    <h2 id="complaint-status-change-to-withdrew-as-counsel"><a class="anchor" aria-hidden="true" tabindex="-1" href="#complaint-status-change-to-withdrew-as-counsel"><span class="octicon octicon-link"></span></a>"Complaint Status change to Withdrew as Counsel"</h2>
+    <h3 id="conditions-31"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-31"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+          <li><strong>Complaint Status</strong> has changed to <em>Withdrew as Counsel</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-31"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-31"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Set Final Status CLOSED and set Locked Automation
+        <a id="wf-311" href="#wf-311"></a>
+      </li>
+    </ul>
+    <h2 id="ds-mfet-to-file-answer-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ds-mfet-to-file-answer-changed"><span class="octicon octicon-link"></span></a>"Ds MFET to File Answer changed"</h2>
+    <h3 id="conditions-32"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-32"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Ds MFET to File Answer</strong> has changed</li>
+          <li><strong>Ds MFET to File Answer</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-32"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-32"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>set Complaint Status to Ds MFET (Answer)</li>
+      <li>
+        create task for Scheduling Team - Hearings to "Negotiate agreed order (no more than 30 days extension) with OC or Schedule Motion for Extension of Time for Hearing ASAP for"
+        <a id="wf-310" href="#wf-310"></a>
+      </li>
+    </ul>
+    <h2 id="empty-answer-date-and-and-ds-mfet-to-file-answer--current-day--120"><a class="anchor" aria-hidden="true" tabindex="-1" href="#empty-answer-date-and-and-ds-mfet-to-file-answer--current-day--120"><span class="octicon octicon-link"></span></a>"Empty Answer date and and Ds MFET to File Answer = current day + 120"</h2>
+    <h3 id="conditions-33"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-33"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Answer</strong> is empty</li>
+          <li><strong>Ds MFET to File Answer</strong> is not empty</li>
+          <li><strong>Ds MFET to File Answer</strong> days ago <em>120</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-33"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-33"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        create task for Assigned Attorney "Review for re: MFET"
+        <a id="wf-289" href="#wf-289"></a>
+      </li>
+    </ul>
+    <h2 id="motion-to-dismiss-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#motion-to-dismiss-changed"><span class="octicon octicon-link"></span></a>"Motion to Dismiss changed"</h2>
+    <h3 id="conditions-34"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-34"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Motion to Dismiss</strong> has changed</li>
+          <li><strong>Motion to Dismiss</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-34"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-34"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>set Complaint status to Motion to Dismiss</li>
+      <li>
+        Create task for Scheduling Team - Hearings to "Confirm with @@ATTORNEY_NAME@@ that MTD in @@CASE ID@@ @@INJUREDPARTY_NAME@@ can be set for hearing; if so, reach out to OC to set hearing
+        <a id="wf-292" href="#wf-292"></a>
+      </li>
+    </ul>
+    <h2 id="ptc-small-claims-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ptc-small-claims-changed"><span class="octicon octicon-link"></span></a>"PTC (Small Claims) changed"</h2>
+    <h3 id="conditions-35"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-35"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>PTC (Small Claims)</strong> has changed</li>
+          <li><strong>PTC (Small Claims)</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-35"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-35"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>create "Ps Motion to Invoke Rules and Waive Appearance" document</del></li>
+      <li><del>draft package Ps Motion to Invoke Rules and Waive Appearance</del></li>
+      <li><del>add event to calendar "Pre-Trial Conference" for Assign To and Case Manager</del></li>
+      <li><del>change status to "Pretrial Conference "</del></li>
+      <li>Create package Ps Motion to Invoke Rules and Waive Appearance</li>
+      <li>add event to calendar "Pre-Trial Conference" for Assign To, Case Manager and AOB/DTP attorney</li>
+      <li>
+        change Complaint status to "Pretrial Conference "
+        <a id="wf-502" href="#wf-502"></a>
+      </li>
+    </ul>
+    <h2 id="service-of-process-date-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#service-of-process-date-changed"><span class="octicon octicon-link"></span></a>"Service of Process date changed"</h2>
+    <h3 id="conditions-36"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-36"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Service of Process</strong> has changed</li>
+          <li><strong>Service of Process</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-36"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-36"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Set Plaintiff Discovery Status to 1st Disco Set - Served, 1st Disco Set - Served
+        <a id="wf-617" href="#wf-617"></a>
+      </li>
+    </ul>
+    <h2 id="service-of-process-has-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#service-of-process-has-changed"><span class="octicon octicon-link"></span></a>"Service of Process has changed"</h2>
+    <h3 id="conditions-37"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-37"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Service of Process</strong> has changed</li>
+          <li><strong>Service of Process</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-37"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-37"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>change Complaint Status to LSOP Case Served</li>
+      <li>
+        add calendar event 23 days after Service of Process for Assign To and Case Manager
+        <a id="wf-843" href="#wf-843"></a>
+      </li>
+    </ul>
+    <h2 id="set-final-status-to-closed-when-complaint-status-changed-to-no-longer-attorney-attorney-lien-filed-"><a class="anchor" aria-hidden="true" tabindex="-1" href="#set-final-status-to-closed-when-complaint-status-changed-to-no-longer-attorney-attorney-lien-filed-"><span class="octicon octicon-link"></span></a>"Set Final Status to CLOSED when Complaint Status changed to No Longer Attorney-Attorney Lien Filed "</h2>
+    <h3 id="conditions-38"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-38"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed to <em>No Longer Attorney-Attorney Lien Filed</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-38"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-38"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Set Final Status to CLOSED
+        <a id="wf-844" href="#wf-844"></a>
+      </li>
+    </ul>
+    <h2 id="set-final-status-to-closed-when-complaint-status-changed-to-voluntary-dismissal-wo-prejudice-recover-in-hos"><a class="anchor" aria-hidden="true" tabindex="-1" href="#set-final-status-to-closed-when-complaint-status-changed-to-voluntary-dismissal-wo-prejudice-recover-in-hos"><span class="octicon octicon-link"></span></a>"Set Final Status to CLOSED when Complaint Status changed to Voluntary Dismissal w/o Prejudice-Recover in HOS"</h2>
+    <h3 id="conditions-39"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-39"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Complaint Status</strong> has changed to <em>Voluntary Dismissal w/o Prejudice-Recover in HOS</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-39"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-39"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Set Final Status to CLOSED
+        <a id="wf-673" href="#wf-673"></a>
+      </li>
+    </ul>
+    <h2 id="set-lock-automation-when-complaint-status-changed-to-figa---litigation-stay"><a class="anchor" aria-hidden="true" tabindex="-1" href="#set-lock-automation-when-complaint-status-changed-to-figa---litigation-stay"><span class="octicon octicon-link"></span></a>"Set Lock Automation when Complaint status changed to FIGA - Litigation Stay"</h2>
+    <h3 id="conditions-40"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-40"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+          <li><strong>Complaint Status</strong> has changed to <em>FIGA - Litigation Stay</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-40"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-40"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li>
+        Set Lock Automation = Yes
+        <a id="wf-287" href="#wf-287"></a>
+      </li>
+    </ul>
+    <h2 id="summons-issued-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#summons-issued-changed"><span class="octicon octicon-link"></span></a>"Summons Issued changed"</h2>
+    <h3 id="conditions-41"><a class="anchor" aria-hidden="true" tabindex="-1" href="#conditions-41"><span class="octicon octicon-link"></span></a>Conditions:</h3>
+    <ul>
+      <li>All:
+        <ul>
+          <li><strong>Summons Issued</strong> has changed</li>
+          <li><strong>Summons Issued</strong> is not empty</li>
+          <li><strong>Lock Automation</strong> is <em>0</em></li>
+        </ul>
+      </li>
+      <li>At least one:</li>
+    </ul>
+    <h3 id="tasks-41"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tasks-41"><span class="octicon octicon-link"></span></a>Tasks:</h3>
+    <ul>
+      <li><del>change Complaint status to "Summons - Executed"</del></li>
+      <li><del>draft package LSOP Package</del></li>
+      <li><del>task for Case Manager to "Go to Dropbox and Upload LSOP Package for @@CASE ID@@ @@INJUREDPARTY_NAME@@ to LSOP Website; once filed change status to Case in LSOP Case - Pending Pmt."</del></li>
+      <li>Generate package LSOP Package</li>
+      <li>task for Case Manager to "Go to Dropbox and Upload LSOP Package for @@CASE ID@@ @@INJUREDPARTY_NAME@@ to LSOP Website; once filed change status to Case in LSOP Case - Pending Pmt."</li>
+      <li>change Complaint status to "Summons - Executed"</li>
+    </ul>
+  <style>markdown-style pre .copied {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  color: #a5afbb;
+  top: 6px;
+  right: 6px;
+  border-radius: 5px;
+  background: #82828226;
+  padding: 6px;
+  font-size: 12px;
+  transition: all .3s;
+}
+markdown-style pre .copied:not(.active) {
+  visibility: hidden;
+}
+markdown-style pre:hover .copied {
+  visibility: visible;
+}
+markdown-style pre:hover .copied:hover {
+  background: #4caf50;
+  color: #fff;
+}
+markdown-style pre:hover .copied:active,
+markdown-style pre .copied.active {
+  background: #2e9b33;
+  color: #fff;
+}
+markdown-style pre .copied .octicon-copy {
+  display: block;
+}
+markdown-style pre .copied .octicon-check {
+  display: none;
+}
+markdown-style pre .active .octicon-copy {
+  display: none;
+}
+markdown-style pre .active .octicon-check {
+  display: block;
+}</style><script>/*! @uiw/copy-to-clipboard v1.0.12 | MIT (c) 2021 Kenny Wang | https://github.com/uiwjs/copy-to-clipboard.git */
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e="undefined"!=typeof globalThis?globalThis:e||self).copyTextToClipboard=t()}(this,(function(){"use strict";return function(e,t){const o=document.createElement("textarea");o.value=e,o.setAttribute("readonly",""),o.style={position:"absolute",left:"-9999px"},document.body.appendChild(o);const n=document.getSelection().rangeCount>0&&document.getSelection().getRangeAt(0);o.select();let c=!1;try{c=!!document.execCommand("copy")}catch(e){c=!1}document.body.removeChild(o),n&&document.getSelection&&(document.getSelection().removeAllRanges(),document.getSelection().addRange(n)),t&&t(c)}}));
+
+function copied(target, str) {
+  target.classList.add('active');
+  copyTextToClipboard(target.dataset.code, function() {
+    setTimeout(() => {
+      target.classList.remove('active');
+    }, 2000);
+  });
+}</script></markdown-style>
+
+</body></html>

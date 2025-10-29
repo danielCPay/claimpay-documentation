@@ -1,0 +1,17 @@
+{
+  "name": "hurdle_percent",
+  "dataType": "double",
+  "sourceColumn": "hurdle_percent",
+  "lineageTag": "067670a8-e3c9-4587-9876-b097f537b473",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

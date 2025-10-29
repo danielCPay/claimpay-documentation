@@ -1,0 +1,25 @@
+{
+  "name": "depo_of_plaintiff_date",
+  "dataType": "dateTime",
+  "sourceColumn": "depo_of_plaintiff_date",
+  "formatString": "General Date",
+  "lineageTag": "7c86b06f-a85d-4a68-93c3-340076c7e9bc",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "053ac95c-ace0-4fce-9c64-e5eb245a720d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_cd914b52-5ee3-4416-a8bf-1c8df25958c3",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

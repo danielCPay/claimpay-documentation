@@ -1,0 +1,20 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "cf_value",
+  "dataType": "double",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[cf_value]",
+  "lineageTag": "ad8d8dde-9e5f-4cbd-9b89-1010f23d3a5c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

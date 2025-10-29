@@ -1,0 +1,13 @@
+{
+  "name": "settl_negot_offer_notes",
+  "dataType": "string",
+  "sourceColumn": "settl_negot_offer_notes",
+  "lineageTag": "b8c13aef-bf1e-4985-b12c-b6900fc32d9e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

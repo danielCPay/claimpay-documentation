@@ -1,0 +1,29 @@
+{
+  "name": "claim_closed_date",
+  "dataType": "dateTime",
+  "sourceColumn": "claim_closed_date",
+  "formatString": "Long Date",
+  "lineageTag": "8422f8c3-f045-4ceb-8708-0cd91c6c1c63",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "0ae2edaa-28ae-42ee-81f9-6e182bafb7d4",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_2041ddf9-76ea-4fdd-a69a-e09291f70f2f",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

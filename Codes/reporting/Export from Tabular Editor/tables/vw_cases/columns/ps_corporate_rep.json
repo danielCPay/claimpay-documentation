@@ -1,0 +1,14 @@
+{
+  "name": "ps_corporate_rep",
+  "dataType": "int64",
+  "sourceColumn": "ps_corporate_rep",
+  "formatString": "0",
+  "lineageTag": "1e072b30-69b0-4dd0-a8b4-ba8c3a61927c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

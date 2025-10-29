@@ -1,0 +1,14 @@
+{
+  "name": "claim",
+  "dataType": "int64",
+  "sourceColumn": "claim",
+  "formatString": "0",
+  "lineageTag": "27ca0dda-5e99-480f-b0e8-52394d9e46e9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "pre_county",
+  "dataType": "string",
+  "sourceColumn": "pre_county",
+  "lineageTag": "bf019f06-2b97-41fb-ac6b-e7e3f35f1c91",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

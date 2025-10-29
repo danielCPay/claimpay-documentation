@@ -1,0 +1,8 @@
+{
+  "name": "89eba5ba-266f-4e80-9da3-81c3c3e21a16",
+  "fromTable": "vw_cases",
+  "fromColumn": "date_of_award_penalties",
+  "toTable": "LocalDateTable_929de5f5-7012-4112-b51d-e32da8be04b1",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

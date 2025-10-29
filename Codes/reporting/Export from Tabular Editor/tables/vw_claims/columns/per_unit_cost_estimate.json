@@ -1,0 +1,13 @@
+{
+  "name": "per_unit_cost_estimate",
+  "dataType": "string",
+  "sourceColumn": "per_unit_cost_estimate",
+  "lineageTag": "d7e96674-b1b7-47d7-a14d-87a7af9c7630",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

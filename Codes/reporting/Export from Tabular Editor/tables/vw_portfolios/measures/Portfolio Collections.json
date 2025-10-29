@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Collections",
+  "expression": "SUM( vw_portfolios[total_collections] )",
+  "lineageTag": "57bdce70-1c33-474c-80d0-af6c38417ef8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

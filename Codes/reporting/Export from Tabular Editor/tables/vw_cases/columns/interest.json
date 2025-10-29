@@ -1,0 +1,17 @@
+{
+  "name": "interest",
+  "dataType": "double",
+  "sourceColumn": "interest",
+  "lineageTag": "cdc6931e-4c67-4cab-b265-6cc3f486c4c4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

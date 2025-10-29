@@ -1,0 +1,10 @@
+{
+  "name": "vw_providers",
+  "lineageTag": "ec9f9830-b8dc-4a46-905b-479be4201312",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

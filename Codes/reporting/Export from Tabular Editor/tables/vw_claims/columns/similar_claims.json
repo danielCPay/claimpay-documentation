@@ -1,0 +1,14 @@
+{
+  "name": "similar_claims",
+  "dataType": "int64",
+  "sourceColumn": "similar_claims",
+  "formatString": "0",
+  "lineageTag": "96a119aa-6c62-4655-ad19-8ed52e07d60e",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

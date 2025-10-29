@@ -1,0 +1,13 @@
+{
+  "name": "Provider Name",
+  "dataType": "string",
+  "sourceColumn": "Provider Name",
+  "lineageTag": "a8089523-5ddb-4f66-8441-6a70c419d60c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

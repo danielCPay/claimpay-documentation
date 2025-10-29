@@ -1,0 +1,8 @@
+{
+  "name": "1f50ca6e-85e9-45e7-860c-7d38ba990303",
+  "fromTable": "vw_cases",
+  "fromColumn": "first_notice_of_loss",
+  "toTable": "LocalDateTable_15e2530b-36af-4de5-8def-9b1aca29bff1",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

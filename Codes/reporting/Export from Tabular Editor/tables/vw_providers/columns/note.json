@@ -1,0 +1,13 @@
+{
+  "name": "note",
+  "dataType": "string",
+  "sourceColumn": "note",
+  "lineageTag": "26535ee5-1b07-4e3e-8668-2fb5a20ba52e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

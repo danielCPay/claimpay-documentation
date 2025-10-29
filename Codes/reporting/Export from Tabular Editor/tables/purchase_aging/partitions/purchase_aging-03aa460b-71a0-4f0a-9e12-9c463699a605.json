@@ -1,0 +1,29 @@
+{
+  "name": "purchase_aging-03aa460b-71a0-4f0a-9e12-9c463699a605",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "GENERATE(",
+      "\t\tSELECTCOLUMNS(vw_portfolio_purchases",
+      "\t\t\t, \"portfolio_purchase\", vw_portfolio_purchases[portfolio_purchase]",
+      "\t\t\t, \"Portfolio Purchase Name\", vw_portfolio_purchases[Portfolio Purchase Name]",
+      "\t\t\t, \"investor\", vw_portfolio_purchases[investor]",
+      "\t\t\t, \"purchase_date\", vw_portfolio_purchases[purchase_date]",
+      "\t\t\t, \"purchase_value\", vw_portfolio_purchases[purchase_value]",
+      "\t\t\t),",
+      "        SELECTCOLUMNS(aging_numbers ",
+      "            , \"months_fwd\", aging_numbers[months_fwd] ",
+      "            , \"aging_to_date\", IF (ISBLANK([purchase_date]), BLANK(), EDATE(",
+      "                DATE(YEAR([purchase_date]), MONTH([purchase_date]), DAY([purchase_date])), ",
+      "                1*aging_numbers[months_fwd]",
+      "                ) + 0*aging_numbers[months_fwd] )",
+      "            , \"aging_start_month\", IF (ISBLANK([purchase_date]), BLANK(), EDATE( DATE(YEAR([purchase_date]), MONTH([purchase_date]), 1), aging_numbers[months_fwd] ) )",
+      "            , \"aging_start_next_month\", IF (ISBLANK([purchase_date]), BLANK(), EDATE( DATE(YEAR([purchase_date]), MONTH([purchase_date]), 1), aging_numbers[months_fwd]+1 ) )",
+      "\t\t\t, \"aging_to_date_eom\", EOMONTH( [purchase_date], [months_fwd] )",
+      "\t\t\t, \"aging_to_date_collections_eo3m-1\", EOMONTH( [purchase_date], TRUNC([months_fwd]/3)*3-1 )",
+      "            )",
+      "        )"
+    ]
+  }
+}

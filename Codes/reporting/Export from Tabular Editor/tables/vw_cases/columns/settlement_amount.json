@@ -1,0 +1,17 @@
+{
+  "name": "settlement_amount",
+  "dataType": "double",
+  "sourceColumn": "settlement_amount",
+  "lineageTag": "2acaaeaa-c5dc-4d88-8461-caadac1b4f4d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "street",
+  "dataType": "string",
+  "sourceColumn": "street",
+  "lineageTag": "9f928746-1166-4979-853c-5d3d9a2a6c4a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

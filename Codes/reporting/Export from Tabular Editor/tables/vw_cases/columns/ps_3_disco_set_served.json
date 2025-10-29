@@ -1,0 +1,29 @@
+{
+  "name": "ps_3_disco_set_served",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_3_disco_set_served",
+  "formatString": "Long Date",
+  "lineageTag": "97a08bb2-5631-460e-a931-14d6a03a9586",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "19d4bb94-01b4-4f10-8279-0ac349782e85",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_92214bb4-3a4d-456c-a702-37442657791e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

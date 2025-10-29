@@ -1,0 +1,13 @@
+{
+  "name": "dummy_settlement",
+  "dataType": "string",
+  "sourceColumn": "dummy_settlement",
+  "lineageTag": "e1bcf442-e3d5-4a42-89a7-a555376af4f6",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

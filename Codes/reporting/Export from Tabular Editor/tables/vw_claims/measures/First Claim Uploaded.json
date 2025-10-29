@@ -1,0 +1,6 @@
+{
+  "name": "First Claim Uploaded",
+  "expression": "MIN( vw_claims[createdtime] )",
+  "formatString": "General Date",
+  "lineageTag": "ad1f7405-b799-4612-8bd1-783968adc9f9"
+}

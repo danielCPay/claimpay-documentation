@@ -1,0 +1,17 @@
+{
+  "name": "ls_claim_balance",
+  "dataType": "double",
+  "sourceColumn": "ls_claim_balance",
+  "lineageTag": "dd36cf36-a57f-429a-b399-1a51e8fa17c3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

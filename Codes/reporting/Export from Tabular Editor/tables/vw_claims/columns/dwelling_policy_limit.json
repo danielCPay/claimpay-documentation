@@ -1,0 +1,17 @@
+{
+  "name": "dwelling_policy_limit",
+  "dataType": "double",
+  "sourceColumn": "dwelling_policy_limit",
+  "lineageTag": "b2df44dc-540f-4688-a8a5-79fd35047695",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "0f534d1d-9a2f-4533-b8d4-a8e7ed79e7d5",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_1_disco_set_ds_mfet_hearing",
+  "toTable": "LocalDateTable_8b16f767-78d6-4a98-ba8f-987942805fd6",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

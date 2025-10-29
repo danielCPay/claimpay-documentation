@@ -1,0 +1,29 @@
+{
+  "name": "ps_motion_for_extension_of_tim",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_motion_for_extension_of_tim",
+  "formatString": "Long Date",
+  "lineageTag": "de420aac-c701-4e40-bb9d-7f2d329ac9d0",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "5138266f-abbf-4ecf-92d9-8f9cd4f701ab",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_7935ad46-621a-4484-8fab-5ce9285d62d4",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

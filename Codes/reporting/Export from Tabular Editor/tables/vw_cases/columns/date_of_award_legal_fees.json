@@ -1,0 +1,29 @@
+{
+  "name": "date_of_award_legal_fees",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_award_legal_fees",
+  "formatString": "Long Date",
+  "lineageTag": "23e385ed-c42a-4ea0-8867-2ee2e620b009",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "96a26e0b-27df-4cbe-b266-c6ba1da9f2d8",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_09d336a5-0802-42cb-9225-0bd0285edd67",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

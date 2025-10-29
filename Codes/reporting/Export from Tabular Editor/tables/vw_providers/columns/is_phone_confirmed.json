@@ -1,0 +1,13 @@
+{
+  "name": "is_phone_confirmed",
+  "dataType": "string",
+  "sourceColumn": "is_phone_confirmed",
+  "lineageTag": "5315bce9-55f5-47b3-b5bb-62b32a16c816",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

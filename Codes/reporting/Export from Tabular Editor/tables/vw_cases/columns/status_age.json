@@ -1,0 +1,14 @@
+{
+  "name": "status_age",
+  "dataType": "int64",
+  "sourceColumn": "status_age",
+  "formatString": "0",
+  "lineageTag": "ccc44a00-d245-41d0-940f-e6148b0d30a6",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

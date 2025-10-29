@@ -1,0 +1,29 @@
+{
+  "name": "vol_coll_started_date",
+  "dataType": "dateTime",
+  "sourceColumn": "vol_coll_started_date",
+  "formatString": "Long Date",
+  "lineageTag": "54d9d7ac-e4da-4926-a25c-5dce0e874f56",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "0f97fe2f-55d6-43b7-9a88-1d3a6768fb64",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_37a2f9f4-7c5c-4e5c-b49e-444ff2f00f8a",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

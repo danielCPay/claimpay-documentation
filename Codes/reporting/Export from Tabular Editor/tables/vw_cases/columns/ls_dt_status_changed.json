@@ -1,0 +1,29 @@
+{
+  "name": "ls_dt_status_changed",
+  "dataType": "dateTime",
+  "sourceColumn": "ls_dt_status_changed",
+  "formatString": "Long Date",
+  "lineageTag": "bab96293-4b19-4349-be6c-95158cc85b6e",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "9ca79c7c-e2d1-43a2-84db-5dbbe78cfd6d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_7041a483-a049-45c3-8b56-afccad1de5b2",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

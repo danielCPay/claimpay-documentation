@@ -1,0 +1,29 @@
+{
+  "name": "referral_date",
+  "dataType": "dateTime",
+  "sourceColumn": "referral_date",
+  "formatString": "Long Date",
+  "lineageTag": "e967ab64-591e-4403-a80a-14650ae17700",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f58e892a-e6c9-423b-85e8-863b41d76ccc",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_24f3021f-e5ae-4882-8ef8-45cf4e68fbfc",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

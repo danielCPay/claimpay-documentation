@@ -1,0 +1,13 @@
+{
+  "name": "source_of_info_about_us_other",
+  "dataType": "string",
+  "sourceColumn": "source_of_info_about_us_other",
+  "lineageTag": "feac94b8-d648-47e8-9ec5-25268a06744d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

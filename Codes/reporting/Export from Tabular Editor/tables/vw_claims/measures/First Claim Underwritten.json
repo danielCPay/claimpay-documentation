@@ -1,0 +1,6 @@
+{
+  "name": "First Claim Underwritten",
+  "expression": "MIN( vw_claims[underwritten_time] )",
+  "formatString": "General Date",
+  "lineageTag": "c5f8948e-8fa4-434a-91af-cce86e687690"
+}

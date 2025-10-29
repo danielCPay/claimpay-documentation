@@ -1,0 +1,21 @@
+{
+  "name": "DeplFee Deployment Fee Charged",
+  "expression": [
+    "CALCULATE( ",
+    "            SUMX( vw_portfolio_purchases,",
+    "\t\t        IF ( [DeplFee Total Roll Forward Amount] < 0,",
+    "\t\t\t        IF ( [DeplFee Capped Deployment Fee] < [DeplFee Capped Factor Fee], [DeplFee Capped Factor Fee], [DeplFee Capped Deployment Fee] ),",
+    "\t\t\t        [DeplFee Capped Deployment Fee]",
+    "\t\t\t        )",
+    "            )",
+    "        , FILTER( vw_portfolio_purchases, vw_portfolio_purchases[purchase_date] >= calendar_dates[Month Start] && vw_portfolio_purchases[purchase_date] < calendar_dates[Month Start Next] )",
+    ")"
+  ],
+  "lineageTag": "c38fb203-72c5-41df-930d-ddcdc3e524f3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

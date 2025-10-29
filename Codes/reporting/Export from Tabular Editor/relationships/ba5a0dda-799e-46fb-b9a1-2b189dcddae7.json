@@ -1,0 +1,8 @@
+{
+  "name": "ba5a0dda-799e-46fb-b9a1-2b189dcddae7",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_motion_to_compel_discovery",
+  "toTable": "LocalDateTable_9705aa64-f3ad-4b94-9358-bb117358f5f6",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Claim Acceptant",
+  "dataType": "string",
+  "sourceColumn": "Claim Acceptant",
+  "lineageTag": "fdca317b-71f6-4191-a70f-d8602ab78548",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

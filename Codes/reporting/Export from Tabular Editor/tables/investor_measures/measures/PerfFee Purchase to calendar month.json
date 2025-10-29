@@ -1,0 +1,18 @@
+{
+  "name": "PerfFee Purchase to calendar month",
+  "expression": [
+    "CALCULATE( ",
+    "\t\t\t\t[Purchase Value], ",
+    "\t\t\t\tFILTER( purchase_aging, ",
+    "\t\t\t\t\tpurchase_aging[purchase_date] < purchase_aging[aging_start_next_month]  ",
+    "\t\t\t\t\t) ",
+    "\t\t\t\t)"
+  ],
+  "lineageTag": "d7a01df5-0ab4-4a03-bac3-cb1a1e54f5ac",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

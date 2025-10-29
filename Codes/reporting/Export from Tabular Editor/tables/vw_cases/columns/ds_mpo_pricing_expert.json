@@ -1,0 +1,29 @@
+{
+  "name": "ds_mpo_pricing_expert",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_mpo_pricing_expert",
+  "formatString": "Long Date",
+  "lineageTag": "40e25101-ac6f-4985-a019-bb6df136d380",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "3d7300f8-fe76-4898-8431-f091613824d5",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_4dc38312-0073-412f-8462-23218b2ed206",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

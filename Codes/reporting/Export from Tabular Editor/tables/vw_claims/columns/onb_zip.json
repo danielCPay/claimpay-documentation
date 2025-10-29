@@ -1,0 +1,13 @@
+{
+  "name": "onb_zip",
+  "dataType": "string",
+  "sourceColumn": "onb_zip",
+  "lineageTag": "3517efb1-f2d0-4fa8-8931-f83b0d6dc068",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

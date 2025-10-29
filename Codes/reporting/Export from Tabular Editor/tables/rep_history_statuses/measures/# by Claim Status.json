@@ -1,0 +1,6 @@
+{
+  "name": "# by Claim Status",
+  "expression": "calculate([Last #],KEEPFILTERS( rep_history_statuses[status_area]=\"Claim Status\" ))",
+  "formatString": "0",
+  "lineageTag": "bd8d8ba4-5d09-47b3-84d9-a2125e1cbc60"
+}

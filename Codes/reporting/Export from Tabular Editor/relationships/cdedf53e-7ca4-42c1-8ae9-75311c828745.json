@@ -1,0 +1,8 @@
+{
+  "name": "cdedf53e-7ca4-42c1-8ae9-75311c828745",
+  "fromTable": "vw_cases",
+  "fromColumn": "motion_cut_off_date",
+  "toTable": "LocalDateTable_17b13492-9863-48f7-a943-5a8f474dd7c3",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ls_secondary_status",
+  "dataType": "string",
+  "sourceColumn": "ls_secondary_status",
+  "lineageTag": "5097b9eb-b77d-41b2-91af-6177398176d7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

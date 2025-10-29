@@ -1,0 +1,11 @@
+{
+  "name": "Limit Reserve",
+  "expression": "sum(vw_claims[limit_reserve])",
+  "lineageTag": "5a85665a-d5a6-47e4-88a6-cbe7d77177b2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

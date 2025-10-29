@@ -1,0 +1,29 @@
+{
+  "name": "ds_mpo_contractor",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_mpo_contractor",
+  "formatString": "Long Date",
+  "lineageTag": "4a237909-68cf-42f5-8a63-ec1793f9f3b8",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "85fc528f-b8ed-4b5c-9dcf-189b10009c65",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_435f2a77-c6e7-49bc-9b1d-ac838e83d200",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "5c0251ce-393e-4f75-9b35-93ce6e06496c",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "sent_be_signed_date",
+  "toTable": "LocalDateTable_23303c93-3aa7-42e8-ba48-aab813f8d744",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

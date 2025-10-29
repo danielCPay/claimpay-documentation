@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": 3310,
+    "user": "yeti",
+    "password": "yetidbsecret",
+    "db": "yetiforce"
+}

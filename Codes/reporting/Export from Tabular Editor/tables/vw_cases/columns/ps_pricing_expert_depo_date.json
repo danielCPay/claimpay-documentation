@@ -1,0 +1,25 @@
+{
+  "name": "ps_pricing_expert_depo_date",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_pricing_expert_depo_date",
+  "formatString": "General Date",
+  "lineageTag": "3c7a013f-b872-4e6b-a9c3-501d58ca0220",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "301b658f-c449-4dcf-9be6-9a15803d3fac",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_18d42d03-7e72-4cb9-814f-2558a6b11287",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

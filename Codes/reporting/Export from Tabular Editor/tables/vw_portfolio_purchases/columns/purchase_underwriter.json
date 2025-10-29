@@ -1,0 +1,14 @@
+{
+  "name": "purchase_underwriter",
+  "dataType": "int64",
+  "sourceColumn": "purchase_underwriter",
+  "formatString": "0",
+  "lineageTag": "f89c2d8c-77f6-47f4-80ae-78415a3dd3c9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

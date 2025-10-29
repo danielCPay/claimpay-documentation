@@ -1,0 +1,14 @@
+{
+  "name": "settl_negot_demand_attorney",
+  "dataType": "int64",
+  "sourceColumn": "settl_negot_demand_attorney",
+  "formatString": "0",
+  "lineageTag": "dd0027bf-d390-48a4-8687-20b1498d320b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

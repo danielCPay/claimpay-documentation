@@ -1,0 +1,8 @@
+{
+  "name": "e51de240-131b-4803-b606-4633b437dab3",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_1_disco_set_agreed_due_date",
+  "toTable": "LocalDateTable_72e5cdfb-e82d-4fa9-babd-4e16b6c583b4",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

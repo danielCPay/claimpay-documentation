@@ -1,0 +1,14 @@
+{
+  "name": "case_manager",
+  "dataType": "int64",
+  "sourceColumn": "case_manager",
+  "formatString": "0",
+  "lineageTag": "2516f893-4e22-4759-94d6-9e951d2dc201",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

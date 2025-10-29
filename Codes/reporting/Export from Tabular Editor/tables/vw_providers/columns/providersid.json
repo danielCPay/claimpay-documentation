@@ -1,0 +1,14 @@
+{
+  "name": "providersid",
+  "dataType": "int64",
+  "sourceColumn": "providersid",
+  "formatString": "0",
+  "lineageTag": "066a94ed-f851-4728-a74f-a54ce8017ef4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

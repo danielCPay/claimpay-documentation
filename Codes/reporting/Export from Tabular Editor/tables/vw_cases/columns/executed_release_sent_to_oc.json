@@ -1,0 +1,29 @@
+{
+  "name": "executed_release_sent_to_oc",
+  "dataType": "dateTime",
+  "sourceColumn": "executed_release_sent_to_oc",
+  "formatString": "Long Date",
+  "lineageTag": "2791d582-8546-456c-83f0-0d80e77bfbca",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "01f26931-291c-42c4-a973-2fafd1b26987",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_5feef7bf-4cd1-49da-9dfc-b5443ec0f6af",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ls_status_changed_by",
+  "dataType": "string",
+  "sourceColumn": "ls_status_changed_by",
+  "lineageTag": "856efc1e-376c-4986-95e2-a0947f92ee1a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

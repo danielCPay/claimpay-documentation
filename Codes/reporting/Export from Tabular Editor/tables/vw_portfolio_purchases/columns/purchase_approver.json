@@ -1,0 +1,14 @@
+{
+  "name": "purchase_approver",
+  "dataType": "int64",
+  "sourceColumn": "purchase_approver",
+  "formatString": "0",
+  "lineageTag": "2fbc597d-b71d-426a-a57b-fd336d3451d9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

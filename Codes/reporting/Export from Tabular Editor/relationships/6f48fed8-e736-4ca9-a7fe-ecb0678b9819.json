@@ -1,0 +1,8 @@
+{
+  "name": "6f48fed8-e736-4ca9-a7fe-ecb0678b9819",
+  "fromTable": "vw_cases",
+  "fromColumn": "ds_meet_to_file_answer",
+  "toTable": "LocalDateTable_636bc0cd-6608-4dda-ab0e-9dc3dcf6c54f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

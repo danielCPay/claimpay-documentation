@@ -1,0 +1,14 @@
+{
+  "name": "similar_cases",
+  "dataType": "int64",
+  "sourceColumn": "similar_cases",
+  "formatString": "0",
+  "lineageTag": "5afcd65f-7d67-4be4-885d-7d4c0304ddb9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_20e64626-1a12-4bd7-b907-65f1678db048-651b3cc3-82ca-45a8-b805-708b9593afa1",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_insureds'[createdtime])), 1, 1), Date(Year(MAX('vw_insureds'[createdtime])), 12, 31))"
+  }
+}

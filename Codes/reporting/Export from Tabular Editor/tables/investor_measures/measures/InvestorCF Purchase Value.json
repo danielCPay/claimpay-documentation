@@ -1,0 +1,16 @@
+{
+  "name": "InvestorCF Purchase Value",
+  "expression": [
+    "CALCULATE(",
+    "                            SUMX( vw_portfolio_purchases, vw_portfolio_purchases[purchase_value] )",
+    "                            , FILTER( vw_portfolio_purchases, vw_portfolio_purchases[purchase_date] >= calendar_dates[Month Start] && vw_portfolio_purchases[purchase_date] < calendar_dates[Month Start Next]",
+    "                            ))"
+  ],
+  "lineageTag": "80a40638-f645-4762-8d4d-ee2491a1a768",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

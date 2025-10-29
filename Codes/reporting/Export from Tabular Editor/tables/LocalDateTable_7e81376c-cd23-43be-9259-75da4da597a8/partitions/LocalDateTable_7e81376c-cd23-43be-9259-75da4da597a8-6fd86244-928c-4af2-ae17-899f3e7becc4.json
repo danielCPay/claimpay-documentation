@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_7e81376c-cd23-43be-9259-75da4da597a8-6fd86244-928c-4af2-ae17-899f3e7becc4",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_claims'[purchased_time])), 1, 1), Date(Year(MAX('vw_claims'[purchased_time])), 12, 31))"
+  }
+}

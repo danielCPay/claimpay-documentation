@@ -1,0 +1,14 @@
+{
+  "name": "Approval/Rejection Duration (average hours)",
+  "expression": [
+    "SUMX( vw_claims, DATEDIFF( vw_claims[underwritten_time], vw_claims[approved_rejected_time], SECOND ) ) /3600",
+    "        / SUMX( vw_claims, IF( ISBLANK( DATEDIFF( vw_claims[underwritten_time], vw_claims[approved_rejected_time], SECOND ) ), 0, 1 ) )"
+  ],
+  "lineageTag": "a7607afa-df5b-4b79-a4b2-223495553000",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

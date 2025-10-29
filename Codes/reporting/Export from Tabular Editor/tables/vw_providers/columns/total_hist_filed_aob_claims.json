@@ -1,0 +1,14 @@
+{
+  "name": "total_hist_filed_aob_claims",
+  "dataType": "int64",
+  "sourceColumn": "total_hist_filed_aob_claims",
+  "formatString": "0",
+  "lineageTag": "955a9e0a-f523-4d22-9cf1-0b9fad31a99b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

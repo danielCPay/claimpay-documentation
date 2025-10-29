@@ -1,0 +1,17 @@
+{
+  "name": "total_buybacks",
+  "dataType": "double",
+  "sourceColumn": "total_buybacks",
+  "lineageTag": "55c78491-e677-4d62-9150-738014469cbc",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

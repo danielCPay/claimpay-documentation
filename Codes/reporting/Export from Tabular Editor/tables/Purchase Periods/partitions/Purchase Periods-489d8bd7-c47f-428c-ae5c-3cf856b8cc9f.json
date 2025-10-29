@@ -1,0 +1,17 @@
+{
+  "name": "Purchase Periods-489d8bd7-c47f-428c-ae5c-3cf856b8cc9f",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "union(",
+      "    ADDCOLUMNS(CALENDAR(TODAY()-1 ,TODAY()-1), \"Type\",\"Yesterday\", \"Order\", 1),",
+      "    ADDCOLUMNS(CALENDAR(TODAY() ,TODAY()), \"Type\",\"Today\", \"Order\", 2),",
+      "    ADDCOLUMNS(CALENDAR(TODAY()-WEEKDAY(TODAY())+1 ,TODAY()), \"Type\",\"This Week\", \"Order\", 3),",
+      "    ADDCOLUMNS(CALENDAR(TODAY()-WEEKDAY(TODAY())-7+1 ,TODAY()-WEEKDAY(TODAY())), \"Type\",\"Last Week\", \"Order\", 4),",
+      "    ADDCOLUMNS(CALENDAR(TODAY()-DAY(TODAY())+1,TODAY()), \"Type\", \"This Month\", \"Order\", 5),",
+      "    ADDCOLUMNS(CALENDAR(\"2020-1-1\",TODAY()), \"Type\",\"Custom\", \"Order\", 6)",
+      "    )"
+    ]
+  }
+}

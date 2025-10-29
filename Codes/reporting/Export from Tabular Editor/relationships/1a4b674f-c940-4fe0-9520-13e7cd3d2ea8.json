@@ -1,0 +1,8 @@
+{
+  "name": "1a4b674f-c940-4fe0-9520-13e7cd3d2ea8",
+  "fromTable": "vw_collections",
+  "fromColumn": "payment_date",
+  "toTable": "LocalDateTable_3790639c-fea0-4bc1-a079-285b99858aac",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

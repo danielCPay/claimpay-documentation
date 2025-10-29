@@ -1,0 +1,13 @@
+{
+  "name": "onb_policy_number",
+  "dataType": "string",
+  "sourceColumn": "onb_policy_number",
+  "lineageTag": "b9e91378-b447-4b0e-87b8-93bea530d0e8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

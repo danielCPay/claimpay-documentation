@@ -1,0 +1,17 @@
+{
+  "name": "wire_fees",
+  "dataType": "double",
+  "sourceColumn": "wire_fees",
+  "lineageTag": "b7c31816-58f3-4537-84ab-753a55d29de9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

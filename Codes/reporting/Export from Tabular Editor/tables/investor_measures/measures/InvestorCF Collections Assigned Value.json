@@ -1,0 +1,16 @@
+{
+  "name": "InvestorCF Collections Assigned Value",
+  "expression": [
+    "CALCULATE(",
+    "                                            SUMX( vw_claimcollections, vw_claimcollections[Assigned Value] ),",
+    "                                            FILTER( vw_collections, vw_collections[payment_date] >= calendar_dates[Month Start] && vw_collections[payment_date] < calendar_dates[Month Start Next] )",
+    ")"
+  ],
+  "lineageTag": "dd2c289e-c2aa-4e26-845b-74e1903fccd9",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

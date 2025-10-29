@@ -1,0 +1,8 @@
+{
+  "name": "e39d3aa7-2713-4fbd-9bfa-5f276cf23642",
+  "fromTable": "vw_cases",
+  "fromColumn": "completed_spol_sent",
+  "toTable": "LocalDateTable_0d15cff9-c290-4a28-b026-01717cc3325a",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

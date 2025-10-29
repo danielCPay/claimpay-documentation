@@ -1,0 +1,17 @@
+{
+  "name": "pct_litigated_coll_to_face_val",
+  "dataType": "double",
+  "sourceColumn": "pct_litigated_coll_to_face_val",
+  "lineageTag": "097ac05c-eb05-4ffb-a1ab-8e380ee3c2e3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

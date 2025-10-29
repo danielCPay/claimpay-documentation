@@ -1,0 +1,18 @@
+{
+  "name": "investor_meausure_id",
+  "dataType": "int64",
+  "sourceColumn": "investor_meausure_id",
+  "formatString": "0",
+  "lineageTag": "da3f8008-9528-4814-aa9c-5b35a6963509",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    }
+  ]
+}

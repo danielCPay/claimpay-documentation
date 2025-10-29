@@ -1,0 +1,8 @@
+{
+  "name": "099619d9-c117-483d-a60e-6f798a6a7ea2",
+  "fromTable": "vw_claims",
+  "fromColumn": "onb_date_of_loss",
+  "toTable": "LocalDateTable_94190bef-0953-4f8e-af06-34314c6084c7",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

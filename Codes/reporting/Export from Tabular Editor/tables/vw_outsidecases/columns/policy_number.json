@@ -1,0 +1,13 @@
+{
+  "name": "policy_number",
+  "dataType": "string",
+  "sourceColumn": "policy_number",
+  "lineageTag": "c7056378-2dd5-4a2c-aa24-d791542a7fde",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "applicable_states",
+  "dataType": "string",
+  "sourceColumn": "applicable_states",
+  "lineageTag": "50adc092-2984-4110-98fa-6be893d182d8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

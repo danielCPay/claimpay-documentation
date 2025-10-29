@@ -1,0 +1,8 @@
+{
+  "name": "658a4ce6-d25c-43c7-a74d-1cb729ac8ee6",
+  "fromTable": "vw_cases",
+  "fromColumn": "notice_of_appeal",
+  "toTable": "LocalDateTable_8c75fd10-8f29-4c45-8f03-d7272be8c1e7",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

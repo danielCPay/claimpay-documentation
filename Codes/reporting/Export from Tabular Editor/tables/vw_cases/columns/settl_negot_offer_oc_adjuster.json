@@ -1,0 +1,14 @@
+{
+  "name": "settl_negot_offer_oc_adjuster",
+  "dataType": "int64",
+  "sourceColumn": "settl_negot_offer_oc_adjuster",
+  "formatString": "0",
+  "lineageTag": "4d4e5626-00ad-4664-94f9-b58f23e3fca0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

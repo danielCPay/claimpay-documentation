@@ -1,0 +1,8 @@
+{
+  "name": "91eb8d92-0579-42c5-9d2e-26189eb42580",
+  "fromTable": "vw_claimcollections",
+  "fromColumn": "collection",
+  "toTable": "vw_collections",
+  "toColumn": "collection",
+  "crossFilteringBehavior": "bothDirections"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "8f99f15a-90a1-4208-b246-f2b89afb2244",
+  "fromTable": "vw_claimcollections",
+  "fromColumn": "disbursed_date",
+  "toTable": "LocalDateTable_8f918fc5-6b77-4db0-a583-d5359574a823",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Hours from Approved to Addendum Sent",
+  "expression": "MAX( DATEDIFF( [Last Claim Approved/Rejected], [Purchase Addendum Sent Date], SECOND ), 0 ) / 3600",
+  "formatString": "0.00",
+  "lineageTag": "0f8bae1a-fd88-4450-bcb4-cd92aadb53bf",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

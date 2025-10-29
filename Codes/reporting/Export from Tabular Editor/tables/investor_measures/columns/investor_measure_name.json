@@ -1,0 +1,18 @@
+{
+  "name": "investor_measure_name",
+  "dataType": "string",
+  "sourceColumn": "investor_measure_name",
+  "sortByColumn": "investor_meausure_id",
+  "lineageTag": "b3b55160-1a71-45f6-8a90-3ea846ff5d59",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    }
+  ]
+}

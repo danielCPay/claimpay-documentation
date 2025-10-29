@@ -1,0 +1,8 @@
+{
+  "name": "370b8160-0044-4549-ada7-1e240f832fac",
+  "fromTable": "vw_cases",
+  "fromColumn": "next_hearing_date",
+  "toTable": "LocalDateTable_62ccc40e-2a6b-45f2-9a65-95ccb8fdfb43",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

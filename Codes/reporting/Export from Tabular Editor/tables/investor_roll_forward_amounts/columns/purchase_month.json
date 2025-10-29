@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "purchase_month",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[purchase_month]",
+  "formatString": "General Date",
+  "lineageTag": "783e4d9d-8919-4c27-b306-8cee6a1416c4",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "8993c262-ed70-46e4-bcc7-a4319538674d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_2411881a-5936-4d3c-ad2f-42059eb0002e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

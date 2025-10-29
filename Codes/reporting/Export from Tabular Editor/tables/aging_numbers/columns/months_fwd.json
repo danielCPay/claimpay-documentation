@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "months_fwd",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[months_fwd]",
+  "formatString": "0",
+  "lineageTag": "f2ab4131-fe10-4a57-889f-6cf267135e5d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

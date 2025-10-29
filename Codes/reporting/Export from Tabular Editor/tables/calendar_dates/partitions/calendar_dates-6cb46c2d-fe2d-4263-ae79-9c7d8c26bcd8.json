@@ -1,0 +1,17 @@
+{
+  "name": "calendar_dates-6cb46c2d-fe2d-4263-ae79-9c7d8c26bcd8",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "ADDCOLUMNS(",
+      "\t\t\tCALENDAR( DATE(2020, 1, 1), TODAY()+365+365+31 )",
+      "\t\t\t, \"Month\", Format([Date], \"MMM yyyy\")",
+      "\t\t\t, \"Quarter\", Year([Date]) & \"-Q\" & Format([Date], \"q\")",
+      "\t\t\t, \"Year\", Format([Date], \"yyyy\")",
+      "\t\t\t, \"month_start\", DATE( YEAR([Date]), MONTH([Date]), 1 )",
+      "\t\t\t, \"month_end\", EOMONTH( [Date], 0 )",
+      "\t\t\t)"
+    ]
+  }
+}

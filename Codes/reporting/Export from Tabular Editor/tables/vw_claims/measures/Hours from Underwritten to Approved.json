@@ -1,0 +1,12 @@
+{
+  "name": "Hours from Underwritten to Approved",
+  "expression": "DATEDIFF( [Last Claim Underwritten], [Last Claim Approved/Rejected], SECOND ) / 3600",
+  "formatString": "0.00",
+  "lineageTag": "8559eea5-052d-44b3-b849-b25e2aacc72e",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

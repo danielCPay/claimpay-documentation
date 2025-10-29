@@ -1,0 +1,14 @@
+{
+  "name": "settl_negot_offer_age",
+  "dataType": "int64",
+  "sourceColumn": "settl_negot_offer_age",
+  "formatString": "0",
+  "lineageTag": "03c5ab54-8ae9-4c2e-864f-1390c405c60c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

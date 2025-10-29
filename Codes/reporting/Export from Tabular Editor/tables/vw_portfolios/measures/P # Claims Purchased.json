@@ -1,0 +1,6 @@
+{
+  "name": "P # Claims Purchased",
+  "expression": "sumx(vw_portfolios, vw_portfolios[total_number_accepted_claims])",
+  "formatString": "0",
+  "lineageTag": "8d0ce7dd-aa4c-47ba-bdd8-bccf05f18b4f"
+}

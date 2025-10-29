@@ -1,0 +1,17 @@
+{
+  "name": "total_reserves_released",
+  "dataType": "double",
+  "sourceColumn": "total_reserves_released",
+  "lineageTag": "1125b13a-0917-4802-8c72-c9f0d4e60f1c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

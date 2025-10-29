@@ -1,0 +1,13 @@
+{
+  "name": "zip",
+  "dataType": "string",
+  "sourceColumn": "zip",
+  "lineageTag": "89f247bf-9934-4e95-85eb-e77d60bc3e7a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "completed_spol_sent",
+  "dataType": "dateTime",
+  "sourceColumn": "completed_spol_sent",
+  "formatString": "Long Date",
+  "lineageTag": "fb2189fa-fbdf-4d90-a250-7b904aa98498",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e39d3aa7-2713-4fbd-9bfa-5f276cf23642",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_0d15cff9-c290-4a28-b026-01717cc3325a",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "pct_litigated_to_total_collect",
+  "dataType": "double",
+  "sourceColumn": "pct_litigated_to_total_collect",
+  "lineageTag": "839348d7-e792-4135-b40b-1ca2a4e02aff",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

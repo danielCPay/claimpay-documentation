@@ -1,0 +1,13 @@
+{
+  "name": "dummy_mediation_arbitration",
+  "dataType": "string",
+  "sourceColumn": "dummy_mediation_arbitration",
+  "lineageTag": "1cbb0def-4cde-497a-ba43-10ec4482d217",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "DeplFee Capped Deployment Fee",
+  "expression": "MIN( [DeplFee Calculated Deployment Fee], [DeplFee Capped Factor Fee] )",
+  "lineageTag": "d3d16f53-4af8-44fb-8147-b4285149c8c9",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "defendant_discovery_status",
+  "dataType": "string",
+  "sourceColumn": "defendant_discovery_status",
+  "lineageTag": "a7d6f33e-1465-4e71-9de0-0caecfab5d92",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

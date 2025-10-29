@@ -1,0 +1,13 @@
+{
+  "name": "defendant_msj_status",
+  "dataType": "string",
+  "sourceColumn": "defendant_msj_status",
+  "lineageTag": "c3dc4e68-d241-4f93-bcea-62b42f9d5de4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

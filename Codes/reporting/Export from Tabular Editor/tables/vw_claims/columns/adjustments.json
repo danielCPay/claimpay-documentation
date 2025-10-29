@@ -1,0 +1,17 @@
+{
+  "name": "adjustments",
+  "dataType": "double",
+  "sourceColumn": "adjustments",
+  "lineageTag": "9eabcbc4-f502-4a3d-a3a9-bcf358106ea4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

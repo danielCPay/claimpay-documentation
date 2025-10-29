@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_1150aaea-3c73-4cc8-86db-0a45e87ecd52-7a50faa3-fb58-46aa-8bb9-ecc1eda173a0",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[ds_msj_hearing_date])), 1, 1), Date(Year(MAX('vw_cases'[ds_msj_hearing_date])), 12, 31))"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "# Buybacks",
+  "expression": "CALCULATE([# Claims],KEEPFILTERS(vw_claims[claim_status]=\"Buyback\"))",
+  "formatString": "0",
+  "lineageTag": "41ac0cf7-b1de-471b-91d3-12cf8ca535cd"
+}

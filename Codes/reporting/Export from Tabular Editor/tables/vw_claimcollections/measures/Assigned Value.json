@@ -1,0 +1,11 @@
+{
+  "name": "Assigned Value",
+  "expression": "sum(vw_claimcollections[assigned_value])",
+  "lineageTag": "79901e08-1eea-4066-9adb-cecdc311fd26",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

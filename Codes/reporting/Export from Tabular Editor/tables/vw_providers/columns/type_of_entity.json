@@ -1,0 +1,13 @@
+{
+  "name": "type_of_entity",
+  "dataType": "string",
+  "sourceColumn": "type_of_entity",
+  "lineageTag": "0f92fc1e-015d-413f-9af3-6eeac1099c8f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "settlement_notes",
+  "dataType": "string",
+  "sourceColumn": "settlement_notes",
+  "lineageTag": "ab03aee0-e63f-4554-bdee-344572d591a0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

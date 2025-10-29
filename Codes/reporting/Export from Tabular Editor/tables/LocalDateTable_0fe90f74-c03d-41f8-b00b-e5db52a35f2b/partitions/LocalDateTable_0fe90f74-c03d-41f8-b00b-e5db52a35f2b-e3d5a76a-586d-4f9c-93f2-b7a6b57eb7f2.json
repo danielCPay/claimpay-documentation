@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_0fe90f74-c03d-41f8-b00b-e5db52a35f2b-e3d5a76a-586d-4f9c-93f2-b7a6b57eb7f2",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[voluntary_payment_date])), 1, 1), Date(Year(MAX('vw_cases'[voluntary_payment_date])), 12, 31))"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "8d82cf88-5a5f-4ef7-bd3a-89ea333c7a55",
+  "fromTable": "vw_cases",
+  "fromColumn": "jury_instructions_verdict_form",
+  "toTable": "LocalDateTable_c6d547c5-9d23-497d-8bf9-f09dedfa441e",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

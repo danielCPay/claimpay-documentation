@@ -1,0 +1,11 @@
+{
+  "name": "Claim Profit",
+  "expression": "sum(vw_claims[total_profit])",
+  "lineageTag": "459608b7-b783-4a32-9397-4da535e871cd",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

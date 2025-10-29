@@ -1,0 +1,17 @@
+{
+  "name": "hurdle",
+  "dataType": "double",
+  "sourceColumn": "hurdle",
+  "lineageTag": "3545bf86-b299-46d5-af11-a834f701889e",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

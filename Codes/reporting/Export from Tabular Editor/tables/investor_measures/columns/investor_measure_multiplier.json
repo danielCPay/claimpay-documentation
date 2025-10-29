@@ -1,0 +1,14 @@
+{
+  "name": "investor_measure_multiplier",
+  "dataType": "int64",
+  "sourceColumn": "investor_measure_multiplier",
+  "formatString": "0",
+  "lineageTag": "bdc6e1fe-a030-4096-979f-5f35b4143575",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

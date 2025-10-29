@@ -1,0 +1,17 @@
+{
+  "name": "total_balance",
+  "dataType": "double",
+  "sourceColumn": "total_balance",
+  "lineageTag": "30d0dda0-65d9-4206-a623-e95bbf5a042d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

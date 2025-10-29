@@ -1,0 +1,13 @@
+{
+  "name": "types_of_services",
+  "dataType": "string",
+  "sourceColumn": "types_of_services",
+  "lineageTag": "7692a1ec-d21b-4911-8823-46d2a0f41873",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

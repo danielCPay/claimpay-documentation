@@ -1,0 +1,13 @@
+{
+  "name": "dummy_appeal",
+  "dataType": "string",
+  "sourceColumn": "dummy_appeal",
+  "lineageTag": "ba6bed4b-8885-43bf-bdfa-3c026f3bdff0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

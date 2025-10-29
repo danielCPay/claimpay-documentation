@@ -1,0 +1,8 @@
+{
+  "name": "9f27b606-f167-4dbb-b989-0989ad32b58a",
+  "fromTable": "vw_cases",
+  "fromColumn": "ls_date_opened",
+  "toTable": "LocalDateTable_c6cd6450-e9f3-47c3-80bd-89eb81862572",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

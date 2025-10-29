@@ -1,0 +1,13 @@
+{
+  "name": "insurance_company_email",
+  "dataType": "string",
+  "sourceColumn": "insurance_company_email",
+  "lineageTag": "2b06cca8-ff21-4a24-901e-56d05289092c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

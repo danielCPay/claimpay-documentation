@@ -1,0 +1,8 @@
+{
+  "name": "1b4f71b7-f2fa-4fc6-adcd-71de6a062f63",
+  "fromTable": "vw_cases",
+  "fromColumn": "engineer_depo_date",
+  "toTable": "LocalDateTable_4600a508-37a7-4c07-b715-5d2dc21b79dc",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

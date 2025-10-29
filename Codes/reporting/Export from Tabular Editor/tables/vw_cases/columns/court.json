@@ -1,0 +1,14 @@
+{
+  "name": "court",
+  "dataType": "int64",
+  "sourceColumn": "court",
+  "formatString": "0",
+  "lineageTag": "2f9655f5-bef7-4920-a8a1-a938adfe8f28",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

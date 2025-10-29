@@ -1,0 +1,13 @@
+{
+  "name": "other_provided_services",
+  "dataType": "string",
+  "sourceColumn": "other_provided_services",
+  "lineageTag": "00012a8d-886f-4e8d-be3a-a371bdd97b71",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

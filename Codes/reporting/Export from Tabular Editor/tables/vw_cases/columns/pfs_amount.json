@@ -1,0 +1,17 @@
+{
+  "name": "pfs_amount",
+  "dataType": "double",
+  "sourceColumn": "pfs_amount",
+  "lineageTag": "afdcc43c-e608-457b-ab32-c6630b5971c9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

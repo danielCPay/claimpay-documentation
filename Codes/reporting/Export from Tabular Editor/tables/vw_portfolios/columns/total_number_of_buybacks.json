@@ -1,0 +1,14 @@
+{
+  "name": "total_number_of_buybacks",
+  "dataType": "int64",
+  "sourceColumn": "total_number_of_buybacks",
+  "formatString": "0",
+  "lineageTag": "057f0b10-9b3a-48e8-935e-f44bc06e2060",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

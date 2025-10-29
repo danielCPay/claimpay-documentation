@@ -1,0 +1,6 @@
+{
+  "name": "Selected Measure ID",
+  "expression": "max( investor_measures[investor_meausure_id] )",
+  "formatString": "0",
+  "lineageTag": "f58eccb7-5c6a-433d-a985-e18aea05f9c9"
+}

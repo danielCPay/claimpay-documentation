@@ -1,0 +1,17 @@
+{
+  "name": "cash_to_seller",
+  "dataType": "double",
+  "sourceColumn": "cash_to_seller",
+  "lineageTag": "532d8258-8532-485c-898d-ba053e3520b0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

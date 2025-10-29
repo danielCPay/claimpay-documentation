@@ -1,0 +1,8 @@
+{
+  "name": "a5563ddb-6d43-4ca7-83e7-7c823fd07834",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "addendum_date",
+  "toTable": "LocalDateTable_555b3a80-482c-432c-a739-065dffc78400",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

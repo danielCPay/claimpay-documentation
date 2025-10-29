@@ -1,0 +1,29 @@
+{
+  "name": "ls_date_opened",
+  "dataType": "dateTime",
+  "sourceColumn": "ls_date_opened",
+  "formatString": "Long Date",
+  "lineageTag": "205ed256-1e5d-40f6-8a00-318890bb3d5a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "9f27b606-f167-4dbb-b989-0989ad32b58a",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_c6cd6450-e9f3-47c3-80bd-89eb81862572",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

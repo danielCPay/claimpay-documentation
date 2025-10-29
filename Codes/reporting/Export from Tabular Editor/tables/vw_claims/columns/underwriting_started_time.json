@@ -1,0 +1,25 @@
+{
+  "name": "underwriting_started_time",
+  "dataType": "dateTime",
+  "sourceColumn": "underwriting_started_time",
+  "formatString": "General Date",
+  "lineageTag": "6f5408db-1159-4e73-ae40-e6ce767cfb04",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "a1f354ba-eb2f-4314-9e9f-13484d170947",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_dcf713bb-a2ce-4a4e-bf59-023b42ec1699",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

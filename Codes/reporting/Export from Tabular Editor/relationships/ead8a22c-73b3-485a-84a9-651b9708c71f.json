@@ -1,0 +1,8 @@
+{
+  "name": "ead8a22c-73b3-485a-84a9-651b9708c71f",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_corp_rep_depo_date",
+  "toTable": "LocalDateTable_6b3e883c-761f-44fd-884f-b8ddd5ca8500",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

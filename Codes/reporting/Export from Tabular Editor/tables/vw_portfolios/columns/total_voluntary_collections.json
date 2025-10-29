@@ -1,0 +1,17 @@
+{
+  "name": "total_voluntary_collections",
+  "dataType": "double",
+  "sourceColumn": "total_voluntary_collections",
+  "lineageTag": "796b95e7-621b-4a7e-8607-69996b6f6948",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

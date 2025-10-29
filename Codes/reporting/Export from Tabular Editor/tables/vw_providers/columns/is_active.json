@@ -1,0 +1,14 @@
+{
+  "name": "is_active",
+  "dataType": "int64",
+  "sourceColumn": "is_active",
+  "formatString": "0",
+  "lineageTag": "c05bfca5-128f-4c6d-8242-750fb9814c11",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

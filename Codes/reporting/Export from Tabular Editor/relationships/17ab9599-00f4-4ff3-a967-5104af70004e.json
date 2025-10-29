@@ -1,0 +1,8 @@
+{
+  "name": "17ab9599-00f4-4ff3-a967-5104af70004e",
+  "fromTable": "vw_cases",
+  "fromColumn": "ds_mpo_fa",
+  "toTable": "LocalDateTable_4e24623a-213f-4ce5-9867-3a2a51d6364a",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

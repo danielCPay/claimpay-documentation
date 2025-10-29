@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_71ea0c1d-ff45-4eea-a317-76e17aa036d6-8f81db9d-f877-447e-8a7c-44b893cef351",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_portfolios'[approved_date])), 1, 1), Date(Year(MAX('vw_portfolios'[approved_date])), 12, 31))"
+  }
+}

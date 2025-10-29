@@ -1,0 +1,13 @@
+{
+  "name": "lop_signed_by_ho",
+  "dataType": "string",
+  "sourceColumn": "lop_signed_by_ho",
+  "lineageTag": "3624bf24-2b3d-4170-a84e-8b7ba06ceb01",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

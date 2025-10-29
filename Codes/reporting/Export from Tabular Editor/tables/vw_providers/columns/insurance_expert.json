@@ -1,0 +1,14 @@
+{
+  "name": "insurance_expert",
+  "dataType": "int64",
+  "sourceColumn": "insurance_expert",
+  "formatString": "0",
+  "lineageTag": "67045bfc-8988-4ad8-884a-25d536749981",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

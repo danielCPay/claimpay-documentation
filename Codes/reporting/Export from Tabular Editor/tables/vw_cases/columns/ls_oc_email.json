@@ -1,0 +1,13 @@
+{
+  "name": "ls_oc_email",
+  "dataType": "string",
+  "sourceColumn": "ls_oc_email",
+  "lineageTag": "a6e8899f-fe68-4b75-bf68-cbdc99a07f62",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

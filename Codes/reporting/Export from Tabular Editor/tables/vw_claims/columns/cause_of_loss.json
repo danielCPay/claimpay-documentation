@@ -1,0 +1,13 @@
+{
+  "name": "cause_of_loss",
+  "dataType": "string",
+  "sourceColumn": "cause_of_loss",
+  "lineageTag": "3d6c08c8-6b36-4b26-a269-e36edccc5381",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

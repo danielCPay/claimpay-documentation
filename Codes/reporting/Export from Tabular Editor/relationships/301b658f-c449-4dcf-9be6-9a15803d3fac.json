@@ -1,0 +1,8 @@
+{
+  "name": "301b658f-c449-4dcf-9be6-9a15803d3fac",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_pricing_expert_depo_date",
+  "toTable": "LocalDateTable_18d42d03-7e72-4cb9-814f-2558a6b11287",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

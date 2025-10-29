@@ -1,0 +1,13 @@
+{
+  "name": "dry_logs",
+  "dataType": "string",
+  "sourceColumn": "dry_logs",
+  "lineageTag": "79626f8e-9ec3-42f4-97fb-d1e703540f7b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

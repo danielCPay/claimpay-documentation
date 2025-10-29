@@ -1,0 +1,8 @@
+{
+  "name": "721821ad-8ef9-4ca6-ac95-23112eb88e36",
+  "toCardinality": "many",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "purchase_date",
+  "toTable": "Purchase Periods",
+  "toColumn": "Date"
+}

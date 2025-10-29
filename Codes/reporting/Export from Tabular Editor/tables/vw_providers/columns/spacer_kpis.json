@@ -1,0 +1,13 @@
+{
+  "name": "spacer_kpis",
+  "dataType": "string",
+  "sourceColumn": "spacer_kpis",
+  "lineageTag": "fa324710-db67-4bc5-9031-ac60f090ff8c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

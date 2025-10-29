@@ -1,0 +1,29 @@
+{
+  "name": "ps_mpo_plaintiff",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_mpo_plaintiff",
+  "formatString": "Long Date",
+  "lineageTag": "311b8373-72f2-4548-96c4-c8cc84e6ea7e",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "8177e69d-8d72-4be9-9e56-41f5b0c62bce",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_3e0e3a00-e182-4898-ad32-b25256fcb291",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

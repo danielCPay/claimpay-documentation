@@ -1,0 +1,35 @@
+"programalgorithmsid";"program_algorithm_name";"number";"algorithm_description"
+"246780";"FF step-ups after months";"FF_STEP_UPS_AFTER_MONTHS";"<div>
+<p>The algorithm replaces standard Factor Fee calculation.<br>
+The Factor Fee is calculated on purchase and then increased after specified number of months. The FF level is dependent on number of months and is applied to remaining Adjusted Face Value:</p>
+<div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;">delta Factor Fee = (Adjusted Face Value - Total PMC Collections) * delta (Portfolio Purchase.Program. dynamic Factor Fee % from the "Algorithm Parameters" field)<br>
+Factor Fee = previous Factor Fee + delta Factor Fee </div>
+<p>Other calculations use standard formulas, including "Hurdle" and "Hurdle %" - they are recalculated accordingly.<br>
+Example syntax:</p>
+<div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;"><code>up to 12 Months: 10%<br>
+up to 18 Months: 15%<br>
+more: 20%</code></div>
+<p>Number of steps as well as numeric values can be changed, but the syntax has to be strictly followed. Each consecutive step should have increased Factor Fee %.<br>
+<br>
+Example scenario:</p>
+<div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;">----- on Purchase Date ------------<br>
+Adjusted Face Value = $ 100 000<br>
+--> Factor Fee = 10% * 100000 = $ 10000<br>
+----- after 12 months ---------------<br>
+Total PMC Collections  20000.<br>
+--> delta FF = (15%-10%) * (100000-20000) = 5% * 80000 = $ 4000<br>
+--> FF = 10000+4000 = $ 14000<br>
+----- after 18 months ---------------<br>
+Total PMC Collections = $ 50000<br>
+--> delta FF = (20%-15%) * (100000-50000) = 5% * 50000 = $ 2500<br>
+--> FF = 14000+2500 = $ 16500</div>
+<p>The system uses "Internal Temporal Data" field to save "Total PMC Collections" values registered on threshold dates. </p>
+<div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;">{ "Total PMC Collections on threshold dates" = [20000, 50000]}</div>
+<p>-<br>
+ </p>
+</div>
+"
+"246996";"Factor fee from Purchase Price instead of AFV";"FF_FROM_PP";"Factor Fee will be calculated as percentage of Purchase Price.<br>
+<br>
+<span style="font-family:'Courier New', Courier, monospace;">Claim.Factor Fee = Claim.Purchase Price / Portfolio Purchase.Program.Purchase Price % * Portfolio Purchase.Program.Factor Fee %</span>"
+"246997";"Special rule for PCG: PP=1500, 1100";"FF_SPECIAL_PCG_1500_1100";""

@@ -1,0 +1,20 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "quarters_fwd",
+  "dataType": "double",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[quarters_fwd]",
+  "lineageTag": "9588e3b0-88a8-46b5-a9f0-92b35ee6f238",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

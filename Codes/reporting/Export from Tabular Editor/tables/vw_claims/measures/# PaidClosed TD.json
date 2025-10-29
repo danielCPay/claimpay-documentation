@@ -1,0 +1,6 @@
+{
+  "name": "# PaidClosed TD",
+  "expression": "CALCULATE([# Claims Paid+Closed], filter(vw_claims, vw_claims[claim_paid_date]<=[Aging to date]))",
+  "formatString": "0",
+  "lineageTag": "86079bf5-2ea6-4a03-9c2a-7037c57cec14"
+}

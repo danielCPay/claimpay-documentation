@@ -1,0 +1,14 @@
+{
+  "name": "co_counsel",
+  "dataType": "int64",
+  "sourceColumn": "co_counsel",
+  "formatString": "0",
+  "lineageTag": "7de37c31-44ff-450f-b8c7-ea6a42831519",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

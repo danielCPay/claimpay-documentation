@@ -1,0 +1,8 @@
+{
+  "name": "f2416b0e-18fc-4ee5-b0ba-1615ac98b71a",
+  "fromTable": "vw_claims",
+  "fromColumn": "approved_rejected_time",
+  "toTable": "LocalDateTable_e8722c41-affa-43e5-af8d-bf823d0ca25c",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

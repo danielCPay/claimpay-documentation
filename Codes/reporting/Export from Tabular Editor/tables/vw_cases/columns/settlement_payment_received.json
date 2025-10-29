@@ -1,0 +1,29 @@
+{
+  "name": "settlement_payment_received",
+  "dataType": "dateTime",
+  "sourceColumn": "settlement_payment_received",
+  "formatString": "Long Date",
+  "lineageTag": "81c4a027-1053-4763-b320-0a75a216db40",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "7ff56e5b-473d-4ae5-a847-e0f702c529ca",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_003046e3-3641-4761-a55b-4d54c8f83c27",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

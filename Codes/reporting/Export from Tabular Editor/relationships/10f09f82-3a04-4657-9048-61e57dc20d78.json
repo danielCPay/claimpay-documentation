@@ -1,0 +1,7 @@
+{
+  "name": "10f09f82-3a04-4657-9048-61e57dc20d78",
+  "fromTable": "vw_portfolio_purchases",
+  "fromColumn": "investor_purchase_month",
+  "toTable": "investor_roll_forward_amounts",
+  "toColumn": "investor_purchase_month"
+}

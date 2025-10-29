@@ -1,0 +1,29 @@
+{
+  "name": "ds_meet_to_file_answer",
+  "dataType": "dateTime",
+  "sourceColumn": "ds_meet_to_file_answer",
+  "formatString": "Long Date",
+  "lineageTag": "dc6ac191-8f7b-42a4-a1d6-39f8e0ee2e63",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "6f48fed8-e736-4ca9-a7fe-ecb0678b9819",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_636bc0cd-6608-4dda-ab0e-9dc3dcf6c54f",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "answer",
+  "dataType": "dateTime",
+  "sourceColumn": "answer",
+  "formatString": "Long Date",
+  "lineageTag": "c2fad993-5b16-4134-977f-530b0b62a80f",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "7a3ea835-0623-476c-b979-7561cc7f54a5",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_a88a45cd-2d4f-485d-8e3a-1e62a14b64c4",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

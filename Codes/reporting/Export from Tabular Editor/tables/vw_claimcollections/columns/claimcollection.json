@@ -1,0 +1,14 @@
+{
+  "name": "claimcollection",
+  "dataType": "int64",
+  "sourceColumn": "claimcollection",
+  "formatString": "0",
+  "lineageTag": "df7a8364-9066-4da6-bbee-7c7bef468ab1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "attorney_fee_settled",
+  "dataType": "double",
+  "sourceColumn": "attorney_fee_settled",
+  "lineageTag": "cc122972-7dec-494a-86b1-4df4e3e20f47",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

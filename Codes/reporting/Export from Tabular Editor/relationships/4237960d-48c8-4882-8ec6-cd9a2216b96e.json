@@ -1,0 +1,8 @@
+{
+  "name": "4237960d-48c8-4882-8ec6-cd9a2216b96e",
+  "fromTable": "vw_cases",
+  "fromColumn": "joint_pre_trial_statement_due",
+  "toTable": "LocalDateTable_301653f4-7ae5-4db8-96b9-1b87348f2113",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

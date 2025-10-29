@@ -1,0 +1,6 @@
+{
+  "name": "P # Buybacks",
+  "expression": "sum(vw_portfolios[total_number_of_buybacks])",
+  "formatString": "0",
+  "lineageTag": "bbebfa61-19ae-4559-9179-363df08a1934"
+}

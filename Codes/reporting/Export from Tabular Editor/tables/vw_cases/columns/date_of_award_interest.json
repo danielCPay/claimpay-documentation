@@ -1,0 +1,29 @@
+{
+  "name": "date_of_award_interest",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_award_interest",
+  "formatString": "Long Date",
+  "lineageTag": "f57c545c-76e7-418e-babc-540e85c48f58",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e1c7b79b-93a7-439b-8cab-a4010d380633",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_3d8797e2-45c8-46f7-a639-9437778bd9ce",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

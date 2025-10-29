@@ -1,0 +1,13 @@
+{
+  "name": "onb_city",
+  "dataType": "string",
+  "sourceColumn": "onb_city",
+  "lineageTag": "43457b98-7ce6-46e0-8608-bac9a5da5477",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

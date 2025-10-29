@@ -1,0 +1,14 @@
+{
+  "name": "number_of_contacts_same_email",
+  "dataType": "int64",
+  "sourceColumn": "number_of_contacts_same_email",
+  "formatString": "0",
+  "lineageTag": "5fa6bef0-49d3-4548-a186-1be767763e11",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

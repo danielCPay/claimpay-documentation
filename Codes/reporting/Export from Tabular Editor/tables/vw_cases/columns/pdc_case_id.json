@@ -1,0 +1,13 @@
+{
+  "name": "pdc_case_id",
+  "dataType": "string",
+  "sourceColumn": "pdc_case_id",
+  "lineageTag": "8b1c9fb1-2db0-443c-8a2e-4edf3c1aa165",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

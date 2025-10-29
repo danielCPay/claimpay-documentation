@@ -1,0 +1,29 @@
+{
+  "name": "date_of_license_to_do_business",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_license_to_do_business",
+  "formatString": "Long Date",
+  "lineageTag": "10885670-a57e-476d-bd85-d2a11de5af30",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "eef513bb-aaf5-444f-9f6b-6bd89127af8d",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_96fe52d1-0b9a-4389-a5eb-947df324f9ea",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

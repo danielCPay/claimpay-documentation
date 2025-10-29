@@ -1,0 +1,8 @@
+{
+  "name": "745da17c-3cd1-4511-af3f-4971bcc826bb",
+  "fromTable": "vw_cases",
+  "fromColumn": "pdc_sync_date",
+  "toTable": "LocalDateTable_9c81fb91-0bf5-47aa-96f4-9902d984904f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "type_of_job",
+  "dataType": "string",
+  "sourceColumn": "type_of_job",
+  "lineageTag": "0b313c37-7a9a-4aa3-901c-cfde68527054",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

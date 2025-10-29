@@ -1,0 +1,17 @@
+{
+  "name": "total_profit",
+  "dataType": "double",
+  "sourceColumn": "total_profit",
+  "lineageTag": "70bc92ac-f73e-470a-9d61-0275ae5c6cc6",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

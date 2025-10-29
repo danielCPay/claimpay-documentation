@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_96fe52d1-0b9a-4389-a5eb-947df324f9ea-3eadf6b2-106d-40b9-9b67-0c7a80c506cb",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_providers'[date_of_license_to_do_business])), 1, 1), Date(Year(MAX('vw_providers'[date_of_license_to_do_business])), 12, 31))"
+  }
+}

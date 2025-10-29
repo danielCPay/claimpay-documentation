@@ -1,0 +1,10 @@
+{
+  "name": "vw_collections",
+  "lineageTag": "39b9bd3b-db60-494b-bc0f-d4c42455c5d2",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

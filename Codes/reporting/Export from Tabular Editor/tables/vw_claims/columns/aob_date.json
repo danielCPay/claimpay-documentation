@@ -1,0 +1,29 @@
+{
+  "name": "aob_date",
+  "dataType": "dateTime",
+  "sourceColumn": "aob_date",
+  "formatString": "Long Date",
+  "lineageTag": "b6bfbf59-4224-4229-96b5-93f867f82eb9",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "87716960-fa90-4417-bca3-a76ac7bd2824",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_d85316cf-3e2e-47eb-9225-0d0aa7767568",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

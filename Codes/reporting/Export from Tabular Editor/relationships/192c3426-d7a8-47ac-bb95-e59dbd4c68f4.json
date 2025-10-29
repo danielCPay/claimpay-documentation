@@ -1,0 +1,8 @@
+{
+  "name": "192c3426-d7a8-47ac-bb95-e59dbd4c68f4",
+  "fromTable": "vw_cases",
+  "fromColumn": "ps_insurance_expert_depo_date",
+  "toTable": "LocalDateTable_c9e58ac9-3592-4346-8113-5cadee9b48ee",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

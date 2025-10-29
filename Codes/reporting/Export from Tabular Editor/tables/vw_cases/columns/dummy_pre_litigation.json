@@ -1,0 +1,13 @@
+{
+  "name": "dummy_pre_litigation",
+  "dataType": "string",
+  "sourceColumn": "dummy_pre_litigation",
+  "lineageTag": "f90c56da-0302-4160-a36d-fe32f61a2072",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

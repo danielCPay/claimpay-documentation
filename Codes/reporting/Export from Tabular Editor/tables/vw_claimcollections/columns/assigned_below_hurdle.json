@@ -1,0 +1,17 @@
+{
+  "name": "assigned_below_hurdle",
+  "dataType": "double",
+  "sourceColumn": "assigned_below_hurdle",
+  "lineageTag": "9656b9d6-9cf9-4ddc-a3a7-7c0b6fda963d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

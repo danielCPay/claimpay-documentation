@@ -1,0 +1,17 @@
+{
+  "name": "refundable_reserve",
+  "dataType": "double",
+  "sourceColumn": "refundable_reserve",
+  "lineageTag": "ed789576-50c9-4a74-8114-5a2ad96c4d8b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

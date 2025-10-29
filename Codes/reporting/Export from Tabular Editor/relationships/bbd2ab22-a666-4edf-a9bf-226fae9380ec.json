@@ -1,0 +1,8 @@
+{
+  "name": "bbd2ab22-a666-4edf-a9bf-226fae9380ec",
+  "fromTable": "vw_cases",
+  "fromColumn": "answer_deadline",
+  "toTable": "LocalDateTable_66c5544b-4d89-49f4-abb7-d21624b939aa",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

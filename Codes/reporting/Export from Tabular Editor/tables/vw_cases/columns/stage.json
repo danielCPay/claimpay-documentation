@@ -1,0 +1,13 @@
+{
+  "name": "stage",
+  "dataType": "string",
+  "sourceColumn": "stage",
+  "lineageTag": "1df49df3-b6da-4a70-88aa-2afc07838ba4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

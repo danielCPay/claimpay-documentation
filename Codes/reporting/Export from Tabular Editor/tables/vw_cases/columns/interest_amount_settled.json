@@ -1,0 +1,17 @@
+{
+  "name": "interest_amount_settled",
+  "dataType": "double",
+  "sourceColumn": "interest_amount_settled",
+  "lineageTag": "dd922042-e893-4fa6-9bd7-3280e554fbd5",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "total_litigation_costs",
+  "dataType": "double",
+  "sourceColumn": "total_litigation_costs",
+  "lineageTag": "9e692697-c6a9-49f8-b8e5-15a969a583d1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

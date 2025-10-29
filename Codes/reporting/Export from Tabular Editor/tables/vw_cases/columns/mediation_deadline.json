@@ -1,0 +1,29 @@
+{
+  "name": "mediation_deadline",
+  "dataType": "dateTime",
+  "sourceColumn": "mediation_deadline",
+  "formatString": "Long Date",
+  "lineageTag": "e7cbb3e9-74e9-4376-931c-6d9d9bd9845a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0c1908f3-bb85-4f2b-a975-5b81082e0445",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_2cf5fded-cb0a-403e-998b-724a642e9bef",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

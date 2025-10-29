@@ -1,0 +1,29 @@
+{
+  "name": "master_purchase_agreement_date",
+  "dataType": "dateTime",
+  "sourceColumn": "master_purchase_agreement_date",
+  "formatString": "Long Date",
+  "lineageTag": "a4fef153-5bb2-4b3f-88d2-2b872f4c78bd",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Odmiana",
+      "relationship": "cf4afc74-5964-47fd-9360-021e447cc30a",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_8b760550-8a6d-497f-bd7c-8ec5e885052e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

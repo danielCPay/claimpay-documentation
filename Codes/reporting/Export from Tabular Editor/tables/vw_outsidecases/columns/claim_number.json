@@ -1,0 +1,13 @@
+{
+  "name": "claim_number",
+  "dataType": "string",
+  "sourceColumn": "claim_number",
+  "lineageTag": "5c7799ce-bb22-48f9-84b0-6c03c22543e0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

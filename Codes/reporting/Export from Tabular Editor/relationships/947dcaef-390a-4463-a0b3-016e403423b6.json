@@ -1,0 +1,8 @@
+{
+  "name": "947dcaef-390a-4463-a0b3-016e403423b6",
+  "fromTable": "vw_cases",
+  "fromColumn": "mediation_deadline_ma",
+  "toTable": "LocalDateTable_34a75f7d-1f13-4efd-9c74-86dba0444ee5",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

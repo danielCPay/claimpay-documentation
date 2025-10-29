@@ -1,0 +1,14 @@
+{
+  "name": "public_adjuster",
+  "dataType": "int64",
+  "sourceColumn": "public_adjuster",
+  "formatString": "0",
+  "lineageTag": "8c18df8b-7cc1-42cb-93c1-e2e36162ef2e",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

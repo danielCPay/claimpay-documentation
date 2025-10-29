@@ -1,0 +1,29 @@
+{
+  "name": "ps_3_disco_set_ds_mfet",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_3_disco_set_ds_mfet",
+  "formatString": "Long Date",
+  "lineageTag": "bf2c0732-8764-4019-8526-08256e9f67bc",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "7bd2b482-bf72-4a63-b1d5-b6d2448756df",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_4475ca29-649a-4657-8ad6-43efe24427d1",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

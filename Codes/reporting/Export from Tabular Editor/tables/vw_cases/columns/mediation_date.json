@@ -1,0 +1,29 @@
+{
+  "name": "mediation_date",
+  "dataType": "dateTime",
+  "sourceColumn": "mediation_date",
+  "formatString": "Long Date",
+  "lineageTag": "14cf22dc-2614-4c55-939e-f77c254f63c1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "6dfa44e6-1dbd-4a34-87d6-bf2f75b2e8ef",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_4a9186cc-820b-4e84-bccf-5e297b6e2821",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "filling_fee_settled",
+  "dataType": "double",
+  "sourceColumn": "filling_fee_settled",
+  "lineageTag": "b874e11c-1aad-4506-88e2-6de91cdc8d98",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

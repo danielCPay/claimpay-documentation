@@ -1,0 +1,12 @@
+{
+  "name": "Purchase % Distribution",
+  "expression": "[Total Invested]/[Global Purchase Value]",
+  "formatString": "0.00%;-0.00%;0.00%",
+  "lineageTag": "325c0dd3-4376-40c7-ac93-bc4ad83cebfe",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

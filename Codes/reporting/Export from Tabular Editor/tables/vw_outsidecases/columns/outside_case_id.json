@@ -1,0 +1,13 @@
+{
+  "name": "outside_case_id",
+  "dataType": "string",
+  "sourceColumn": "outside_case_id",
+  "lineageTag": "e26220be-18a5-48d4-9fef-762c547617be",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

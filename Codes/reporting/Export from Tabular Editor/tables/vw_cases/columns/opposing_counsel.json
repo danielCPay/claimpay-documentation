@@ -1,0 +1,14 @@
+{
+  "name": "opposing_counsel",
+  "dataType": "int64",
+  "sourceColumn": "opposing_counsel",
+  "formatString": "0",
+  "lineageTag": "90d3cb44-00b3-4e6e-83d1-f713aa8ed809",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

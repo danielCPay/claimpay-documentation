@@ -1,0 +1,14 @@
+{
+  "name": "number_of_employess",
+  "dataType": "int64",
+  "sourceColumn": "number_of_employess",
+  "formatString": "0",
+  "lineageTag": "a71bf5f4-d8dd-4735-a455-0a84a8fc41be",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

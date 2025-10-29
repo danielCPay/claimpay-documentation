@@ -1,0 +1,10 @@
+{
+  "name": "vw_users",
+  "lineageTag": "1e05fb2e-c397-4e85-a77a-3251e6d1c2d3",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

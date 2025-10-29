@@ -1,0 +1,6 @@
+{
+  "name": "Month Start",
+  "expression": "MIN( calendar_dates[month_start] )",
+  "formatString": "General Date",
+  "lineageTag": "d8766d03-8e87-4eb7-aaa7-cdba87b1426b"
+}

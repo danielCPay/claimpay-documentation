@@ -1,0 +1,13 @@
+{
+  "name": "trial_status",
+  "dataType": "string",
+  "sourceColumn": "trial_status",
+  "lineageTag": "c00eef38-2568-4a2f-bafb-22376e589413",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

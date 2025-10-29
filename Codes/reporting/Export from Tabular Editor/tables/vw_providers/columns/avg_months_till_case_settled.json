@@ -1,0 +1,14 @@
+{
+  "name": "avg_months_till_case_settled",
+  "dataType": "int64",
+  "sourceColumn": "avg_months_till_case_settled",
+  "formatString": "0",
+  "lineageTag": "4815ea05-b78f-484e-9643-814e185a5cb1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

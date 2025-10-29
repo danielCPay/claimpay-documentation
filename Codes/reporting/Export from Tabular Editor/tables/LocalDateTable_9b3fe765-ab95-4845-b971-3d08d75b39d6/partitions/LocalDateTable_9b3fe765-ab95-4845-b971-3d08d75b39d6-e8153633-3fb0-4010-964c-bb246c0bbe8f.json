@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_9b3fe765-ab95-4845-b971-3d08d75b39d6-e8153633-3fb0-4010-964c-bb246c0bbe8f",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[settl_negot_offer_last_date])), 1, 1), Date(Year(MAX('vw_cases'[settl_negot_offer_last_date])), 12, 31))"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "service_of_process",
+  "dataType": "dateTime",
+  "sourceColumn": "service_of_process",
+  "formatString": "Long Date",
+  "lineageTag": "24322d0f-bbe5-49ca-87e3-4abacbf67ac2",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e630db43-7bed-4be2-8c75-f521710d2119",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_61da77f0-3e34-423e-97ca-3c9bb0a2808e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

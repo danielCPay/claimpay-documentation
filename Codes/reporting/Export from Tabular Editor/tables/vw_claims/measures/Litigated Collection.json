@@ -1,0 +1,11 @@
+{
+  "name": "Litigated Collection",
+  "expression": "sum(vw_claims[total_litigated_collections])",
+  "lineageTag": "d9202154-d81f-4f00-b053-2c280bd4916e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

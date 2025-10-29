@@ -1,0 +1,11 @@
+{
+  "name": "Total Invested",
+  "expression": "sum(vw_claims[purchase_price])",
+  "lineageTag": "b9a69008-b4fa-4df2-bda5-e6982968ac76",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

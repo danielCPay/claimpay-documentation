@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "aging_start_next_month",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[aging_start_next_month]",
+  "formatString": "General Date",
+  "lineageTag": "4a5d6bf9-9b86-4357-9c0a-65fbf0a4e3bf",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "068a02d8-f1f6-46c1-8d02-800cf39d7683",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_5164225c-b9cb-4b59-97eb-3f5393f43c5e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

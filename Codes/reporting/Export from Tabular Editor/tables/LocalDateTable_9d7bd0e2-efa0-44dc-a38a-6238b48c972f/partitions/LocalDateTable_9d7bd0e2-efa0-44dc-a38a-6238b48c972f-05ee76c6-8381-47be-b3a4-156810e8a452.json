@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_9d7bd0e2-efa0-44dc-a38a-6238b48c972f-05ee76c6-8381-47be-b3a4-156810e8a452",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('purchase_aging'[aging_start_month])), 1, 1), Date(Year(MAX('purchase_aging'[aging_start_month])), 12, 31))"
+  }
+}

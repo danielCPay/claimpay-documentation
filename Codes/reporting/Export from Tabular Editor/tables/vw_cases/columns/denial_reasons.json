@@ -1,0 +1,13 @@
+{
+  "name": "denial_reasons",
+  "dataType": "string",
+  "sourceColumn": "denial_reasons",
+  "lineageTag": "0a00d29d-eaba-4fa5-b431-2a749c1b6a61",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

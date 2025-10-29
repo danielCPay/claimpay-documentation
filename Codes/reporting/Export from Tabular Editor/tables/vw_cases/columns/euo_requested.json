@@ -1,0 +1,29 @@
+{
+  "name": "euo_requested",
+  "dataType": "dateTime",
+  "sourceColumn": "euo_requested",
+  "formatString": "Long Date",
+  "lineageTag": "cb9a9cd1-32f8-4931-a110-1cb92dbb49b1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "73f7f579-187e-4361-a5dc-e07fc6268464",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_a8bb22dc-1646-4507-8c53-ae0ab23d0282",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "daubert_deadline",
+  "dataType": "dateTime",
+  "sourceColumn": "daubert_deadline",
+  "formatString": "Long Date",
+  "lineageTag": "8796f032-fcc9-4d5e-8026-c08e495e35a1",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "56446486-7d5b-4d28-9895-3b22dff23890",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_bbaa6ddb-03d0-4b47-af68-a614a422eee0",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

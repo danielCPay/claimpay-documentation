@@ -1,0 +1,13 @@
+{
+  "name": "insured2_first_name",
+  "dataType": "string",
+  "sourceColumn": "insured2_first_name",
+  "lineageTag": "6339cd98-0f29-47c8-a55d-58c6c4f85129",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

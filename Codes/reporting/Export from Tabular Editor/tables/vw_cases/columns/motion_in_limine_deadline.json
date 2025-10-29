@@ -1,0 +1,29 @@
+{
+  "name": "motion_in_limine_deadline",
+  "dataType": "dateTime",
+  "sourceColumn": "motion_in_limine_deadline",
+  "formatString": "Long Date",
+  "lineageTag": "baecf277-87ef-4e33-b25f-0f2fc3ebb3fb",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "812a68d8-b808-4e46-a598-f0e21caa4a2e",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_ef41b948-62fa-44d4-bce8-4fb3b9446060",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

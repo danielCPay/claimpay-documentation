@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "aging_to_date_eom",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[aging_to_date_eom]",
+  "formatString": "General Date",
+  "lineageTag": "c78497aa-2080-4d50-981e-1ae6a6b90d45",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "ebe7d2c5-2d7b-496a-b2f8-39f793590812",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_7ec5de19-ac1f-4cbe-b875-2e25c889ce39",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

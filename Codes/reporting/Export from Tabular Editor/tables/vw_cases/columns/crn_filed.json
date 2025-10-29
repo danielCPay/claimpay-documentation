@@ -1,0 +1,29 @@
+{
+  "name": "crn_filed",
+  "dataType": "dateTime",
+  "sourceColumn": "crn_filed",
+  "formatString": "Long Date",
+  "lineageTag": "b3be45c6-2162-4c60-9635-87babcdd4b50",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "89a88564-3bce-40e1-9e13-231ef5c124fb",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_9211bed7-2d61-4384-b6f6-0d9e9e12b1c0",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

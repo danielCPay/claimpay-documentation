@@ -1,0 +1,13 @@
+{
+  "name": "ls_portfolio_name",
+  "dataType": "string",
+  "sourceColumn": "ls_portfolio_name",
+  "lineageTag": "4ac4989b-15c6-4826-928f-e160293af421",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

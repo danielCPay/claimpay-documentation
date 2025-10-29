@@ -1,0 +1,12 @@
+{
+  "name": "Total Collection/Purchase Price",
+  "expression": "COALESCE(DIVIDE(vw_claimcollections[Assigned Value TD], vw_portfolio_purchases[Purchase Value]), 0)",
+  "formatString": "0.00%;-0.00%;0.00%",
+  "lineageTag": "10076822-103c-44ad-a7fd-fa6107095f12",
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "docusign_envelope_id",
+  "dataType": "string",
+  "sourceColumn": "docusign_envelope_id",
+  "lineageTag": "7ba52cf1-a2d0-40e2-971a-7cc0b8427751",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

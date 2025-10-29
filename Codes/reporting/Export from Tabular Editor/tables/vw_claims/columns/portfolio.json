@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "dataType": "int64",
+  "sourceColumn": "portfolio",
+  "formatString": "0",
+  "lineageTag": "2104eb4a-dfc7-449a-872e-ca9c60cc9e0f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ls_defense_status_date",
+  "dataType": "dateTime",
+  "sourceColumn": "ls_defense_status_date",
+  "formatString": "Long Date",
+  "lineageTag": "c649ccd7-e9f2-4945-81bc-40edc1be6da6",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "4406258b-3ebe-46c3-a28b-77025c4fa3af",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_565b9869-c926-4526-a2ae-03b16754e933",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

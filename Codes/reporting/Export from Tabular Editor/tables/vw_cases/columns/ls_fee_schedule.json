@@ -1,0 +1,17 @@
+{
+  "name": "ls_fee_schedule",
+  "dataType": "double",
+  "sourceColumn": "ls_fee_schedule",
+  "lineageTag": "6d98bd57-623b-4125-915e-a31069b89021",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "onboarding_status",
+  "dataType": "string",
+  "sourceColumn": "onboarding_status",
+  "lineageTag": "ee6f68cc-1cee-4436-81ea-90f62b1bdaad",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

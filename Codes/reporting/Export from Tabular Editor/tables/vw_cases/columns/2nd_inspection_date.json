@@ -1,0 +1,29 @@
+{
+  "name": "2nd_inspection_date",
+  "dataType": "dateTime",
+  "sourceColumn": "2nd_inspection_date",
+  "formatString": "Long Date",
+  "lineageTag": "67067099-132e-415a-a26e-e6b41d4a0473",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e38a000b-9a21-41fb-a593-2abe5fe2f993",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_875c32a7-3717-4154-93b8-1aa8615f7bb8",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

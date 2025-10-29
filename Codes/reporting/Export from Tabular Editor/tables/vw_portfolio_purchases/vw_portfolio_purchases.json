@@ -1,0 +1,14 @@
+{
+  "name": "vw_portfolio_purchases",
+  "lineageTag": "d6236a4a-4be3-40b6-ad09-9a3a1cd57e9c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

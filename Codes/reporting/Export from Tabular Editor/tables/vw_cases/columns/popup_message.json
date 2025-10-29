@@ -1,0 +1,13 @@
+{
+  "name": "popup_message",
+  "dataType": "string",
+  "sourceColumn": "popup_message",
+  "lineageTag": "ea03f60c-380c-4429-ba55-9152b7785c65",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

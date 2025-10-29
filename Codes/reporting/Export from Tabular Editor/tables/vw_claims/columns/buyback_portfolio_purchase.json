@@ -1,0 +1,14 @@
+{
+  "name": "buyback_portfolio_purchase",
+  "dataType": "int64",
+  "sourceColumn": "buyback_portfolio_purchase",
+  "formatString": "0",
+  "lineageTag": "29b93d0e-ceeb-4536-ab1d-5873fe8537b9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

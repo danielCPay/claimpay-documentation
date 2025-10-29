@@ -1,0 +1,13 @@
+{
+  "name": "dummy_defendant_discovery",
+  "dataType": "string",
+  "sourceColumn": "dummy_defendant_discovery",
+  "lineageTag": "e8529231-c23c-4122-93fd-856826ca7144",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

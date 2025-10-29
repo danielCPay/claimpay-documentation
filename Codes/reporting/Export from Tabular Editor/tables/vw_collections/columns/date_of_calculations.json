@@ -1,0 +1,25 @@
+{
+  "name": "date_of_calculations",
+  "dataType": "dateTime",
+  "sourceColumn": "date_of_calculations",
+  "formatString": "General Date",
+  "lineageTag": "1b1d0c75-ca87-402f-995d-bfcaf3c03086",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "631a8a65-5fb9-476e-a55e-57e1fd68c47c",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_16354015-96fa-4889-a85d-caa2a7a6c8f3",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ls_adjuster_email",
+  "dataType": "string",
+  "sourceColumn": "ls_adjuster_email",
+  "lineageTag": "96ef886d-89e9-4da6-ab6d-dd8cd3bb29b1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

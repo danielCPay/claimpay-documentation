@@ -1,0 +1,8 @@
+{
+  "name": "f32c4127-a72d-4a40-8222-277dede38152",
+  "fromTable": "vw_collections",
+  "fromColumn": "date_of_disbursal_calculation",
+  "toTable": "LocalDateTable_773c249e-4ad7-41f3-97a3-5a598dca7765",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

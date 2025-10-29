@@ -1,0 +1,17 @@
+{
+  "name": "pct_voluntary_coll_to_face_val",
+  "dataType": "double",
+  "sourceColumn": "pct_voluntary_coll_to_face_val",
+  "lineageTag": "46397a83-5585-491f-b63c-830529445761",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

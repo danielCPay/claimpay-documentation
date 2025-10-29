@@ -1,0 +1,14 @@
+{
+  "name": "attorney",
+  "dataType": "int64",
+  "sourceColumn": "attorney",
+  "formatString": "0",
+  "lineageTag": "f5aac760-c6c4-48f7-847c-ab99df56f5f8",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

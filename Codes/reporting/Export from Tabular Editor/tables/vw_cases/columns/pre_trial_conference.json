@@ -1,0 +1,25 @@
+{
+  "name": "pre_trial_conference",
+  "dataType": "dateTime",
+  "sourceColumn": "pre_trial_conference",
+  "formatString": "General Date",
+  "lineageTag": "2933b37a-6c4b-469d-ae2e-5a54866c779a",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "99000580-eaf2-4715-9d09-7e01a9e9fbff",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_59a699f3-4da0-4282-bab2-9f65cc110e35",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

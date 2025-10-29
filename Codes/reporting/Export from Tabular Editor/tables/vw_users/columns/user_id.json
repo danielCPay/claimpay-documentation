@@ -1,0 +1,14 @@
+{
+  "name": "user_id",
+  "dataType": "int64",
+  "sourceColumn": "user_id",
+  "formatString": "0",
+  "lineageTag": "e5fb8f56-974f-4a27-9b23-134f3dcea9e7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run metabase",
+            "program": "bin/yetiforce_readable_db_export.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": ["armsa_dev", "metabase"]
+        },
+        {
+            "name": "run workflows",
+            "program": "bin/yetiforce_readable_db_export.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": ["dev", "workflows"]
+        }
+    ]
+}

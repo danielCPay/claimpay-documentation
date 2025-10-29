@@ -1,0 +1,8 @@
+{
+  "name": "520fcfd8-a32f-4d10-8c85-315c02b38a24",
+  "fromTable": "vw_cases",
+  "fromColumn": "corp_rep_depo_date",
+  "toTable": "LocalDateTable_3eb67d6c-fd98-4f79-83e8-b7dc278eea4b",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

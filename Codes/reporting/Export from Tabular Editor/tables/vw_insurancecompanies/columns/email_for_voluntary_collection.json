@@ -1,0 +1,13 @@
+{
+  "name": "email_for_voluntary_collection",
+  "dataType": "string",
+  "sourceColumn": "email_for_voluntary_collection",
+  "lineageTag": "dd341b15-3e94-47d1-8521-24cd37eabbaf",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

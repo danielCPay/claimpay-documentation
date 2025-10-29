@@ -1,0 +1,13 @@
+{
+  "name": "dummy_plaintiff_msj",
+  "dataType": "string",
+  "sourceColumn": "dummy_plaintiff_msj",
+  "lineageTag": "f76d82d9-f121-4ee6-84a3-2e95c6885afe",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

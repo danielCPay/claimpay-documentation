@@ -1,0 +1,8 @@
+{
+  "name": "0f97fe2f-55d6-43b7-9a88-1d3a6768fb64",
+  "fromTable": "vw_claims",
+  "fromColumn": "vol_coll_started_date",
+  "toTable": "LocalDateTable_37a2f9f4-7c5c-4e5c-b49e-444ff2f00f8a",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

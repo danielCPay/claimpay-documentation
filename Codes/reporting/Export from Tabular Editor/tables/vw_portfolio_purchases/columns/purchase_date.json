@@ -1,0 +1,18 @@
+{
+  "name": "purchase_date",
+  "dataType": "dateTime",
+  "sourceColumn": "purchase_date",
+  "formatString": "Long Date",
+  "lineageTag": "185a03df-7df8-444a-8154-d813070237f5",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "__PBI_SemanticLinks",
+      "value": "[{\"LinkTarget\":{\"TableName\":\"vw_portfolio_purchases\",\"TableItemName\":\"purchase_date (bins)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+    }
+  ]
+}

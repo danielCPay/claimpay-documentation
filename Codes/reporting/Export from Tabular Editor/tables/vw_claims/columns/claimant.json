@@ -1,0 +1,14 @@
+{
+  "name": "claimant",
+  "dataType": "int64",
+  "sourceColumn": "claimant",
+  "formatString": "0",
+  "lineageTag": "cb47a408-4f20-463d-9cdc-f2ac536400b7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

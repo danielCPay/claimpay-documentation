@@ -1,0 +1,13 @@
+{
+  "name": "check_number",
+  "dataType": "string",
+  "sourceColumn": "check_number",
+  "lineageTag": "f2a6df12-512c-4b9c-9672-fce055c433bb",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

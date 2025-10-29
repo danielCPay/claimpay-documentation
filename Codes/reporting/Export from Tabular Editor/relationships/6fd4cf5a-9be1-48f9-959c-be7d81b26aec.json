@@ -1,0 +1,8 @@
+{
+  "name": "6fd4cf5a-9be1-48f9-959c-be7d81b26aec",
+  "fromTable": "vw_cases",
+  "fromColumn": "arbitration_deadline",
+  "toTable": "LocalDateTable_a296e58e-b029-43b2-a368-e7bd72f39a3f",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

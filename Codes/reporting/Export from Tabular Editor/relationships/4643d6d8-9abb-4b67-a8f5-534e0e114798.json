@@ -1,0 +1,8 @@
+{
+  "name": "4643d6d8-9abb-4b67-a8f5-534e0e114798",
+  "fromTable": "purchase_cf",
+  "fromColumn": "cf_date",
+  "toTable": "LocalDateTable_e3eb6daf-d9ae-4138-a8c8-1e9d0e268bb2",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

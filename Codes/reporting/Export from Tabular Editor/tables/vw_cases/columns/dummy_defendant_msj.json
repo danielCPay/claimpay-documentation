@@ -1,0 +1,13 @@
+{
+  "name": "dummy_defendant_msj",
+  "dataType": "string",
+  "sourceColumn": "dummy_defendant_msj",
+  "lineageTag": "00111fdb-0866-4a04-a0cf-69298530e685",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

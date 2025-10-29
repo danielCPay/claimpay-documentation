@@ -1,0 +1,61 @@
+{
+  "type": "calculated",
+  "name": "purchase_date (bins)",
+  "dataType": "dateTime",
+  "isDataTypeInferred": true,
+  "expression": [
+    "IF(",
+    "  ISBLANK('vw_portfolio_purchases'[purchase_date]),",
+    "  BLANK(),",
+    "  DATE(",
+    "    YEAR('vw_portfolio_purchases'[purchase_date]),",
+    "    1 + (MONTH('vw_portfolio_purchases'[purchase_date]) - 1),",
+    "    1",
+    "  )",
+    ")"
+  ],
+  "formatString": "mmmm yyyy",
+  "lineageTag": "d9a5943c-6a01-4388-97fd-ee2c4f31c0d3",
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "GroupingMetadata",
+      "value": {
+        "version": 0,
+        "groupedColumns": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "vw_portfolio_purchases"
+                }
+              },
+              "Property": "purchase_date"
+            }
+          }
+        ],
+        "binningMetadata": {
+          "binSize": {
+            "value": 1.0,
+            "unit": 6
+          }
+        }
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "GroupingDesignState",
+      "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"v\",\"Entity\":\"vw_portfolio_purchases\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"purchase_date\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"purchase_date\"}},\"Size\":1.0,\"TimeUnit\":2}}}}"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDateTimeCustom\":true}"
+    }
+  ]
+}

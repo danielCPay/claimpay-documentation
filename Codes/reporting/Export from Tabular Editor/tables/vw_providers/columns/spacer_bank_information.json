@@ -1,0 +1,13 @@
+{
+  "name": "spacer_bank_information",
+  "dataType": "string",
+  "sourceColumn": "spacer_bank_information",
+  "lineageTag": "8256e9d4-94d1-461b-8043-af46b3e34bba",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

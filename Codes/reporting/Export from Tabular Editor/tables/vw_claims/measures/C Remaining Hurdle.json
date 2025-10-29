@@ -1,0 +1,11 @@
+{
+  "name": "C Remaining Hurdle",
+  "expression": "sum(vw_claims[remaining_to_hurdle])",
+  "lineageTag": "41fa38e1-e10b-40dc-bca8-cc599587e91b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

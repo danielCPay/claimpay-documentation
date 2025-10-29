@@ -1,0 +1,25 @@
+{
+  "name": "status_date",
+  "dataType": "dateTime",
+  "sourceColumn": "status_date",
+  "formatString": "General Date",
+  "lineageTag": "c5889edb-60aa-42dc-a1e2-797655789abc",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "5da9a209-6cb2-4c46-bd02-4c631e817fbb",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_f29e6a78-53c7-4371-96d8-23e3c4de7053",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

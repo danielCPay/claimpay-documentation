@@ -1,0 +1,17 @@
+{
+  "name": "write_off",
+  "dataType": "double",
+  "sourceColumn": "write_off",
+  "lineageTag": "cd510e0d-bf06-425d-9389-49f94abb41e1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

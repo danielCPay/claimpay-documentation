@@ -1,0 +1,13 @@
+{
+  "name": "routing_no",
+  "dataType": "string",
+  "sourceColumn": "routing_no",
+  "lineageTag": "53b609b9-48cd-4445-a6c1-c3ffffe2f7b0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dates_verified",
+  "dataType": "string",
+  "sourceColumn": "dates_verified",
+  "lineageTag": "bc87b95e-ec24-41c2-84a3-b0fb66b98eab",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

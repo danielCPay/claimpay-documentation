@@ -1,0 +1,29 @@
+{
+  "name": "jury_instructions_verdict_form",
+  "dataType": "dateTime",
+  "sourceColumn": "jury_instructions_verdict_form",
+  "formatString": "Long Date",
+  "lineageTag": "4897d825-3fd6-42bb-82cd-723583d25ef3",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "8d82cf88-5a5f-4ef7-bd3a-89ea333c7a55",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_c6d547c5-9d23-497d-8bf9-f09dedfa441e",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

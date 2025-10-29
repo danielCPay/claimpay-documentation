@@ -1,0 +1,17 @@
+{
+  "name": "legal_fee_awarded",
+  "dataType": "double",
+  "sourceColumn": "legal_fee_awarded",
+  "lineageTag": "f39465c4-aeb3-4808-a7cc-0b55281ca9c8",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "settlement_oc_adjuster",
+  "dataType": "int64",
+  "sourceColumn": "settlement_oc_adjuster",
+  "formatString": "0",
+  "lineageTag": "5c186e5c-c3f2-4ea5-9422-37accf4f28d2",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

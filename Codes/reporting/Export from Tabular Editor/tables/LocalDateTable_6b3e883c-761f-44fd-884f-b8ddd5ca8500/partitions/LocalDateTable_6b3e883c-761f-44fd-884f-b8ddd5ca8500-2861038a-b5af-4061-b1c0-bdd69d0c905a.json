@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_6b3e883c-761f-44fd-884f-b8ddd5ca8500-2861038a-b5af-4061-b1c0-bdd69d0c905a",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('vw_cases'[ps_corp_rep_depo_date])), 1, 1), Date(Year(MAX('vw_cases'[ps_corp_rep_depo_date])), 12, 31))"
+  }
+}

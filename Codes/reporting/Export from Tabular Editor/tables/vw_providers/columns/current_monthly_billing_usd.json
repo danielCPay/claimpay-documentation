@@ -1,0 +1,17 @@
+{
+  "name": "current_monthly_billing_usd",
+  "dataType": "double",
+  "sourceColumn": "current_monthly_billing_usd",
+  "lineageTag": "95ada825-3cdf-42fb-961a-8c59630926c7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

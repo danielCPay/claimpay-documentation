@@ -1,0 +1,11 @@
+{
+  "name": "Pre-Suit Collections",
+  "expression": "sum(vw_claims[total_pre_suit_collections])",
+  "lineageTag": "78abfa95-fd8f-4153-a895-def227a9a659",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

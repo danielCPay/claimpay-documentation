@@ -1,0 +1,21 @@
+name: yetiforce_readable_db_export
+description: A simple command-line application.
+# version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=3.0.0 <5.0.0'
+
+dependencies:
+  path: ^1.7.0
+  mysql1: ^0.20.0 # because the old code works with it for MariaDB
+  mysql_client: ^0.0.27 # needed to connect to Metabase MySQL 8
+  #galileo_mysql: ^3.0.0
+  #dart_mysql: ^0.0.1
+  php_serializer: ^1.1.0  
+  indent: ^2.0.0
+  http: ^1.1.0
+  #http: ^0.12.2
+
+dev_dependencies:
+  pedantic: ^1.9.0

@@ -1,0 +1,13 @@
+{
+  "name": "onb_warning_to_acceptant",
+  "dataType": "string",
+  "sourceColumn": "onb_warning_to_acceptant",
+  "lineageTag": "614bfab1-8711-46df-b001-6aca70f89de9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ps_mpo_engineer",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_mpo_engineer",
+  "formatString": "Long Date",
+  "lineageTag": "8ad1cd3e-bde8-4999-9190-faa9f7a7f191",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "77496130-810c-4fdd-8cea-bf0140771b7b",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_0ab8659b-8dbd-4fae-bf48-eab0f663870c",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

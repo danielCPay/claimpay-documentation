@@ -1,0 +1,13 @@
+{
+  "name": "email_for_litigation",
+  "dataType": "string",
+  "sourceColumn": "email_for_litigation",
+  "lineageTag": "f90b9d36-37f6-4d56-a998-0127247ef403",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

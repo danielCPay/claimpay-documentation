@@ -1,0 +1,13 @@
+{
+  "name": "appeal_status",
+  "dataType": "string",
+  "sourceColumn": "appeal_status",
+  "lineageTag": "0fb4b3e3-de8b-4d63-943b-27b7c4b2785a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

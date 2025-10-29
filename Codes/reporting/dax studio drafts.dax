@@ -1,0 +1,482 @@
+﻿DEFINE
+    // Deployment Fee
+    
+    VAR tab1 =
+        FILTER (
+            SELECTCOLUMNS (
+                FILTER (
+                    vw_portfolio_purchases,
+                    vw_portfolio_purchases[createdtime] >= DATE ( 2022, 5, 1 )
+                        && vw_portfolio_purchases[purchase_date] >= DATE ( 2022, 5, 1 )
+                ),
+                "portfolio_purchase", vw_portfolio_purchases[portfoliopurchasesid],
+                "Investor", RELATED ( vw_investors[investor_name] ),
+                "Portfolio Purchase Name", vw_portfolio_purchases[Portfolio Purchase Name],
+                "Purchase Date", vw_portfolio_purchases[purchase_date],
+                "Purchase Value", vw_portfolio_purchases[purchase_value],
+                "Purchase Value claims",
+                    [Total Invested] //, "dif", vw_portfolio_purchases[purchase_value] - [Total Invested]
+                    ,
+                "Factor Fee", [Factor Fee],
+                "Calculated Deployment Fee",
+                    10 / 100 * [Total Invested],
+                "Capped Factor Fee",
+                    25 / 100 * [Factor Fee]
+            ),
+            1
+        )
+    VAR tab2 =
+        ADDCOLUMNS (
+            tab1,
+            "Capped Deployment Fee", MIN ( [Calculated Deployment Fee], [Capped Factor Fee] ),
+            "Maximum Factor Fee",
+                30 / 100 * [Factor Fee]
+        )
+    TABLE tab3 =
+        ADDCOLUMNS (
+            tab2,
+            "Roll Forward Amount",
+                IF (
+                    [Calculated Deployment Fee] > [Maximum Factor Fee]
+                        && [Calculated Deployment Fee] > [Capped Factor Fee],
+                    [Capped Deployment Fee] - [Maximum Factor Fee],
+                    IF (
+                        [Calculated Deployment Fee] < [Maximum Factor Fee]
+                            && [Calculated Deployment Fee] > [Capped Factor Fee],
+                        [Capped Factor Fee] - [Calculated Deployment Fee],
+                        [Capped Factor Fee] - [Calculated Deployment Fee]
+                    )
+                )
+        )
+    MEASURE vw_portfolio_purchases[Calculated Deployment Fee] = 10 / 100 * [Total Invested]
+    MEASURE vw_portfolio_purchases[Capped Factor Fee] = 25 / 100 * [Factor Fee]
+    MEASURE vw_portfolio_purchases[Capped Deployment Fee] =
+        MIN ( [Calculated Deployment Fee], [Capped Factor Fee] )
+    MEASURE vw_portfolio_purchases[Maximum Factor Fee] = 30 / 100 * [Factor Fee]
+    MEASURE vw_portfolio_purchases[Roll Forward Amount] =
+        IF (
+            [Calculated Deployment Fee] > [Maximum Factor Fee]
+                && [Calculated Deployment Fee] > [Capped Factor Fee],
+            [Capped Deployment Fee] - [Maximum Factor Fee],
+            IF (
+                [Calculated Deployment Fee] < [Maximum Factor Fee]
+                    && [Calculated Deployment Fee] > [Capped Factor Fee],
+                [Capped Factor Fee] - [Calculated Deployment Fee],
+                [Capped Factor Fee] - [Calculated Deployment Fee]
+            )
+        )
+    TABLE tab4 =
+        DISTINCT (
+            SELECTCOLUMNS (
+                tab1,
+                [Investor],
+                "Purchase Month", DATE ( YEAR ( [Purchase Date] ), MONTH ( [Purchase Date] ), 1 )
+            )
+        )
+    MEASURE investor_roll_forward_amounts[Total Roll Forward Amount] =
+        VAR investor =
+            MIN ( vw_portfolio_purchases[investor] )
+        VAR purchase_month =
+            DATE ( YEAR ( MIN ( vw_portfolio_purchases[purchase_date] ) ), MONTH ( MIN ( vw_portfolio_purchases[purchase_date] ) ), 1 )
+        RETURN
+            CALCULATE (
+                SUMX ( vw_portfolio_purchases, [Roll Forward Amount] ),
+                FILTER (
+                    ALL ( vw_portfolio_purchases ),
+                    vw_portfolio_purchases[investor] = investor
+                        && vw_portfolio_purchases[purchase_date] < purchase_month
+                        && vw_portfolio_purchases[createdtime] >= DATE ( 2022, 5, 1 )
+                        && vw_portfolio_purchases[purchase_date] >= DATE ( 2022, 5, 1 )
+                )
+            )
+    MEASURE vw_portfolio_purchases[Deployment Fee Charged] =
+        IF (
+            [Total Roll Forward Amount] < 0,
+            IF (
+                [Capped Deployment Fee] < [Capped Factor Fee],
+                [Capped Factor Fee],
+                [Capped Deployment Fee]
+            ),
+            [Capped Deployment Fee]
+        )
+    /*			
+	VAR tab5 = 
+		SUMMARIZE( tab4
+			, ROLLUP( [Investor], [Purchase Month] )
+			, "sum", 
+				CALCULATE(
+					[Roll Forward Amount],
+					[Investor] = tab4[Investor]
+					)
+			)
+
+*/
+    
+    // Admin Fee
+    
+    TABLE adm1 =
+        FILTER (
+            SELECTCOLUMNS (
+                FILTER (
+                    purchase_aging,
+                    purchase_aging[aging_to_date] >= DATE ( 2022, 1, 1 )
+                        && [Assigned Value TD] > 0
+                )
+                , "portfolio_purchase", RELATED ( vw_portfolio_purchases[portfoliopurchasesid] )
+                , "Investor", RELATED ( vw_investors[investor_name] )
+                , "Portfolio Purchase Name", RELATED ( vw_portfolio_purchases[Portfolio Purchase Name] )
+                , "Purchase Date", RELATED ( vw_portfolio_purchases[purchase_date] )
+                , "Purchase Value", RELATED ( vw_portfolio_purchases[purchase_value] )
+                , "Aging to Date", purchase_aging[aging_to_date]
+                , "Collections to Date", [Assigned Value TD]
+                , "Aging to Date EOM", purchase_aging[aging_start_next_month]
+                , "Collections to Date EOM", CALCULATE ( SUM ( vw_claimcollections[assigned_value] ), FILTER( vw_collections, [payment_date] <=  purchase_aging[aging_start_next_month] ) )
+            ),
+            1
+        )
+        
+	MEASURE investor_measures[AdminFee Aging to Date EOM] = ENDOFMONTH ( purchase_aging[aging_to_date] )
+
+	MEASURE investor_measures[AdminFee Aging to Date EO3M-1] = EOMONTH( MIN(purchase_aging[purchase_date]), TRUNC(MIN(purchase_aging[months_fwd])/3)*3-1 )
+
+	MEASURE investor_measures[AdminFee Collections to Date EO3M-1] = CALCULATE ( 
+				SUM ( vw_claimcollections[assigned_value] ), 
+				FILTER( vw_collections, [payment_date] <=  [AdminFee Aging to Date EO3M-1] ) 
+				)
+	
+	MEASURE investor_measures[AdminFee Outstanding Deployment] = IF( [Purchase Value] - [AdminFee Collections to Date EO3M-1] > 0, 
+				[Purchase Value] - [AdminFee Collections to Date EO3M-1], 
+				BLANK() 
+				)
+	
+	MEASURE investor_measures[AdminFee Total 0.625 Admin Fee] = CALCULATE( 
+				SUMX( purchase_aging, [AdminFee Outstanding Deployment] / 3 * 0.00625 ), 
+				FILTER( 
+					ALLEXCEPT(purchase_aging, purchase_aging[Investor]), 
+					purchase_aging[purchase_date] >= DATE ( 2022, 1, 1 ) && [AdminFee Aging to Date EO3M-1] < TODAY() ) 
+				)	
+	
+	MEASURE investor_measures[AdminFee Admin Fee] = IF ( MIN(purchase_aging[months_fwd]) < 24 && [AdminFee Aging to Date EO3M-1] < TODAY(), 
+				[AdminFee Outstanding Deployment] / 3 * IF( [AdminFee Total 0.625 Admin Fee] <= 6000000, 0.00625, 0.005 ), 
+				BLANK()
+				)
+	
+	
+// Catch Up & Performance Fee
+
+	MEASURE investor_measures[PerfFee Months Fwd] = MIN( purchase_aging[aging_start_month] )
+
+	MEASURE investor_measures[PerfFee Collections in calendar month] = CALCULATE( 
+				SUM( vw_claimcollections[assigned_value] ), 
+				FILTER( vw_collections, 
+					vw_collections[payment_date] >= SELECTEDVALUE( purchase_aging[aging_start_month] )
+					&& vw_collections[payment_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] ) 
+					) 
+				)
+
+	MEASURE investor_measures[PerfFee Collections to calendar month] = CALCULATE( 
+				SUM( vw_claimcollections[assigned_value] ), 
+				FILTER( vw_collections, 
+					vw_collections[payment_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )
+					) 
+				)
+
+	MEASURE investor_measures[PerfFee Purchase in calendar month] = CALCULATE( 
+				[Purchase Value], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] >= purchase_aging[aging_start_month] 
+					&& purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] 
+					) 
+				)
+
+	MEASURE investor_measures[PerfFee Purchase to calendar month] = CALCULATE( 
+				[Purchase Value], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] < purchase_aging[aging_start_next_month]  
+					) 
+				)
+
+	MEASURE investor_measures[PerfFee Deployment Fee in calendar month] = CALCULATE( 
+				[DeplFee Deployment Fee Charged], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] >= purchase_aging[aging_start_month] 
+					&& purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] 
+					) 
+				)
+
+	MEASURE investor_measures[PerfFee Deployment Fee to calendar month] = CALCULATE( 
+				[DeplFee Deployment Fee Charged], 
+				FILTER( purchase_aging, 
+					purchase_aging[purchase_date] < purchase_aging[aging_start_next_month] 
+					) 
+				)
+
+	MEASURE investor_measures[PerfFee Monthly CF] = - [PerfFee Purchase in calendar month] - [PerfFee Deployment Fee in calendar month] + [PerfFee Collections in calendar month]
+
+	MEASURE investor_measures[PerfFee Cumulative CF] = - [PerfFee Purchase to calendar month] - [PerfFee Deployment Fee to calendar month] + [PerfFee Collections to calendar month]
+/*	
+	table  apurchase_aging = GENERATE(
+		SELECTCOLUMNS(vw_portfolio_purchases
+			, "portfolio_purchase", vw_portfolio_purchases[portfolio_purchase]
+			, "Portfolio Purchase Name", vw_portfolio_purchases[Portfolio Purchase Name]
+			, "investor", vw_portfolio_purchases[investor]
+			, "purchase_date", vw_portfolio_purchases[purchase_date]
+			, "purchase_value", vw_portfolio_purchases[purchase_value]
+			),
+        SELECTCOLUMNS(aging_numbers 
+            , "months_fwd", aging_numbers[months_fwd] 
+            , "aging_to_date", EDATE(
+                DATE(YEAR([purchase_date]), MONTH([purchase_date]), DAY([purchase_date])), 
+                1*aging_numbers[months_fwd]
+                ) + 0*aging_numbers[months_fwd]
+            , "aging_start_month", EDATE( DATE(YEAR([purchase_date]), MONTH([purchase_date]), 1), aging_numbers[months_fwd] )
+            , "aging_start_next_month", EDATE( DATE(YEAR([purchase_date]), MONTH([purchase_date]), 1), aging_numbers[months_fwd]+1 )
+            )
+        )
+        
+    EVALUATE apurchase_aging
+*/
+    
+/*	TABLE purchase_cf = UNION( 
+				SELECTCOLUMNS( 
+					FILTER(
+						vw_portfolio_purchases,
+						NOT ISBLANK( vw_portfolio_purchases[purchase_date] ) && NOT ISBLANK( vw_portfolio_purchases[purchase_value] )
+						)
+					, "investor", vw_portfolio_purchases[investor]
+					, "portfolio_purchase", vw_portfolio_purchases[portfolio_purchase]
+					, "cf_date", vw_portfolio_purchases[purchase_date]
+					, "cf_value", - vw_portfolio_purchases[purchase_value] 
+					)
+				,
+				SELECTCOLUMNS(
+					FILTER(
+						vw_claimcollections,
+						NOT ISBLANK( RELATED( vw_collections[payment_date] ) ) && NOT ISBLANK( vw_claimcollections[assigned_value] )
+						)
+					, RELATED( vw_portfolio_purchases[investor] )
+					, RELATED( vw_portfolio_purchases[portfolio_purchase] )
+					, RELATED( vw_collections[payment_date] )
+					, vw_claimcollections[assigned_value]
+					)
+				)
+				
+	EVALUATE ADDCOLUMNS(purchase_cf, "1", 1
+, 			"irr", XIRR( 
+					   	filter(ALLEXCEPT(purchase_cf, purchase_cf[cf_date]), not ISBLANK(purchase_cf[portfolio_purchase])),--SELECTEDVALUE(purchase_cf[portfolio_purchase])),
+					   	purchase_cf[cf_value], 
+					   	purchase_cf[cf_date],
+					   	0.1, -1
+					   	)					   	
+					   	)
+*/
+	MEASURE investor_measures[PerfFee CF IRR] = XIRR( 
+					   	FILTER( ALL(purchase_cf), 
+					   		purchase_cf[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					   		&& purchase_cf[cf_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )
+					   		),
+					   	purchase_cf[cf_value], 
+					   	purchase_cf[cf_date], 
+					   	0.1, -1
+					   	)
+					   	
+
+	--EVALUATE ADDCOLUMNS(FILTER(purchase_cf, purchase_cf[investor]<172964), "a", [PerfFee CF IRR], "b", 1 )
+	
+
+
+					        	
+	MEASURE investor_measures[PerfFee Incremental IRR] = CALCULATE([PerfFee CF IRR], 	
+        					FILTER( purchase_cf,
+					  			purchase_cf[portfolio_purchase] = MIN( purchase_aging[portfolio_purchase] ) 
+						 		&& purchase_cf[cf_date] < SELECTEDVALUE( purchase_aging[aging_start_next_month] )
+						 		&& NOT( ISBLANK( purchase_cf[portfolio_purchase] ) ) 
+						 		&& NOT( ISBLANK( purchase_cf[cf_date] ) ) 
+						 		&& NOT( ISBLANK( purchase_cf[cf_value] ) ) 
+						 		&& purchase_cf[portfolio_purchase] = 1						 		
+						  		)
+					  		)
+					        	
+	MEASURE investor_measures[PerfFee IRR>10% Month] = CALCULATE( [PerfFee Months Fwd], 	
+        					FILTER( ALL( purchase_aging ),
+        						purchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					  			&& [PerfFee Incremental IRR] >=  10/100 -- -0.9991
+						  		)
+					  		)
+
+	MEASURE investor_measures[PerfFee Catch-Up] = CALCULATE( 20/100 * [PerfFee Cumulative CF], 	
+        					FILTER( purchase_aging,
+        						purchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					  			&& purchase_aging[aging_start_month] = [PerfFee IRR>10% Month]
+						  		)
+					  		)
+
+	MEASURE investor_measures[PerfFee Performance Fee] = CALCULATE( 20/100 * [PerfFee Collections in calendar month], 	
+        					FILTER( purchase_aging,
+        						purchase_aging[portfolio_purchase] = SELECTEDVALUE( purchase_aging[portfolio_purchase] ) 
+					  			&& [PerfFee Incremental IRR] >= 10/100
+						  		)
+					  		)
+
+
+
+/*	TABLE cf = union ( 
+		SELECTCOLUMNS( {0}, "date", date(2014, 1, 1), "value", -7 ),
+		SELECTCOLUMNS( {0}, "date", date(2014, 2, 1), "value", 2 ),
+		SELECTCOLUMNS( {0}, "date", date(2014, 10, 30), "value", 5 ),
+		SELECTCOLUMNS( {0}, "date", date(2014, 2, 15), "value", -5 ),
+		SELECTCOLUMNS( {0}, "date", date(2014, 5, 1), "value", 6 )
+		)
+		
+	
+	EVALUATE ADDCOLUMNS( cf
+		, "irr", XIRR( cf, cf[value], cf[date], 0.1 ) 
+		, "npv", XNPV( cf, cf[value], cf[date], 0.1 ) 
+		)
+*/
+
+
+/*
+	TABLE investor_cf = SELECTCOLUMNS( purchase_aging
+				, "Investor Name", RELATED(vw_investors[investor_name])
+				, "aging_to_date", purchase_aging[aging_to_date]
+		        , "Incremental CF", [PerfFee Incremental CF]
+		        , "Cumulative CF", [PerfFee Cumulative CF]
+				)
+*/
+
+
+// Catch Up & Performance Fee
+
+--EVALUATE FILTER(purchase_aging, purchase_aging[Portfolio Purchase Name] = "PROV2-1A" )
+
+--EVALUATE FILTER(purchase_cf, purchase_cf[portfolio_purchase] = 237036)
+
+EVALUATE SELECTCOLUMNS(
+                FILTER (
+                    purchase_aging,
+                    purchase_aging[purchase_date] >= DATE ( 2022, 1, 1 )
+                    	&& purchase_aging[Portfolio Purchase Name] = "PROV2-1A"
+                    	--&& purchase_aging[Portfolio Purchase Name] <= "M"
+                    	--&& ISBLANK(purchase_aging[Portfolio Purchase Name])
+                    	--&& SEARCH("M", purchase_aging[Portfolio Purchase Name], 1, 0) = 1
+                    	--&& NOT ISBLANK([PerfFee Incremental CF])
+                        --&& [Assigned Value TD] > 0
+                )
+                , "portfolio_purchase", RELATED ( vw_portfolio_purchases[portfoliopurchasesid] )
+                , "Investor", RELATED ( vw_investors[investor_name] )
+                , "Portfolio Purchase Name", RELATED ( vw_portfolio_purchases[Portfolio Purchase Name] )
+                , "Purchase Date", RELATED ( vw_portfolio_purchases[purchase_date] )
+                , "Purchase Value", RELATED ( vw_portfolio_purchases[purchase_value] )
+                , "Months Fwd", purchase_aging[months_fwd]
+                --, "Aging to Date", purchase_aging[aging_to_date]
+                --, "Collections", [Assigned Value]
+                --, "Collections to Date", [Assigned Value TD]
+        --, "Purchase in calendar month", [PerfFee Purchase in calendar month]
+        --, "Deployment Fee in calendar month", [PerfFee Deployment Fee in calendar month]
+        , "Collections in calendar month", [PerfFee Collections in calendar month]
+        , "Monthly CF", [PerfFee Monthly CF]
+        , "Cumulative CF", [PerfFee Cumulative CF]
+        , "Incremental IRR", [PerfFee Incremental IRR]
+        , "Catch-up Month", [PerfFee IRR>10% Month]
+        , "Catch-up", [PerfFee Catch-Up]
+        , "Performance Fee", [PerfFee Performance Fee]
+        , "Incremental IRR last", CALCULATE( [PerfFee CF IRR], FILTER( purchase_cf, purchase_cf[portfolio_purchase] = 175571 ) )
+        /*, "Incremental IRR as column", XIRR( 
+					        	FILTER( purchase_cf, 
+					        		purchase_cf[portfolio_purchase] = purchase_aging[portfolio_purchase] 
+					        		&& purchase_cf[cf_date] < purchase_aging[aging_start_next_month]
+					        		),
+					        	purchase_cf[cf_value], 
+					        	purchase_cf[cf_date], 
+					        	0.1, -1
+					        	) 
+		*/)
+		/*
+EVALUATE SELECTCOLUMNS(vw_investors
+		, "Investor Name", vw_investors[investor_name]
+        , "Monthly CF", [PerfFee Monthly CF]
+        , "Cumulative CF", [PerfFee Cumulative CF]
+		)		
+
+EVALUATE ADDCOLUMNS( purchase_cf
+		, "Investor Name", CALCULATE( MIN(vw_investors[investor_name]), FILTER(vw_investors, vw_investors[investor] = purchase_cf[investor] ) )
+		)
+
+EVALUATE { 
+		XIRR( 
+					        	FILTER( purchase_cf, 
+					        		purchase_cf[portfolio_purchase] = 175571
+					        		--&& purchase_cf[cf_date] <= ENDOFMONTH( purchase_aging[aging_to_date] )
+					        		),
+					        	purchase_cf[cf_value], 
+					        	purchase_cf[cf_date], 
+--					        	0.1, -1
+					        	) 
+		} 
+
+--EVALUATE investor_cf
+
+/*
+	// Admin Fee
+EVALUATE SELECTCOLUMNS (
+                FILTER (
+                    purchase_aging,
+                    purchase_aging[purchase_date] >= DATE ( 2022, 1, 1 )
+                    	-- && purchase_aging[Portfolio Purchase Name] = "PROV2-1A"
+                        --&& [Assigned Value TD] > 0
+                )
+                , "portfolio_purchase", RELATED ( vw_portfolio_purchases[portfoliopurchasesid] )
+                , "Investor", RELATED ( vw_investors[investor_name] )
+                , "Portfolio Purchase Name", RELATED ( vw_portfolio_purchases[Portfolio Purchase Name] )
+                , "Purchase Date", RELATED ( vw_portfolio_purchases[purchase_date] )
+                , "Months Fwd", purchase_aging[months_fwd]
+                , "Aging to Date", purchase_aging[aging_to_date]
+                , "Collections to Date", [Assigned Value TD]
+        , "Purchase Value", [Purchase Value]
+		, "Aging to Date EOM", [AdminFee Aging to Date EOM] 
+		, "Aging to Date EO3M-1", [AdminFee Aging to Date EO3M-1] 
+		, "Collections to Date EO3M-1", [AdminFee Collections to Date EO3M-1] 
+		, "Outstanding Deployment", [AdminFee Outstanding Deployment] 
+		, "AdminFee Total 0.625 Admin Fee", [AdminFee Total 0.625 Admin Fee] 
+		, "Admin Fee", [AdminFee Admin Fee] 
+		)
+		
+EVALUATE adm1
+*/
+
+/*
+	// Deployment Fee
+	
+EVALUATE tab3
+
+EVALUATE tab4
+
+EVALUATE
+ADDCOLUMNS (
+    investor_roll_forward_amounts,
+    "Total Roll Forward Amount", investor_roll_forward_amounts[Total Roll Forward Amount]
+)
+
+EVALUATE
+SELECTCOLUMNS (
+    FILTER (
+        vw_portfolio_purchases,
+        vw_portfolio_purchases[createdtime] >= DATE ( 2022, 5, 1 )
+            && vw_portfolio_purchases[purchase_date] >= DATE ( 2022, 5, 1 )
+    ),
+    "portfolio_purchase", vw_portfolio_purchases[portfoliopurchasesid],
+    "Investor", RELATED ( vw_investors[investor_name] ),
+    "Portfolio Purchase Name", vw_portfolio_purchases[Portfolio Purchase Name],
+    "Purchase Date", vw_portfolio_purchases[purchase_date],
+    "Purchase Value", vw_portfolio_purchases[purchase_value],
+    "Purchase Value claims", [Total Invested],
+    "Factor Fee", [Factor Fee],
+    "Calculated Deployment Fee", [Calculated Deployment Fee],
+    "Capped Factor Fee", [Capped Factor Fee],
+    "Capped Deployment Fee", [Capped Deployment Fee],
+    "Maximum Factor Fee", [Maximum Factor Fee],
+    "Roll Forward Amount", [Roll Forward Amount],
+    "Deployment Fee Charged", [Deployment Fee Charged]
+)
+*/

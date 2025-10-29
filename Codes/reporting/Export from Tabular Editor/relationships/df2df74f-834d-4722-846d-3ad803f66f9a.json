@@ -1,0 +1,8 @@
+{
+  "name": "df2df74f-834d-4722-846d-3ad803f66f9a",
+  "fromTable": "vw_cases",
+  "fromColumn": "arbitration_date",
+  "toTable": "LocalDateTable_53f83e2b-49ea-443b-8158-c0bb52b0f75d",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

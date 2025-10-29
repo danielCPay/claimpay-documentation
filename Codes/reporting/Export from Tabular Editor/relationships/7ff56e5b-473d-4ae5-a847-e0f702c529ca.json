@@ -1,0 +1,8 @@
+{
+  "name": "7ff56e5b-473d-4ae5-a847-e0f702c529ca",
+  "fromTable": "vw_cases",
+  "fromColumn": "settlement_payment_received",
+  "toTable": "LocalDateTable_003046e3-3641-4761-a55b-4d54c8f83c27",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

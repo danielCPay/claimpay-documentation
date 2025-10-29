@@ -1,0 +1,29 @@
+﻿DEFINE
+
+measure vw_claims[min_created] = min(vw_claims[created_date])
+measure vw_claims[max_underwritten_date] = max(vw_claims[underwritten_date])
+
+MEASURE vw_claims[duration_h] = DATEDIFF( vw_claims[min_created], vw_claims[max_underwritten_date], HOUR )
+
+MEASURE vw_claims[duration_h2] = SUMX( vw_claims, DATEDIFF( vw_claims[created_date], vw_claims[underwritten_date], HOUR ) )
+
+evaluate ADDCOLUMNS( summarize( FILTER(vw_claims, vw_claims[portfolio_purchase] = 235354) , vw_claims[claim_underwriter] ) 
+	, "m duration h", CALCULATE( [duration_h], filter(vw_claims, vw_claims[portfolio_purchase] = 235354 ))
+	, "m duration h2", [duration_h2]
+	)
+
+evaluate ADDCOLUMNS( DISTINCT( SELECTCOLUMNS( FILTER(vw_claims, vw_claims[portfolio_purchase] = 235354) , vw_claims[claim_underwriter] ) )
+	, "m duration h", CALCULATE( [duration_h], filter(vw_claims, vw_claims[portfolio_purchase] = 235354 ))
+	, "m duration h2", [duration_h2]
+	)
+
+evaluate SELECTCOLUMNS( FILTER(vw_claims, vw_claims[portfolio_purchase] = 235354)
+	, "claim_id", vw_claims[claim_id]
+	, "underwriter", vw_claims[claim_underwriter]
+	, "created", vw_claims[created_date]
+	, "underwritten", vw_claims[underwritten_date]
+	, "duration h", DATEDIFF( vw_claims[created_date], vw_claims[underwritten_date], HOUR )
+	, "m duration h", [duration_h]
+	, "m duration h2", [duration_h2]
+	)
+	

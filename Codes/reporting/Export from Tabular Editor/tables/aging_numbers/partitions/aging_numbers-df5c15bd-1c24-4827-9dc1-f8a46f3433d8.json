@@ -1,0 +1,13 @@
+{
+  "name": "aging_numbers-df5c15bd-1c24-4827-9dc1-f8a46f3433d8",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "SELECTCOLUMNS( GENERATESERIES ( 0, 23 ), ",
+      "        \"months_fwd\", [Value], ",
+      "        \"quarters_fwd\", TRUNC([Value]/3+1)",
+      "        )"
+    ]
+  }
+}

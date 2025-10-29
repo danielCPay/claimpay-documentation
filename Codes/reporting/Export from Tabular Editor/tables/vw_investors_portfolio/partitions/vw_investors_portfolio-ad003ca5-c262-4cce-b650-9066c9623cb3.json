@@ -1,0 +1,13 @@
+{
+  "name": "vw_investors_portfolio-ad003ca5-c262-4cce-b650-9066c9623cb3",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = vw_investors",
+      "in",
+      "    Source"
+    ]
+  }
+}

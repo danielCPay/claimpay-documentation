@@ -1,0 +1,29 @@
+{
+  "name": "claim_paid_date",
+  "dataType": "dateTime",
+  "sourceColumn": "claim_paid_date",
+  "formatString": "Long Date",
+  "lineageTag": "009cfd3d-a338-4364-aca1-8c221253b427",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f1d41b00-ff05-4ed2-be73-00588a16683f",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_16e25cce-5573-4d04-a130-f770d775a5ac",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

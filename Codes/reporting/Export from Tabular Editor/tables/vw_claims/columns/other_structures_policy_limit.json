@@ -1,0 +1,17 @@
+{
+  "name": "other_structures_policy_limit",
+  "dataType": "double",
+  "sourceColumn": "other_structures_policy_limit",
+  "lineageTag": "1b31a619-1e7c-45b2-bde9-d92c92f6d8f8",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

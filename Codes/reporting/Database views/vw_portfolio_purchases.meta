@@ -1,0 +1,7 @@
+let
+  Source = Csv.Document(Web.Contents("https://login.claimpay.net:8443/vw_portfolio_purchases.csv"),[Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+  #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+  #"Changed Types" = Table.TransformColumnTypes(#"Promoted Headers",{{"portfolio_purchase", Int64.Type}, {"createdtime", type datetime}, {"portfoliopurchasesid", Int64.Type}, {"portfolio_purchase_name", type text}, {"number", type text}, {"purchase_date", type datetime}, {"program", Int64.Type}, {"portfolio_purchase_status", type text}, {"purchase_underwriter", Int64.Type}, {"purchase_approver", Int64.Type}, {"provider", Int64.Type}, {"portfolio", Int64.Type}, {"investor", Int64.Type}, {"total_number_of_claims", Int64.Type}, {"total_claim_value", type number}, {"adjusted_claim_value", type number}, {"purchase_value", type number}, {"note", type text}, {"total_number_of_aob_claims", Int64.Type}, {"lock_automation", Int64.Type}, {"buyback_clearance", type number}, {"cash_to_seller", type number}, {"wire_fees", type number}, {"projected_refundable_reserve", type number}, {"addendum_date", type date}, {"funded_date", type date}, {"sent_be_signed_date", type date}, {"docusign_envelope_id", type text}, {"factor_fee", type number}}, "en-US"),
+  #"Renamed Columns" = Table.RenameColumns(#"Changed Types", {})
+in
+  #"Renamed Columns"

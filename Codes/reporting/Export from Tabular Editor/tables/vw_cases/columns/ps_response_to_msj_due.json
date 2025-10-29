@@ -1,0 +1,29 @@
+{
+  "name": "ps_response_to_msj_due",
+  "dataType": "dateTime",
+  "sourceColumn": "ps_response_to_msj_due",
+  "formatString": "Long Date",
+  "lineageTag": "241a4b1b-662d-427a-87f5-0a227d285bb4",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "daa81e8b-e995-4516-97ee-7c0d37bb5ba1",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_0804a917-9600-455d-b7ef-6914b80df3b7",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

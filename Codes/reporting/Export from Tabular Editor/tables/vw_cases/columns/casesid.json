@@ -1,0 +1,14 @@
+{
+  "name": "casesid",
+  "dataType": "int64",
+  "sourceColumn": "casesid",
+  "formatString": "0",
+  "lineageTag": "de39c7d4-7ba4-4ea4-a3d0-812beb8049c1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

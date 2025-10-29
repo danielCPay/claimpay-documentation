@@ -1,0 +1,6 @@
+{
+  "name": "# Actions",
+  "expression": "SUM(rep_history_statuses[number_of_elements])",
+  "formatString": "0",
+  "lineageTag": "b1f31f39-a1ab-43d5-ab96-420d4a0c70d1"
+}

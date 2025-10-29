@@ -1,0 +1,7 @@
+{
+  "name": "13bf59da-462b-44ac-a598-a4345e4bdf00",
+  "fromTable": "vw_claims",
+  "fromColumn": "claim_underwriter",
+  "toTable": "vw_users_claim_underwriter",
+  "toColumn": "user_id"
+}

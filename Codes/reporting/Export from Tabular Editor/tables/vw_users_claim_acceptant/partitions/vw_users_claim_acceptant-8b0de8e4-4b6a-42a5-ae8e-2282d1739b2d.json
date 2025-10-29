@@ -1,0 +1,14 @@
+{
+  "name": "vw_users_claim_acceptant-8b0de8e4-4b6a-42a5-ae8e-2282d1739b2d",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = vw_users,",
+      "    #\"Renamed Columns\" = Table.RenameColumns(Source,{{\"user_full_name\", \"Claim Acceptant\"}})",
+      "in",
+      "    #\"Renamed Columns\""
+    ]
+  }
+}

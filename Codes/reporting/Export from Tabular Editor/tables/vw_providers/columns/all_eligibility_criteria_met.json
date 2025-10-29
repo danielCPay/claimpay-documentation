@@ -1,0 +1,13 @@
+{
+  "name": "all_eligibility_criteria_met",
+  "dataType": "string",
+  "sourceColumn": "all_eligibility_criteria_met",
+  "lineageTag": "7d35e4e7-b5bc-4569-8d84-685aeb7de4ce",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

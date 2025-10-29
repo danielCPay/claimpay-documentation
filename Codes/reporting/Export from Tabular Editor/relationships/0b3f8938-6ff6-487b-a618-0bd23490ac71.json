@@ -1,0 +1,8 @@
+{
+  "name": "0b3f8938-6ff6-487b-a618-0bd23490ac71",
+  "fromTable": "vw_cases",
+  "fromColumn": "motion_to_compel_settlement",
+  "toTable": "LocalDateTable_41570b2a-f53e-4504-add3-4c1af8205f0e",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

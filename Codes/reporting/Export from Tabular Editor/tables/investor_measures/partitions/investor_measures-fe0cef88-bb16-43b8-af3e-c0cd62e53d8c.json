@@ -1,0 +1,14 @@
+{
+  "name": "investor_measures-fe0cef88-bb16-43b8-af3e-c0cd62e53d8c",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"dc49C8IwEAbgv3JkstiA9XuVSsFFCuJUOsR4IYU0KUlE/PcmVtQWHG65h3vfqyoyoQmUN8slc0hSkoWhGanTXvbYKfNoUXsoMPp86Ltr2+g3LX5omkBulELuG6NdgOUrO9pBc4sxkSk4ooecOQmFMne4oDAWobRGNB5OktkYuwoz+xTmzHNJz11YroevjM42X/3fyIRHO77c9oX1Ew==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [investor_measure_name = _t, investor_meausure_id = _t, investor_measure_multiplier = _t]),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"investor_measure_name\", type text}, {\"investor_meausure_id\", Int64.Type}, {\"investor_measure_multiplier\", Int64.Type}})",
+      "in",
+      "    #\"Changed Type\""
+    ]
+  }
+}

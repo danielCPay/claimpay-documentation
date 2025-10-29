@@ -1,0 +1,14 @@
+{
+  "name": "case",
+  "dataType": "int64",
+  "sourceColumn": "case",
+  "formatString": "0",
+  "lineageTag": "2431203b-90d0-4581-95d9-2bf847708241",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

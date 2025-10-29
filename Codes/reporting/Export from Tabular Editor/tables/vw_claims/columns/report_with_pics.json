@@ -1,0 +1,13 @@
+{
+  "name": "report_with_pics",
+  "dataType": "string",
+  "sourceColumn": "report_with_pics",
+  "lineageTag": "98b4ec98-dbb3-45ef-93b6-32993734aeba",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

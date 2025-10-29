@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio Total Purchase Price",
+  "expression": "SUM( vw_portfolios[total_purchase_price] )",
+  "lineageTag": "d8526cb3-7f4a-4962-8e84-d688b1c43536",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

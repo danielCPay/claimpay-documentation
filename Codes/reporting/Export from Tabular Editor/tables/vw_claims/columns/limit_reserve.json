@@ -1,0 +1,17 @@
+{
+  "name": "limit_reserve",
+  "dataType": "double",
+  "sourceColumn": "limit_reserve",
+  "lineageTag": "bce238b1-790b-4875-945f-cca4d5af9b49",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

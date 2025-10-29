@@ -1,0 +1,14 @@
+{
+  "name": "claimsid",
+  "dataType": "int64",
+  "sourceColumn": "claimsid",
+  "formatString": "0",
+  "lineageTag": "f39d0d06-63be-4ad6-96dc-aeedf960198f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

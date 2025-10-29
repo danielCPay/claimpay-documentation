@@ -1,0 +1,14 @@
+﻿DEFINE
+	TABLE calendar_months = 
+		ADDCOLUMNS(
+			CALENDAR( DATE(2020, 1, 1), TODAY()+365 )
+			, "Month", Format([Date], "MMM yyyy")
+			, "Quarter", Year([Date]) & "-Q" & Format([Date], "q")
+			, "Year", Format([Date], "yyyy")
+			, "month_start", DATE( YEAR([Date]), MONTH([Date]), 1 )
+			, "month_end", EOMONTH( [Date], 0 )
+			)
+
+EVALUATE calendar_months
+
+EVALUATE calendar_dates

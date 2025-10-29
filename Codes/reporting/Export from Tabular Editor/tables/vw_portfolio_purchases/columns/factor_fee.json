@@ -1,0 +1,17 @@
+{
+  "name": "factor_fee",
+  "dataType": "double",
+  "sourceColumn": "factor_fee",
+  "lineageTag": "9d1fe681-2752-4e33-856a-d8da4297b1bb",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

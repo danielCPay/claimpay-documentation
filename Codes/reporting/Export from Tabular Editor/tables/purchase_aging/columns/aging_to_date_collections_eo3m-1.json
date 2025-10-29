@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "aging_to_date_collections_eo3m-1",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[aging_to_date_collections_eo3m-1]",
+  "formatString": "General Date",
+  "lineageTag": "16b47d67-da26-4d24-9c98-8f32e3901523",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "90051de0-41ca-464f-be6c-917933dc799b",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_65cf8ec6-071b-4dfb-b7b6-de4c18a5360f",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

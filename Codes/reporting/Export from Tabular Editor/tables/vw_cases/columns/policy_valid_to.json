@@ -1,0 +1,29 @@
+{
+  "name": "policy_valid_to",
+  "dataType": "dateTime",
+  "sourceColumn": "policy_valid_to",
+  "formatString": "Long Date",
+  "lineageTag": "9cadce42-e8bf-4e7f-8389-51d8760bb392",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "0a90cc2c-7091-42e9-acf0-5b30df4f11f8",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_27c9d29a-85e1-48bf-8f36-a48ff1fce962",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

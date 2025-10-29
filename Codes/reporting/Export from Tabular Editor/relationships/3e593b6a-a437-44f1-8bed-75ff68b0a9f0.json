@@ -1,0 +1,8 @@
+{
+  "name": "3e593b6a-a437-44f1-8bed-75ff68b0a9f0",
+  "fromTable": "vw_providers",
+  "fromColumn": "validated_by_provider_date",
+  "toTable": "LocalDateTable_512f66a7-357f-49e5-9b33-187875b115cc",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

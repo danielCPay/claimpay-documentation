@@ -1,0 +1,8 @@
+{
+  "name": "09d2a443-5988-43a3-8f5b-10ca66735db8",
+  "fromTable": "calendar_dates",
+  "fromColumn": "month_start",
+  "toTable": "LocalDateTable_0664ed9a-7fef-43f7-8c5f-a0026c1fd7dd",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "4e3814c7-31e8-4a0a-b11c-6b031abbbd92",
+  "fromTable": "vw_portfolios",
+  "fromColumn": "provider",
+  "toTable": "vw_providers",
+  "toColumn": "provider"
+}

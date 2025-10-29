@@ -1,0 +1,17 @@
+{
+  "name": "attorney_fee",
+  "dataType": "double",
+  "sourceColumn": "attorney_fee",
+  "lineageTag": "11868011-2c00-4a80-b422-8700814916f4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

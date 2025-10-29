@@ -1,0 +1,17 @@
+{
+  "name": "adjusted_claim_value",
+  "dataType": "double",
+  "sourceColumn": "adjusted_claim_value",
+  "lineageTag": "8a216c4b-f1e5-4a88-b638-780351cd972d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Underwriting Duration (average hours)",
+  "expression": [
+    "SUMX( vw_claims, DATEDIFF( IF(ISBLANK(vw_claims[underwriting_started_time]), vw_claims[createdtime], vw_claims[underwriting_started_time]), vw_claims[underwritten_time], SECOND ) ) / 3600",
+    "        / SUMX( vw_claims, IF( ISBLANK(vw_claims[underwritten_time]), 0, 1 ) )"
+  ],
+  "lineageTag": "3e71a872-1cfd-4d20-b757-1987d63a81df",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

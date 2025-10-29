@@ -1,0 +1,25 @@
+{
+  "name": "Investor Measure Value YTD",
+  "expression": "TOTALYTD( [Investor Measure Value], calendar_dates[month_start], ALLEXCEPT(calendar_dates, calendar_dates[month_start]))",
+  "lineageTag": "1bfbea3d-ed42-4bf0-833e-8ad5e607d719",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "MeasureTemplate",
+      "value": {
+        "version": 0,
+        "daxTemplateName": "YearToDate"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"FormatString\"]"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}
