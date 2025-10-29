@@ -1584,7 +1584,7 @@
   ```
   <a id="user-content-wf-1035" href="#wf-1035"></a>
 
-## WF 1035 - "Public Adjuster confirmed"
+## WF 1035 - "Public Adjuster confirmed" (TRIGGER)
 
 ### Conditions:
 
